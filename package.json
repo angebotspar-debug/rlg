@@ -1,0 +1,47 @@
+{
+  "name": "islamic-guidance-website",
+  "version": "0.1.0",
+  "description": "Yeni Müslümanlar İçin Başlangıç Rehberi - A comprehensive guide for new Muslims",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean",
+    "db:generate": "cd apps/web && prisma generate",
+    "db:push": "cd apps/web && prisma db push",
+    "db:migrate": "cd apps/web && prisma migrate dev",
+    "db:seed": "cd apps/web && prisma db seed",
+    "db:studio": "cd apps/web && prisma studio"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.16",
+    "@types/node": "^20.8.0",
+    "typescript": "^5.2.2",
+    "eslint": "^8.51.0",
+    "prettier": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "islam",
+    "muslim",
+    "guidance",
+    "education",
+    "multilingual",
+    "nextjs",
+    "turkish",
+    "english",
+    "german"
+  ],
+  "author": "Islamic Guidance Project",
+  "license": "MIT"
+}

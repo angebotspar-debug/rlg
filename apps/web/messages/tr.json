@@ -1,0 +1,42 @@
+{
+  "navigation": {
+    "home": "Ana Sayfa",
+    "islamIntro": "İslam'a Giriş",
+    "faithPrinciples": "İman Esasları",
+    "prayerGuide": "Namaz Rehberi",
+    "dailyLife": "Günlük Müslüman Hayatı",
+    "thirtyDayPlan": "30 Günlük Başlangıç Planı",
+    "faq": "Sık Sorulan Sorular",
+    "resources": "Kaynaklar"
+  },
+  "common": {
+    "readMore": "Devamını Oku",
+    "backToHome": "Ana Sayfaya Dön",
+    "readingTime": "dakika okuma",
+    "difficulty": {
+      "beginner": "Başlangıç",
+      "intermediate": "Orta",
+      "advanced": "İleri"
+    },
+    "language": "Dil",
+    "languages": {
+      "tr": "Türkçe",
+      "en": "English",
+      "de": "Deutsch"
+    }
+  },
+  "home": {
+    "title": "Yeni Müslümanlar İçin Başlangıç Rehberi",
+    "subtitle": "İslam'ı öğrenmeye adım adım başlayın",
+    "description": "Yeni Müslüman olmuş veya İslam'ı araştıran kişiler için kapsamlı, güvenilir ve sade anlatımlı rehber.",
+    "featuredArticles": "Öne Çıkan Makaleler",
+    "learningPaths": "Öğrenme Yolları",
+    "getStarted": "Başlayın"
+  },
+  "seo": {
+    "home": {
+      "title": "Yeni Müslümanlar İçin Başlangıç Rehberi | İslam'ı Öğrenin",
+      "description": "Yeni Müslüman olmuş veya İslam'ı araştıran kişiler için kapsamlı rehber. Adım adım öğrenme planı, güvenilir kaynaklarla İslam'ı öğrenin."
+    }
+  }
+}

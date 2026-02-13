@@ -1,0 +1,42 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "islamIntro": "Einführung in den Islam",
+    "faithPrinciples": "Glaubensgrundsätze",
+    "prayerGuide": "Gebetsanleitung",
+    "dailyLife": "Tägliches muslimisches Leben",
+    "thirtyDayPlan": "30-Tage-Anfängerplan",
+    "faq": "Häufig gestellte Fragen",
+    "resources": "Ressourcen"
+  },
+  "common": {
+    "readMore": "Weiterlesen",
+    "backToHome": "Zurück zur Startseite",
+    "readingTime": "Min. Lesezeit",
+    "difficulty": {
+      "beginner": "Anfänger",
+      "intermediate": "Mittelstufe",
+      "advanced": "Fortgeschritten"
+    },
+    "language": "Sprache",
+    "languages": {
+      "tr": "Türkçe",
+      "en": "English",
+      "de": "Deutsch"
+    }
+  },
+  "home": {
+    "title": "Anfängerleitfaden für neue Muslime",
+    "subtitle": "Lernen Sie den Islam Schritt für Schritt",
+    "description": "Ein umfassender, zuverlässiger und einfacher Leitfaden für diejenigen, die neu zum Islam konvertiert sind oder den Islam erforschen.",
+    "featuredArticles": "Empfohlene Artikel",
+    "learningPaths": "Lernpfade",
+    "getStarted": "Loslegen"
+  },
+  "seo": {
+    "home": {
+      "title": "Anfängerleitfaden für neue Muslime | Islam lernen",
+      "description": "Umfassender Leitfaden für diejenigen, die neu zum Islam konvertiert sind oder den Islam erforschen. Lernen Sie den Islam mit schrittweisem Lernplan und zuverlässigen Quellen."
+    }
+  }
+}

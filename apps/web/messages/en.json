@@ -1,0 +1,42 @@
+{
+  "navigation": {
+    "home": "Home",
+    "islamIntro": "Introduction to Islam",
+    "faithPrinciples": "Principles of Faith",
+    "prayerGuide": "Prayer Guide",
+    "dailyLife": "Daily Muslim Life",
+    "thirtyDayPlan": "30-Day Beginner Plan",
+    "faq": "Frequently Asked Questions",
+    "resources": "Resources"
+  },
+  "common": {
+    "readMore": "Read More",
+    "backToHome": "Back to Home",
+    "readingTime": "min read",
+    "difficulty": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "language": "Language",
+    "languages": {
+      "tr": "Türkçe",
+      "en": "English",
+      "de": "Deutsch"
+    }
+  },
+  "home": {
+    "title": "Beginner's Guide for New Muslims",
+    "subtitle": "Start learning Islam step by step",
+    "description": "A comprehensive, reliable, and simple guide for those who have newly converted to Islam or are researching Islam.",
+    "featuredArticles": "Featured Articles",
+    "learningPaths": "Learning Paths",
+    "getStarted": "Get Started"
+  },
+  "seo": {
+    "home": {
+      "title": "Beginner's Guide for New Muslims | Learn Islam",
+      "description": "Comprehensive guide for those who have newly converted to Islam or are researching Islam. Learn Islam with step-by-step learning plan and reliable sources."
+    }
+  }
+}
