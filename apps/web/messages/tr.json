@@ -110,6 +110,18 @@
     "faithPrinciples": {
       "title": "İman Esasları | İslam Rehberi",
       "description": "İslam'ın altı temel inanç esası. Allah'a, meleklere, kitaplara, peygamberlere, ahiret gününe ve kadere iman."
+    },
+    "prayerGuide": {
+      "title": "Namaz Rehberi | İslam Rehberi",
+      "description": "Namaz nasıl kılınır? Abdest nasıl alınır? Yeni Müslümanlar için adım adım namaz rehberi."
+    },
+    "dailyLife": {
+      "title": "Günlük Müslüman Hayatı | İslam Rehberi",
+      "description": "Müslüman olarak günlük hayatta nelere dikkat edilmeli? Helal yaşam rehberi ve pratik öneriler."
+    },
+    "thirtyDayPlan": {
+      "title": "30 Günlük Başlangıç Planı | İslam Rehberi",
+      "description": "Yeni Müslümanlar için 30 günlük adım adım öğrenme planı. İslam'ı sistematik olarak öğrenin."
     }
   }
 }

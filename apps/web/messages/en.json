@@ -110,6 +110,18 @@
     "faithPrinciples": {
       "title": "Principles of Faith | Islamic Guide",
       "description": "The six fundamental principles of Islamic faith. Belief in Allah, angels, books, prophets, the Day of Judgment, and divine decree."
+    },
+    "prayerGuide": {
+      "title": "Prayer Guide | Islamic Guide",
+      "description": "How to pray? How to perform ablution? Step-by-step prayer guide for new Muslims."
+    },
+    "dailyLife": {
+      "title": "Daily Muslim Life | Islamic Guide",
+      "description": "What should be considered in daily life as a Muslim? Halal living guide and practical suggestions."
+    },
+    "thirtyDayPlan": {
+      "title": "30-Day Beginner Plan | Islamic Guide",
+      "description": "30-day step-by-step learning plan for new Muslims. Learn Islam systematically."
     }
   }
 }

@@ -110,6 +110,18 @@
     "faithPrinciples": {
       "title": "Glaubensprinzipien | Islamischer Leitfaden",
       "description": "Die sechs grundlegenden Prinzipien des islamischen Glaubens. Glaube an Allah, Engel, Bücher, Propheten, den Jüngsten Tag und die göttliche Bestimmung."
+    },
+    "prayerGuide": {
+      "title": "Gebetsanleitung | Islamischer Leitfaden",
+      "description": "Wie betet man? Wie führt man die Waschung durch? Schritt-für-Schritt Gebetsanleitung für neue Muslime."
+    },
+    "dailyLife": {
+      "title": "Tägliches muslimisches Leben | Islamischer Leitfaden",
+      "description": "Was sollte im täglichen Leben als Muslim beachtet werden? Halal-Lebensführung und praktische Vorschläge."
+    },
+    "thirtyDayPlan": {
+      "title": "30-Tage-Anfängerplan | Islamischer Leitfaden",
+      "description": "30-tägiger Schritt-für-Schritt Lernplan für neue Muslime. Lernen Sie den Islam systematisch."
     }
   }
 }
