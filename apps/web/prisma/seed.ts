@@ -115,6 +115,141 @@ Namaza başlamadan önce abdest almak gerekir:
         featured: true,
       },
     }),
+    
+    // English Articles
+    prisma.article.upsert({
+      where: { slug_language: { slug: 'what-is-islam', language: Language.EN } },
+      update: {},
+      create: {
+        slug: 'what-is-islam',
+        language: Language.EN,
+        title: 'What is Islam?',
+        summary: 'Learn the fundamental principles and meaning of Islam. A comprehensive introduction guide for new Muslims.',
+        content: `# What is Islam?
+
+Islam is an Arabic word meaning "peace, security, and submission." As a religious term, Islam means complete submission to Allah and obedience to His commands.
+
+## The Core Message of Islam
+
+The fundamental message of Islam is simple and clear: "La ilaha illa Allah" - There is no god but Allah.
+
+This statement represents the essence of Islam:
+- Tawhid: The unity and uniqueness of Allah
+- Worship: Devotion only to Allah
+- Lifestyle: Living according to Allah's commands`,
+        categoryId: categories[0].id,
+        readingTime: 5,
+        difficultyLevel: Level.BEGINNER,
+        seoTitle: 'What is Islam? - Essential Guide for New Muslims',
+        seoDescription: 'Comprehensive information about the meaning of Islam, its basic principles and beliefs.',
+        published: true,
+        featured: true,
+      },
+    }),
+    prisma.article.upsert({
+      where: { slug_language: { slug: 'how-to-pray', language: Language.EN } },
+      update: {},
+      create: {
+        slug: 'how-to-pray',
+        language: Language.EN,
+        title: 'How to Pray in Islam?',
+        summary: 'Learn the steps and importance of prayer in detail. A step-by-step prayer guide for new Muslims.',
+        content: `# How to Pray in Islam?
+
+Prayer (Salah) is one of the five pillars of Islam and is performed five times daily.
+
+## The Importance of Prayer
+
+Prayer is the most important act of worship that strengthens the Muslim's connection with Allah.
+
+## How to Perform Ablution?
+
+Before starting prayer, ablution must be performed:
+1. Say Bismillah
+2. Wash your hands
+3. Rinse your mouth
+4. Clean your nose
+5. Wash your face
+6. Wash your arms
+7. Wipe your head
+8. Wash your feet`,
+        categoryId: categories[1].id,
+        readingTime: 8,
+        difficultyLevel: Level.BEGINNER,
+        seoTitle: 'How to Pray in Islam? - Step-by-Step Prayer Guide',
+        seoDescription: 'Detailed guide on the steps of prayer, performing ablution, and prayer supplications.',
+        published: true,
+        featured: true,
+      },
+    }),
+    
+    // German Articles
+    prisma.article.upsert({
+      where: { slug_language: { slug: 'was-ist-islam', language: Language.DE } },
+      update: {},
+      create: {
+        slug: 'was-ist-islam',
+        language: Language.DE,
+        title: 'Was ist Islam?',
+        summary: 'Lernen Sie die grundlegenden Prinzipien und die Bedeutung des Islam. Ein umfassender Einführungsleitfaden für neue Muslime.',
+        content: `# Was ist Islam?
+
+Islam ist ein arabisches Wort, das "Frieden, Sicherheit und Hingabe" bedeutet. Als religiöser Begriff bedeutet Islam vollständige Hingabe an Allah und Gehorsam gegenüber Seinen Geboten.
+
+## Die Kernbotschaft des Islam
+
+Die grundlegende Botschaft des Islam ist einfach und klar: "La ilaha illa Allah" - Es gibt keinen Gott außer Allah.
+
+Diese Aussage repräsentiert das Wesen des Islam:
+- Tawhid: Die Einheit und Einzigartigkeit Allahs
+- Anbetung: Hingabe nur an Allah
+- Lebensweise: Leben nach Allahs Geboten`,
+        categoryId: categories[0].id,
+        readingTime: 5,
+        difficultyLevel: Level.BEGINNER,
+        seoTitle: 'Was ist Islam? - Grundlegender Leitfaden für neue Muslime',
+        seoDescription: 'Umfassende Informationen über die Bedeutung des Islam, seine Grundprinzipien und Glaubensgrundlagen.',
+        published: true,
+        featured: true,
+      },
+    }),
+    prisma.article.upsert({
+      where: { slug_language: { slug: 'wie-betet-man', language: Language.DE } },
+      update: {},
+      create: {
+        slug: 'wie-betet-man',
+        language: Language.DE,
+        title: 'Wie betet man im Islam?',
+        summary: 'Lernen Sie die Schritte und die Bedeutung des Gebets im Detail. Eine schrittweise Gebetsanleitung für neue Muslime.',
+        content: `# Wie betet man im Islam?
+
+Das Gebet (Salah) ist eine der fünf Säulen des Islam und wird fünfmal täglich verrichtet.
+
+## Die Bedeutung des Gebets
+
+Das Gebet ist die wichtigste Anbetungshandlung, die die Verbindung des Muslims zu Allah stärkt.
+
+## Wie führt man die Gebetswaschung durch?
+
+Vor Beginn des Gebets muss die Gebetswaschung durchgeführt werden:
+1. Bismillah sprechen
+2. Hände waschen
+3. Mund ausspülen
+4. Nase reinigen
+5. Gesicht waschen
+6. Arme waschen
+7. Kopf abwischen
+8. Füße waschen`,
+        categoryId: categories[1].id,
+        readingTime: 8,
+        difficultyLevel: Level.BEGINNER,
+        seoTitle: 'Wie betet man im Islam? - Schrittweise Gebetsanleitung',
+        seoDescription: 'Detaillierte Anleitung zu den Gebetsschritten, der Gebetswaschung und den Gebetsbittgebeten.',
+        published: true,
+        featured: true,
+      },
+    }),
+    
     prisma.article.upsert({
       where: { slug_language: { slug: '30-gunluk-plan', language: Language.TR } },
       update: {},
