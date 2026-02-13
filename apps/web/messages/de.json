@@ -33,10 +33,83 @@
     "learningPaths": "Lernpfade",
     "getStarted": "Loslegen"
   },
+  "faithPrinciples": {
+    "title": "Glaubensprinzipien",
+    "description": "Die sechs grundlegenden Prinzipien des islamischen Glaubens. Detaillierte Informationen über die Kernüberzeugungen, die jeder Muslim in seinem Herzen bestätigen muss.",
+    "introTitle": "Was ist Glaube (Iman)?",
+    "introText": "Glaube bedeutet, mit dem Herzen zu bestätigen, mit der Zunge zu bekennen und mit den Gliedern zu praktizieren. Im Islam basiert der Glaube auf sechs grundlegenden Prinzipien, und es ist notwendig, an alle diese Prinzipien zu glauben.",
+    "hadithText": "Der Glaube ist, an Allah, Seine Engel, Seine Bücher, Seine Gesandten, den Jüngsten Tag und die göttliche Bestimmung, sowohl gut als auch schlecht, zu glauben.",
+    "principles": {
+      "allah": {
+        "title": "Glaube an Allah",
+        "description": "An die Existenz, Einheit und Einzigartigkeit Allahs glauben. Den Glauben haben, dass Er der Schöpfer, Versorger und Allmächtige ist.",
+        "details": [
+          "Allahs Existenz und Einheit (Tawhid)",
+          "Allahs 99 schöne Namen (Asma al-Husna)",
+          "Allahs Eigenschaften und Charakteristika",
+          "Allah keine Partner beigesellen (Shirk vermeiden)"
+        ]
+      },
+      "angels": {
+        "title": "Glaube an Engel",
+        "description": "An die Existenz von Engeln glauben, die von Allah aus Licht erschaffen wurden, die Ihm gehorchen und niemals Sünden begehen.",
+        "details": [
+          "Gabriel (Friede sei mit ihm) - Engel der Offenbarung",
+          "Michael (Friede sei mit ihm) - Engel des Unterhalts",
+          "Israfil (Friede sei mit ihm) - Engel, der die Posaune blasen wird",
+          "Azrael (Friede sei mit ihm) - Todesengel"
+        ]
+      },
+      "books": {
+        "title": "Glaube an Bücher",
+        "description": "An die Existenz heiliger Bücher glauben, die Allah Seinen Propheten offenbart hat, und dass der Quran das letzte Buch ist.",
+        "details": [
+          "Quran - Offenbart an Prophet Muhammad (Friede sei mit ihm)",
+          "Evangelium - Offenbart an Prophet Jesus (Friede sei mit ihm)",
+          "Thora - Offenbart an Prophet Moses (Friede sei mit ihm)",
+          "Psalmen - Offenbart an Prophet David (Friede sei mit ihm)"
+        ]
+      },
+      "prophets": {
+        "title": "Glaube an Propheten",
+        "description": "An die Existenz von Propheten glauben, die Allah gesandt hat, um die Menschheit zu führen, und dass Muhammad (Friede sei mit ihm) der letzte Prophet ist.",
+        "details": [
+          "Adam (Friede sei mit ihm) - Erster Mensch und Prophet",
+          "Noah (Friede sei mit ihm) - Prophet der Sintflut",
+          "Abraham (Friede sei mit ihm) - Freund Allahs (Khalilullah)",
+          "Muhammad (Friede sei mit ihm) - Letzter Prophet"
+        ]
+      },
+      "afterlife": {
+        "title": "Glaube an den Jüngsten Tag",
+        "description": "Glauben, dass die Auferstehung nach dem Tod, der Jüngste Tag, das Paradies und die Hölle real sind.",
+        "details": [
+          "Auferstehung nach dem Tod (Ba'th)",
+          "Jüngster Tag (Yawm al-Din)",
+          "Paradies - Ort der Gläubigen",
+          "Hölle - Ort der Ungläubigen"
+        ]
+      },
+      "destiny": {
+        "title": "Glaube an die göttliche Bestimmung",
+        "description": "Glauben, dass Allah alles im Voraus weiß, es bestimmt hat und nichts ohne Seine Erlaubnis geschieht.",
+        "details": [
+          "Allahs Wissen über alles (Ilm)",
+          "Sein Aufschreiben von allem (Kitabah)",
+          "Sein Wollen von allem (Mashi'ah)",
+          "Seine Schöpfung von allem (Khalq)"
+        ]
+      }
+    }
+  },
   "seo": {
     "home": {
       "title": "Anfängerleitfaden für neue Muslime | Islam lernen",
       "description": "Umfassender Leitfaden für diejenigen, die neu zum Islam konvertiert sind oder den Islam erforschen. Lernen Sie den Islam mit schrittweisem Lernplan und zuverlässigen Quellen."
+    },
+    "faithPrinciples": {
+      "title": "Glaubensprinzipien | Islamischer Leitfaden",
+      "description": "Die sechs grundlegenden Prinzipien des islamischen Glaubens. Glaube an Allah, Engel, Bücher, Propheten, den Jüngsten Tag und die göttliche Bestimmung."
     }
   }
 }
