@@ -9,7 +9,7 @@ services:
     environment:
       POSTGRES_DB: islamic_guidance
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_PASSWORD: password
     ports:
       - "5432:5432"
     volumes:
@@ -39,7 +39,7 @@ services:
     restart: unless-stopped
     environment:
       - NODE_ENV=development
-      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/islamic_guidance?schema=public
+      - DATABASE_URL=postgresql://postgres:password@postgres:5432/islamic_guidance?schema=public
       - REDIS_URL=redis://redis:6379
       - NEXT_PUBLIC_APP_URL=http://localhost:3000
     ports:
