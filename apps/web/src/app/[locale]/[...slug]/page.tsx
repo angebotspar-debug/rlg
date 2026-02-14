@@ -47,10 +47,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: article.seoTitle || article.title,
-    description: article.seoDescription || article.summary,
+    description: article.seoDescription || article.summary || undefined,
     openGraph: {
       title: article.seoTitle || article.title,
-      description: article.seoDescription || article.summary,
+      description: article.seoDescription || article.summary || undefined,
       type: 'article',
       publishedTime: article.createdAt.toISOString(),
       modifiedTime: article.updatedAt.toISOString(),
