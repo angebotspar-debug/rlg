@@ -32,28 +32,30 @@ const Navigation = () => {
   const currentLanguage = languages.find(lang => lang.code === locale)
 
   return (
-    <nav className="bg-white shadow-lg sticky top-0 z-50">
+    <nav className="bg-white/95 backdrop-blur-md shadow-soft sticky top-0 z-50 border-b border-neutral-100">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link href={`/${locale}`} className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-islamic-green rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">IG</span>
+          <Link href={`/${locale}`} className="flex items-center space-x-3 group">
+            <div className="w-12 h-12 bg-gradient-to-br from-islamic-green to-primary-600 rounded-2xl flex items-center justify-center shadow-islamic group-hover:shadow-medium transition-all duration-300 group-hover:scale-105">
+              <span className="text-white font-bold text-lg">IG</span>
             </div>
-            <span className="text-xl font-bold text-islamic-green">
-              İslam Rehberi
-            </span>
+            <div className="flex flex-col">
+              <span className="text-2xl font-bold text-neutral-800 group-hover:text-islamic-green transition-colors">İslam Rehberi</span>
+              <span className="text-xs text-neutral-500 font-medium">Islamic Guidance</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-1">
             {navigationItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-gray-700 hover:text-islamic-green transition-colors font-medium"
+                className="px-4 py-2 text-neutral-700 hover:text-islamic-green hover:bg-islamic-cream/30 rounded-xl transition-all duration-200 font-medium text-sm relative group"
               >
                 {item.label}
+                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-islamic-green group-hover:w-3/4 group-hover:left-1/8 transition-all duration-300"></span>
               </Link>
             ))}
           </div>
@@ -64,28 +66,28 @@ const Navigation = () => {
             <div className="relative">
               <button
                 onClick={() => setIsLangOpen(!isLangOpen)}
-                className="flex items-center space-x-2 px-3 py-2 rounded-lg border border-gray-200 hover:border-gray-300 transition-colors"
+                className="flex items-center space-x-2 px-4 py-2.5 rounded-xl border border-neutral-200 hover:border-islamic-green/30 hover:bg-islamic-cream/20 transition-all duration-200 shadow-soft hover:shadow-medium"
               >
-                <Globe className="h-4 w-4" />
-                <span className="text-sm font-medium">
+                <Globe className="h-4 w-4 text-islamic-green" />
+                <span className="text-sm font-medium text-neutral-700">
                   {currentLanguage?.flag} {currentLanguage?.name}
                 </span>
               </button>
 
               {isLangOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                <div className="absolute right-0 mt-3 w-52 bg-white rounded-2xl shadow-strong border border-neutral-100 py-3 z-50 animate-slide-up">
                   {languages.map((lang) => (
                     <Link
                       key={lang.code}
                       href={`/${lang.code}`}
                       className={cn(
-                        'flex items-center space-x-3 px-4 py-2 hover:bg-gray-50 transition-colors',
-                        locale === lang.code && 'bg-islamic-green/10 text-islamic-green'
+                        'flex items-center space-x-3 px-4 py-3 hover:bg-islamic-cream/30 transition-all duration-200 mx-2 rounded-xl',
+                        locale === lang.code && 'bg-islamic-green/10 text-islamic-green border-l-4 border-islamic-green'
                       )}
                       onClick={() => setIsLangOpen(false)}
                     >
-                      <span>{lang.flag}</span>
-                      <span className="font-medium">{lang.name}</span>
+                      <span className="text-lg">{lang.flag}</span>
+                      <span className="font-medium text-neutral-700">{lang.name}</span>
                     </Link>
                   ))}
                 </div>
@@ -95,12 +97,12 @@ const Navigation = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+              className="lg:hidden p-3 rounded-xl hover:bg-islamic-cream/30 transition-all duration-200 shadow-soft hover:shadow-medium"
             >
               {isOpen ? (
-                <X className="h-6 w-6" />
+                <X className="h-6 w-6 text-neutral-700" />
               ) : (
-                <Menu className="h-6 w-6" />
+                <Menu className="h-6 w-6 text-neutral-700" />
               )}
             </button>
           </div>
@@ -108,13 +110,13 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden border-t border-gray-200 py-4">
-            <div className="flex flex-col space-y-4">
+          <div className="lg:hidden border-t border-neutral-100 py-6 animate-slide-up">
+            <div className="flex flex-col space-y-2">
               {navigationItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-gray-700 hover:text-islamic-green transition-colors font-medium py-2"
+                  className="text-neutral-700 hover:text-islamic-green hover:bg-islamic-cream/30 transition-all duration-200 font-medium py-3 px-4 rounded-xl mx-2"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
