@@ -1,16 +1,5 @@
-import { Article, Category, LearningPath, Lesson, Language, Level } from '@prisma/client'
-
-export type { Language, Level }
-
-export interface ArticleWithCategory extends Article {
-  category: Category
-}
-
-export interface LearningPathWithLessons extends LearningPath {
-  lessons: (Lesson & {
-    article: ArticleWithCategory
-  })[]
-}
+export type Language = 'tr' | 'en' | 'de'
+export type Level = 'BEGINNER' | 'INTERMEDIATE' | 'ADVANCED'
 
 export interface MDXFrontmatter {
   title: string
