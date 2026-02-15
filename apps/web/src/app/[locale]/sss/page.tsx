@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server'
+import { setRequestLocale } from 'next-intl/server'
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { ChevronDown, ChevronUp, HelpCircle, MessageCircle, Book, Heart } from 'lucide-react'
@@ -101,6 +102,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function FAQPage({ params }: PageProps) {
+  // Enable static rendering
+  setRequestLocale(params.locale)
+  
   const t = await getTranslations({ locale: params.locale })
 
   return (

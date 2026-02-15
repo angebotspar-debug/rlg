@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server'
+import { setRequestLocale } from 'next-intl/server'
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { Calendar, BookOpen, Target, ArrowRight, CheckCircle, Clock, Users, Heart } from 'lucide-react'
@@ -19,6 +20,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function ThirtyDayPlanPage({ params }: PageProps) {
+  // Enable static rendering
+  setRequestLocale(params.locale)
+  
   const content = {
     tr: {
       title: '30 Günlük Başlangıç Planı',
@@ -333,4 +337,3 @@ export default async function ThirtyDayPlanPage({ params }: PageProps) {
     </div>
   )
 }
-

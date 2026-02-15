@@ -1,14 +1,18 @@
-import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
+import { setRequestLocale } from 'next-intl/server'
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { BookOpen, Users, Clock, Star } from 'lucide-react'
 
+interface PageProps {
+  params: {
+    locale: string
+  }
+}
+
 export async function generateMetadata({
   params: { locale },
-}: {
-  params: { locale: string }
-}): Promise<Metadata> {
+}: PageProps): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'seo.home' })
 
   return {
@@ -17,8 +21,11 @@ export async function generateMetadata({
   }
 }
 
-export default function HomePage() {
-  const t = useTranslations()
+export default async function HomePage({ params: { locale } }: PageProps) {
+  // Enable static rendering
+  setRequestLocale(locale)
+  
+  const t = await getTranslations({ locale })
 
   return (
     <div className="container mx-auto px-4 py-8">

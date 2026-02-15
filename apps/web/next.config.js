@@ -10,12 +10,18 @@ const withNextIntl = require('next-intl/plugin')('./src/i18n.ts')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   experimental: {
     mdxRs: true,
   },
   images: {
     domains: ['localhost'],
+    unoptimized: true, // Required for static export
+  },
+  env: {
+    _next_intl_trailing_slash: 'true'
   },
   async headers() {
     return [

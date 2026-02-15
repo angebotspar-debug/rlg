@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server'
+import { setRequestLocale } from 'next-intl/server'
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { Home, Utensils, Briefcase, Users, BookOpen, Heart, ArrowRight, CheckCircle, XCircle } from 'lucide-react'
@@ -19,6 +20,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function DailyLifePage({ params }: PageProps) {
+  // Enable static rendering
+  setRequestLocale(params.locale)
+  
   const content = {
     tr: {
       title: 'Günlük Müslüman Hayatı',
@@ -256,4 +260,3 @@ export default async function DailyLifePage({ params }: PageProps) {
     </div>
   )
 }
-

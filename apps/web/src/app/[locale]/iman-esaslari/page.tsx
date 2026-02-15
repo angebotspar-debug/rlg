@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server'
+import { setRequestLocale } from 'next-intl/server'
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { Book, Heart, Star, Users, Globe, ArrowRight } from 'lucide-react'
@@ -19,6 +20,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function FaithPrinciplesPage({ params }: PageProps) {
+  // Enable static rendering
+  setRequestLocale(params.locale)
+  
   const t = await getTranslations({ locale: params.locale, namespace: 'faithPrinciples' })
   
   const principleKeys = ['allah', 'angels', 'books', 'prophets', 'afterlife', 'destiny']
@@ -251,4 +255,3 @@ export default async function FaithPrinciplesPage({ params }: PageProps) {
     </div>
   )
 }
-

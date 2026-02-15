@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server'
+import { setRequestLocale } from 'next-intl/server'
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { Clock, Droplets, Heart, ArrowRight, Sun, Sunset, Moon } from 'lucide-react'
@@ -19,6 +20,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function PrayerGuidePage({ params }: PageProps) {
+  // Enable static rendering
+  setRequestLocale(params.locale)
+  
   const content = {
     tr: {
       title: 'Namaz Rehberi',
@@ -221,4 +225,3 @@ export default async function PrayerGuidePage({ params }: PageProps) {
     </div>
   )
 }
-
