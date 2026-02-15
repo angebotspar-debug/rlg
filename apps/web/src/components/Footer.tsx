@@ -9,31 +9,44 @@ const Footer = () => {
   const locale = useLocale()
 
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
+    <footer className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-islamic-dark-green text-white">
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid md:grid-cols-4 gap-12">
           {/* Brand */}
-          <div className="col-span-1">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-islamic-green rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">IG</span>
+          <div className="col-span-1 md:col-span-2">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-12 h-12 bg-gradient-to-br from-islamic-green to-primary-600 rounded-2xl flex items-center justify-center shadow-islamic">
+                <span className="text-white font-bold text-lg">IG</span>
               </div>
-              <span className="text-xl font-bold">İslam Rehberi</span>
+              <div className="flex flex-col">
+                <span className="text-2xl font-bold">İslam Rehberi</span>
+                <span className="text-xs text-neutral-400 font-medium">Islamic Guidance</span>
+              </div>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
+            <p className="text-neutral-300 text-base leading-relaxed mb-6 max-w-md">
               Yeni Müslümanlar için kapsamlı, güvenilir ve sade anlatımlı rehber. 
               İslam'ı öğrenmeye adım adım başlayın.
             </p>
+            <div className="flex items-center space-x-4">
+              <div className="flex items-center text-sm text-neutral-400">
+                <Globe className="mr-2 h-4 w-4 text-islamic-green" />
+                3 Dil Desteği
+              </div>
+              <div className="flex items-center text-sm text-neutral-400">
+                <Heart className="mr-2 h-4 w-4 text-islamic-green" />
+                Güvenilir İçerik
+              </div>
+            </div>
           </div>
 
           {/* Quick Links */}
           <div className="col-span-1">
-            <h3 className="font-semibold mb-4">Hızlı Erişim</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="text-lg font-bold mb-6 text-white">Hızlı Erişim</h3>
+            <ul className="space-y-3">
               <li>
                 <Link 
                   href={`/${locale}/islam-nedir`}
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-neutral-300 hover:text-islamic-green transition-all duration-200 text-sm hover:translate-x-1 inline-block"
                 >
                   İslam Nedir?
                 </Link>
@@ -41,7 +54,7 @@ const Footer = () => {
               <li>
                 <Link 
                   href={`/${locale}/namaz-rehberi`}
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-neutral-300 hover:text-islamic-green transition-all duration-200 text-sm hover:translate-x-1 inline-block"
                 >
                   Namaz Rehberi
                 </Link>
@@ -49,7 +62,7 @@ const Footer = () => {
               <li>
                 <Link 
                   href={`/${locale}/30-gunluk-plan`}
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-neutral-300 hover:text-islamic-green transition-all duration-200 text-sm hover:translate-x-1 inline-block"
                 >
                   30 Günlük Plan
                 </Link>
@@ -57,7 +70,7 @@ const Footer = () => {
               <li>
                 <Link 
                   href={`/${locale}/sss`}
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-neutral-300 hover:text-islamic-green transition-all duration-200 text-sm hover:translate-x-1 inline-block"
                 >
                   Sık Sorulan Sorular
                 </Link>
@@ -67,36 +80,36 @@ const Footer = () => {
 
           {/* Learning Paths */}
           <div className="col-span-1">
-            <h3 className="font-semibold mb-4">Öğrenme Yolları</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="text-lg font-bold mb-6 text-white">Öğrenme Yolları</h3>
+            <ul className="space-y-3">
               <li>
                 <Link 
-                  href={`/${locale}/ogrenme-yolu/temel-islam`}
-                  className="text-gray-400 hover:text-white transition-colors"
+                  href={`/${locale}/iman-esaslari`}
+                  className="text-neutral-300 hover:text-islamic-green transition-all duration-200 text-sm hover:translate-x-1 inline-block"
                 >
-                  Temel İslam Bilgisi
+                  İman Esasları
                 </Link>
               </li>
               <li>
                 <Link 
-                  href={`/${locale}/ogrenme-yolu/gunluk-ibadetler`}
-                  className="text-gray-400 hover:text-white transition-colors"
+                  href={`/${locale}/namaz-rehberi`}
+                  className="text-neutral-300 hover:text-islamic-green transition-all duration-200 text-sm hover:translate-x-1 inline-block"
                 >
                   Günlük İbadetler
                 </Link>
               </li>
               <li>
                 <Link 
-                  href={`/${locale}/ogrenme-yolu/ahlak`}
-                  className="text-gray-400 hover:text-white transition-colors"
+                  href={`/${locale}/gunluk-hayat`}
+                  className="text-neutral-300 hover:text-islamic-green transition-all duration-200 text-sm hover:translate-x-1 inline-block"
                 >
-                  İslam Ahlakı
+                  Günlük Hayat
                 </Link>
               </li>
               <li>
                 <Link 
                   href={`/${locale}/kaynaklar`}
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-neutral-300 hover:text-islamic-green transition-all duration-200 text-sm hover:translate-x-1 inline-block"
                 >
                   Kaynaklar
                 </Link>
@@ -106,38 +119,38 @@ const Footer = () => {
 
           {/* Languages & Contact */}
           <div className="col-span-1">
-            <h3 className="font-semibold mb-4">Diller</h3>
-            <div className="space-y-2 text-sm mb-6">
+            <h3 className="text-lg font-bold mb-6 text-white">Diller</h3>
+            <div className="space-y-3 mb-8">
               <Link 
                 href="/tr"
-                className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors"
+                className="flex items-center space-x-3 text-neutral-300 hover:text-islamic-green transition-all duration-200 text-sm hover:translate-x-1"
               >
-                <span>🇹🇷</span>
+                <span className="text-lg">🇹🇷</span>
                 <span>Türkçe</span>
               </Link>
               <Link 
                 href="/en"
-                className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors"
+                className="flex items-center space-x-3 text-neutral-300 hover:text-islamic-green transition-all duration-200 text-sm hover:translate-x-1"
               >
-                <span>🇺🇸</span>
+                <span className="text-lg">🇺🇸</span>
                 <span>English</span>
               </Link>
               <Link 
                 href="/de"
-                className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors"
+                className="flex items-center space-x-3 text-neutral-300 hover:text-islamic-green transition-all duration-200 text-sm hover:translate-x-1"
               >
-                <span>🇩🇪</span>
+                <span className="text-lg">🇩🇪</span>
                 <span>Deutsch</span>
               </Link>
             </div>
 
-            <div className="space-y-2 text-sm">
-              <div className="flex items-center space-x-2 text-gray-400">
-                <Mail className="h-4 w-4" />
+            <div className="space-y-3">
+              <div className="flex items-center space-x-3 text-neutral-400 text-sm">
+                <Mail className="h-4 w-4 text-islamic-green" />
                 <span>iletisim@islamrehberi.com</span>
               </div>
-              <div className="flex items-center space-x-2 text-gray-400">
-                <Globe className="h-4 w-4" />
+              <div className="flex items-center space-x-3 text-neutral-400 text-sm">
+                <Globe className="h-4 w-4 text-islamic-green" />
                 <span>www.islamrehberi.com</span>
               </div>
             </div>
@@ -145,24 +158,24 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 mt-8 pt-8">
+        <div className="border-t border-neutral-700/50 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center space-x-1 text-sm text-gray-400 mb-4 md:mb-0">
+            <div className="flex items-center space-x-2 text-sm text-neutral-400 mb-4 md:mb-0">
               <span>© 2024 İslam Rehberi. Tüm hakları saklıdır.</span>
-              <Heart className="h-4 w-4 text-red-500 mx-1" />
+              <Heart className="h-4 w-4 text-islamic-green mx-1 animate-pulse" />
               <span>ile yapılmıştır.</span>
             </div>
             
-            <div className="flex space-x-6 text-sm">
+            <div className="flex space-x-8 text-sm">
               <Link 
                 href={`/${locale}/gizlilik`}
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-neutral-400 hover:text-islamic-green transition-all duration-200"
               >
                 Gizlilik Politikası
               </Link>
               <Link 
                 href={`/${locale}/kullanim-kosullari`}
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-neutral-400 hover:text-islamic-green transition-all duration-200"
               >
                 Kullanım Koşulları
               </Link>
