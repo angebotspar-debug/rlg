@@ -1,0 +1,127 @@
+{
+  "navigation": {
+    "home": "Home",
+    "islamIntro": "Introduction to Islam",
+    "faithPrinciples": "Principles of Faith",
+    "prayerGuide": "Prayer Guide",
+    "dailyLife": "Daily Muslim Life",
+    "thirtyDayPlan": "30-Day Beginner Plan",
+    "faq": "Frequently Asked Questions",
+    "resources": "Resources"
+  },
+  "common": {
+    "readMore": "Read More",
+    "backToHome": "Back to Home",
+    "readingTime": "min read",
+    "difficulty": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "language": "Language",
+    "languages": {
+      "tr": "Türkçe",
+      "en": "English",
+      "de": "Deutsch"
+    }
+  },
+  "home": {
+    "title": "Beginner's Guide for New Muslims",
+    "subtitle": "Start learning Islam step by step",
+    "description": "A comprehensive, reliable, and simple guide for those who have newly converted to Islam or are researching Islam.",
+    "featuredArticles": "Featured Articles",
+    "learningPaths": "Learning Paths",
+    "getStarted": "Get Started"
+  },
+  "faithPrinciples": {
+    "title": "Principles of Faith",
+    "description": "The six fundamental principles of Islamic faith. Detailed information about the core beliefs that every Muslim must affirm in their heart.",
+    "introTitle": "What is Faith (Iman)?",
+    "introText": "Faith means to affirm with the heart, declare with the tongue, and practice with the limbs. In Islam, faith is based on six fundamental principles, and it is necessary to believe in all of these principles.",
+    "hadithText": "Faith is to believe in Allah, His angels, His books, His messengers, the Last Day, and divine decree both good and bad.",
+    "principles": {
+      "allah": {
+        "title": "Belief in Allah",
+        "description": "Believing in the existence, unity, and uniqueness of Allah. Having faith that He is the Creator, Provider, and All-Powerful.",
+        "details": [
+          "Allah's existence and unity (Tawhid)",
+          "Allah's 99 beautiful names (Asma al-Husna)",
+          "Allah's attributes and characteristics",
+          "Not associating partners with Allah (avoiding Shirk)"
+        ]
+      },
+      "angels": {
+        "title": "Belief in Angels",
+        "description": "Believing in the existence of angels created from light by Allah, who obey Him and never commit sins.",
+        "details": [
+          "Gabriel (peace be upon him) - Angel of revelation",
+          "Michael (peace be upon him) - Angel of sustenance",
+          "Israfil (peace be upon him) - Angel who will blow the trumpet",
+          "Azrael (peace be upon him) - Angel of death"
+        ]
+      },
+      "books": {
+        "title": "Belief in Books",
+        "description": "Believing in the existence of holy books revealed by Allah to His prophets and that the Quran is the final book.",
+        "details": [
+          "Quran - Revealed to Prophet Muhammad (peace be upon him)",
+          "Gospel - Revealed to Prophet Jesus (peace be upon him)",
+          "Torah - Revealed to Prophet Moses (peace be upon him)",
+          "Psalms - Revealed to Prophet David (peace be upon him)"
+        ]
+      },
+      "prophets": {
+        "title": "Belief in Prophets",
+        "description": "Believing in the existence of prophets sent by Allah to guide humanity and that Muhammad (peace be upon him) is the final prophet.",
+        "details": [
+          "Adam (peace be upon him) - First human and prophet",
+          "Noah (peace be upon him) - Prophet of the flood",
+          "Abraham (peace be upon him) - Friend of Allah (Khalilullah)",
+          "Muhammad (peace be upon him) - Final prophet"
+        ]
+      },
+      "afterlife": {
+        "title": "Belief in the Day of Judgment",
+        "description": "Believing that resurrection after death, the Day of Judgment, Paradise, and Hell are real.",
+        "details": [
+          "Resurrection after death (Ba'th)",
+          "Day of Judgment (Yawm al-Din)",
+          "Paradise - Place of the believers",
+          "Hell - Place of the disbelievers"
+        ]
+      },
+      "destiny": {
+        "title": "Belief in Divine Decree",
+        "description": "Believing that Allah knows everything in advance, has decreed it, and nothing happens without His permission.",
+        "details": [
+          "Allah's knowledge of everything (Ilm)",
+          "His writing of everything (Kitabah)",
+          "His willing of everything (Mashi'ah)",
+          "His creation of everything (Khalq)"
+        ]
+      }
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Beginner's Guide for New Muslims | Learn Islam",
+      "description": "Comprehensive guide for those who have newly converted to Islam or are researching Islam. Learn Islam with step-by-step learning plan and reliable sources."
+    },
+    "faithPrinciples": {
+      "title": "Principles of Faith | Islamic Guide",
+      "description": "The six fundamental principles of Islamic faith. Belief in Allah, angels, books, prophets, the Day of Judgment, and divine decree."
+    },
+    "prayerGuide": {
+      "title": "Prayer Guide | Islamic Guide",
+      "description": "How to pray? How to perform ablution? Step-by-step prayer guide for new Muslims."
+    },
+    "dailyLife": {
+      "title": "Daily Muslim Life | Islamic Guide",
+      "description": "What should be considered in daily life as a Muslim? Halal living guide and practical suggestions."
+    },
+    "thirtyDayPlan": {
+      "title": "30-Day Beginner Plan | Islamic Guide",
+      "description": "30-day step-by-step learning plan for new Muslims. Learn Islam systematically."
+    }
+  }
+}

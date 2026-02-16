@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaz Rehberi - İslam Rehberi</title>
+    <meta name="description" content="Yeni Müslümanlar için detaylı namaz rehberi. Abdest alma, namaz vakitleri ve adım adım namaz kılma rehberi.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <span>İR</span>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">İslam Rehberi</span>
+                    <span class="logo-sub">Islamic Guidance</span>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <a href="islam-nedir.html" class="nav-link">İslam Nedir?</a>
+                <a href="namaz-rehberi.html" class="nav-link active">Namaz Rehberi</a>
+                <a href="iman-esaslari.html" class="nav-link">İman Esasları</a>
+                <a href="gunluk-hayat.html" class="nav-link">Günlük Hayat</a>
+                <a href="30-gunluk-plan.html" class="nav-link">30 Günlük Plan</a>
+                <a href="sss.html" class="nav-link">SSS</a>
+                <a href="kaynaklar.html" class="nav-link">Kaynaklar</a>
+            </div>
+
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="language-btn" id="languageBtn">
+                    <span class="flag">🇹🇷</span>
+                    <span>TR</span>
+                    <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"></polyline>
+                    </svg>
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <a href="../tr/namaz-rehberi.html" class="language-option">
+                        <span class="flag">🇹🇷</span>
+                        <span>Türkçe</span>
+                    </a>
+                    <a href="../en/prayer-guide.html" class="language-option">
+                        <span class="flag">🇺🇸</span>
+                        <span>English</span>
+                    </a>
+                    <a href="../de/gebetsanleitung.html" class="language-option">
+                        <span class="flag">🇩🇪</span>
+                        <span>Deutsch</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="islam-nedir.html" class="mobile-nav-link">İslam Nedir?</a>
+                <a href="namaz-rehberi.html" class="mobile-nav-link active">Namaz Rehberi</a>
+                <a href="iman-esaslari.html" class="mobile-nav-link">İman Esasları</a>
+                <a href="gunluk-hayat.html" class="mobile-nav-link">Günlük Hayat</a>
+                <a href="30-gunluk-plan.html" class="mobile-nav-link">30 Günlük Plan</a>
+                <a href="sss.html" class="mobile-nav-link">SSS</a>
+                <a href="kaynaklar.html" class="mobile-nav-link">Kaynaklar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Content -->
+    <article class="article-page">
+        <div class="container">
+            <!-- Article Header -->
+            <header class="article-header">
+                <div class="breadcrumb">
+                    <a href="index.html">Ana Sayfa</a>
+                    <span class="separator">›</span>
+                    <span class="current">Namaz Rehberi</span>
+                </div>
+                
+                <div class="article-category ibadet">İbadet</div>
+                
+                <h1 class="article-title">Namaz Rehberi</h1>
+                
+                <div class="article-meta">
+                    <div class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12,6 12,12 16,14"></polyline>
+                        </svg>
+                        <span>8 dk okuma</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                        <span>Orta Seviye</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Article Content -->
+            <div class="article-content">
+                <div class="content-intro">
+                    <p class="lead">
+                        Namaz, İslam'ın beş şartından biridir ve günde beş vakit kılınır. 
+                        Bu rehber, yeni Müslümanlar için <strong>abdest alma</strong> ve <strong>namaz kılma</strong> adımlarını detaylı olarak açıklar.
+                    </p>
+                </div>
+
+                <section class="content-section">
+                    <h2>Namaz Vakitleri</h2>
+                    <p>
+                        Günde beş vakit namaz vardır ve her birinin belirli zamanları bulunur:
+                    </p>
+                    
+                    <div class="prayer-times">
+                        <div class="prayer-time-card">
+                            <h4>1. Sabah Namazı (Fecir)</h4>
+                            <p><strong>Vakti:</strong> Tan yerinin ağarmasından güneşin doğuşuna kadar</p>
+                            <p><strong>Rekat:</strong> 2 sünnet + 2 farz</p>
+                        </div>
+                        
+                        <div class="prayer-time-card">
+                            <h4>2. Öğle Namazı (Zuhr)</h4>
+                            <p><strong>Vakti:</strong> Güneşin tepe noktasından ikindi vaktine kadar</p>
+                            <p><strong>Rekat:</strong> 4 sünnet + 4 farz + 2 sünnet</p>
+                        </div>
+                        
+                        <div class="prayer-time-card">
+                            <h4>3. İkindi Namazı (Asr)</h4>
+                            <p><strong>Vakti:</strong> Gölgenin eşit olmasından güneşin batışına kadar</p>
+                            <p><strong>Rekat:</strong> 4 sünnet + 4 farz</p>
+                        </div>
+                        
+                        <div class="prayer-time-card">
+                            <h4>4. Akşam Namazı (Maghrib)</h4>
+                            <p><strong>Vakti:</strong> Güneşin batışından yatsı vaktine kadar</p>
+                            <p><strong>Rekat:</strong> 3 farz + 2 sünnet</p>
+                        </div>
+                        
+                        <div class="prayer-time-card">
+                            <h4>5. Yatsı Namazı (Isha)</h4>
+                            <p><strong>Vakti:</strong> Akşam şafağının kaybolmasından fecre kadar</p>
+                            <p><strong>Rekat:</strong> 4 sünnet + 4 farz + 2 sünnet + 3 vitir</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Abdest Alma (Vudû)</h2>
+                    <p>
+                        Namaz kılmadan önce abdest almak gerekir. Abdest, hem fiziksel hem de ruhsal temizliği sağlar.
+                    </p>
+                    
+                    <div class="wudu-steps">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Niyet</h4>
+                                <p>Kalben abdest almaya niyet edin.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Besmele</h4>
+                                <p>"Bismillahirrahmanirrahim" deyin.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Elleri Yıkama</h4>
+                                <p>Her iki elinizi bileklerinize kadar 3 kez yıkayın.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Ağız Çalkalama</h4>
+                                <p>Ağzınızı 3 kez çalkalayın.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h4>Burun Temizleme</h4>
+                                <p>Burnunuza su çekerek 3 kez temizleyin.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">6</div>
+                            <div class="step-content">
+                                <h4>Yüz Yıkama</h4>
+                                <p>Yüzünüzü kulaktan kulağa, alından çeneye kadar 3 kez yıkayın.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">7</div>
+                            <div class="step-content">
+                                <h4>Kolları Yıkama</h4>
+                                <p>Sağ kolu, sonra sol kolu dirseklerinize kadar 3 kez yıkayın.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">8</div>
+                            <div class="step-content">
+                                <h4>Başı Mesh Etme</h4>
+                                <p>Islak ellerinizle başınızın 1/4'ünü mesh edin.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">9</div>
+                            <div class="step-content">
+                                <h4>Ayakları Yıkama</h4>
+                                <p>Sağ ayağı, sonra sol ayağı topuklarınıza kadar 3 kez yıkayın.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Namaz Kılma Adımları</h2>
+                    <p>
+                        Abdest aldıktan sonra, temiz bir yerde ve kıbleye yönelerek namaz kılınır.
+                    </p>
+                    
+                    <div class="prayer-steps">
+                        <div class="prayer-step">
+                            <h4>1. Kıbleye Yönelme ve Niyet</h4>
+                            <p>Kıbleye (Kabe yönüne) dönün ve hangi namazı kılacağınıza niyet edin.</p>
+                            <div class="arabic-text">نَوَيْتُ أَنْ أُصَلِّيَ</div>
+                            <div class="transliteration">"Naveytü en usalliye..."</div>
+                        </div>
+                        
+                        <div class="prayer-step">
+                            <h4>2. Tekbir-i İftitah</h4>
+                            <p>Ellerinizi kulak hizasına kaldırarak "Allahu Ekber" deyin.</p>
+                            <div class="arabic-text">اللَّهُ أَكْبَرُ</div>
+                            <div class="transliteration">"Allahu Ekber"</div>
+                        </div>
+                        
+                        <div class="prayer-step">
+                            <h4>3. Sübhaneke Duası</h4>
+                            <p>Ellerinizi göbek altında bağlayarak Sübhaneke duasını okuyun.</p>
+                            <div class="arabic-text">سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ</div>
+                            <div class="transliteration">"Sübhaneke Allahumme ve bihamdike..."</div>
+                        </div>
+                        
+                        <div class="prayer-step">
+                            <h4>4. Fatiha Suresi</h4>
+                            <p>Euzü-Besmele'den sonra Fatiha suresini okuyun.</p>
+                            <div class="arabic-text">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+                            <div class="transliteration">"Bismillahirrahmanirrahim..."</div>
+                        </div>
+                        
+                        <div class="prayer-step">
+                            <h4>5. Rükû</h4>
+                            <p>"Allahu Ekber" diyerek rükûya eğilin ve "Sübhane Rabbiyel Azim" deyin.</p>
+                            <div class="arabic-text">سُبْحَانَ رَبِّيَ الْعَظِيمِ</div>
+                            <div class="transliteration">"Sübhane Rabbiyel Azim" (3 kez)</div>
+                        </div>
+                        
+                        <div class="prayer-step">
+                            <h4>6. Secde</h4>
+                            <p>"Allahu Ekber" diyerek secdeye varın ve "Sübhane Rabbiyel A'la" deyin.</p>
+                            <div class="arabic-text">سُبْحَانَ رَبِّيَ الْأَعْلَى</div>
+                            <div class="transliteration">"Sübhane Rabbiyel A'la" (3 kez)</div>
+                        </div>
+                        
+                        <div class="prayer-step">
+                            <h4>7. Teşehhüd ve Selam</h4>
+                            <p>Son rekatta teşehhüd okuyun ve sağa-sola selam verin.</p>
+                            <div class="arabic-text">السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ</div>
+                            <div class="transliteration">"Esselamu aleykum ve rahmetullah"</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Önemli Notlar</h2>
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <h4>Kıble Yönü</h4>
+                            <ul>
+                                <li>Kıble, Mekke'deki Kabe'nin yönüdür</li>
+                                <li>Kıble pusulası veya mobil uygulamalar kullanabilirsiniz</li>
+                                <li>Türkiye'den kıble yönü güneydoğudur</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h4>Temizlik Şartları</h4>
+                            <ul>
+                                <li>Abdest almış olmak</li>
+                                <li>Temiz elbise giymek</li>
+                                <li>Temiz bir yerde namaz kılmak</li>
+                                <li>Avret yerlerini kapatmak</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Sonuç</h2>
+                    <p>
+                        Namaz, Allah ile kulun arasındaki en önemli bağdır. İlk başta zor gelse de, 
+                        düzenli olarak kıldıkça alışacak ve ruhsal huzur bulacaksınız.
+                    </p>
+                    <p>
+                        Namaz öğrenirken sabırlı olun ve mükemmel olmaya çalışmayın. 
+                        Önemli olan samimi bir kalple Allah'a yönelmektir.
+                    </p>
+                </section>
+
+                <!-- Next Steps -->
+                <div class="next-steps">
+                    <h3>Sonraki Adım</h3>
+                    <p>İslam'ın temel inançlarını öğrenmek için <a href="iman-esaslari.html">İman Esasları</a> sayfasını ziyaret edin.</p>
+                </div>
+            </div>
+
+            <!-- Article Navigation -->
+            <nav class="article-nav">
+                <a href="islam-nedir.html" class="nav-prev">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                    İslam Nedir?
+                </a>
+                <a href="iman-esaslari.html" class="nav-next">
+                    İman Esasları
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span>İR</span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">İslam Rehberi</span>
+                            <span class="logo-sub">Islamic Guidance</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Yeni Müslümanlar için kapsamlı, güvenilir ve basit rehber. 
+                        İslam'ı adım adım öğrenmeye başlayın.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Hızlı Erişim</h3>
+                    <ul class="footer-links">
+                        <li><a href="islam-nedir.html" class="footer-link">İslam Nedir?</a></li>
+                        <li><a href="namaz-rehberi.html" class="footer-link">Namaz Rehberi</a></li>
+                        <li><a href="30-gunluk-plan.html" class="footer-link">30 Günlük Plan</a></li>
+                        <li><a href="sss.html" class="footer-link">SSS</a></li>
+                    </ul>
+                </div>
+
+                <!-- Learning Paths -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Öğrenme Yolları</h3>
+                    <ul class="footer-links">
+                        <li><a href="iman-esaslari.html" class="footer-link">İman Esasları</a></li>
+                        <li><a href="namaz-rehberi.html" class="footer-link">Günlük İbadet</a></li>
+                        <li><a href="gunluk-hayat.html" class="footer-link">Günlük Hayat</a></li>
+                        <li><a href="kaynaklar.html" class="footer-link">Kaynaklar</a></li>
+                    </ul>
+                </div>
+
+                <!-- Languages & Contact -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Diller</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="../tr/" class="footer-link language-link">
+                                <span class="flag">🇹🇷</span>
+                                <span>Türkçe</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../en/" class="footer-link language-link">
+                                <span class="flag">🇺🇸</span>
+                                <span>English</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../de/" class="footer-link language-link">
+                                <span class="flag">🇩🇪</span>
+                                <span>Deutsch</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <span>© 2024 İslam Rehberi. Tüm hakları saklıdır.</span>
+                        <svg class="heart-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"></path>
+                        </svg>
+                        <span>ile yapıldı</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

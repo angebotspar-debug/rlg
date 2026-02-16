@@ -1,0 +1,171 @@
+{
+  "name": "İslam Rehberi - Islamic Guidance",
+  "short_name": "İslam Rehberi",
+  "description": "Yeni Müslümanlar için kapsamlı, güvenilir ve sade anlatımlı rehber. İslam'ı öğrenmeye adım adım başlayın.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fefefe",
+  "theme_color": "#2d6a4f",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "tr",
+  "dir": "ltr",
+  "categories": ["education", "lifestyle", "books"],
+  "icons": [
+    {
+      "src": "icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "İslam Nedir?",
+      "short_name": "İslam",
+      "description": "İslam dininin temel prensipleri",
+      "url": "/tr/islam-nedir.html",
+      "icons": [
+        {
+          "src": "icons/shortcut-islam.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Namaz Rehberi",
+      "short_name": "Namaz",
+      "description": "Adım adım namaz kılma rehberi",
+      "url": "/tr/namaz-rehberi.html",
+      "icons": [
+        {
+          "src": "icons/shortcut-prayer.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "30 Günlük Plan",
+      "short_name": "Plan",
+      "description": "Sistematik öğrenme planı",
+      "url": "/tr/30-gunluk-plan.html",
+      "icons": [
+        {
+          "src": "icons/shortcut-plan.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "SSS",
+      "short_name": "Sorular",
+      "description": "Sık sorulan sorular",
+      "url": "/tr/sss.html",
+      "icons": [
+        {
+          "src": "icons/shortcut-faq.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/desktop-home.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Ana sayfa - Desktop görünümü"
+    },
+    {
+      "src": "screenshots/mobile-home.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Ana sayfa - Mobil görünümü"
+    },
+    {
+      "src": "screenshots/mobile-article.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Makale sayfası - Mobil görünümü"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "handle_links": "preferred",
+  "protocol_handlers": [
+    {
+      "protocol": "web+islamrehberi",
+      "url": "/?protocol=%s"
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "/",
+      "accept": {
+        "text/plain": [".txt"],
+        "application/json": [".json"]
+      }
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+}
