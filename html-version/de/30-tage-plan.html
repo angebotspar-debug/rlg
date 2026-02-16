@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-Tage-Plan - Islamische Anleitung</title>
+    <meta name="description" content="30-Tage systematischer islamischer Lernplan für neue Muslime. Lernen Sie den Islam Schritt für Schritt mit täglicher Anleitung.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <span>IG</span>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Islamische Anleitung</span>
+                    <span class="logo-sub">İslam Rehberi</span>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <a href="was-ist-islam.html" class="nav-link">Was ist Islam?</a>
+                <a href="gebetsanleitung.html" class="nav-link">Gebetsanleitung</a>
+                <a href="glaubenssaeulen.html" class="nav-link">Glaubenssäulen</a>
+                <a href="taegliches-leben.html" class="nav-link">Tägliches Leben</a>
+                <a href="30-tage-plan.html" class="nav-link active">30-Tage-Plan</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="ressourcen.html" class="nav-link">Ressourcen</a>
+            </div>
+
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="language-btn" id="languageBtn">
+                    <span class="flag">🇩🇪</span>
+                    <span>DE</span>
+                    <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"></polyline>
+                    </svg>
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <a href="../tr/30-gunluk-plan.html" class="language-option">
+                        <span class="flag">🇹🇷</span>
+                        <span>Türkçe</span>
+                    </a>
+                    <a href="../en/30-day-plan.html" class="language-option">
+                        <span class="flag">🇺🇸</span>
+                        <span>English</span>
+                    </a>
+                    <a href="../de/30-tage-plan.html" class="language-option">
+                        <span class="flag">🇩🇪</span>
+                        <span>Deutsch</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="was-ist-islam.html" class="mobile-nav-link">Was ist Islam?</a>
+                <a href="gebetsanleitung.html" class="mobile-nav-link">Gebetsanleitung</a>
+                <a href="glaubenssaeulen.html" class="mobile-nav-link">Glaubenssäulen</a>
+                <a href="taegliches-leben.html" class="mobile-nav-link">Tägliches Leben</a>
+                <a href="30-tage-plan.html" class="mobile-nav-link active">30-Tage-Plan</a>
+                <a href="faq.html" class="mobile-nav-link">FAQ</a>
+                <a href="ressourcen.html" class="mobile-nav-link">Ressourcen</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Content -->
+    <article class="article-page">
+        <div class="container">
+            <!-- Article Header -->
+            <header class="article-header">
+                <div class="breadcrumb">
+                    <a href="index.html">Startseite</a>
+                    <span class="separator">›</span>
+                    <span class="current">30-Tage-Plan</span>
+                </div>
+                
+                <div class="article-category plan">30-Tage-Plan</div>
+                
+                <h1 class="article-title">30-Tage-Plan</h1>
+                
+                <div class="article-meta">
+                    <div class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12,6 12,12 16,14"></polyline>
+                        </svg>
+                        <span>10 Min. Lesezeit</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                        <span>Anfänger</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Article Content -->
+            <div class="article-content">
+                <div class="content-intro">
+                    <p class="lead">
+                        Ein <strong>30-Tage systematischer Lernplan</strong> für neue Muslime. 
+                        Lernen und wenden Sie täglich Schritt für Schritt die Grundlagen des Islam an.
+                    </p>
+                </div>
+
+                <section class="content-section">
+                    <h2>Wie der Plan funktioniert</h2>
+                    <div class="plan-overview">
+                        <div class="overview-card">
+                            <h4>Woche 1: Grundlagen</h4>
+                            <p>Grundlagen des Islam, Glaubenssäulen und fundamentale Anbetung</p>
+                        </div>
+                        <div class="overview-card">
+                            <h4>Woche 2: Gebet und Anbetung</h4>
+                            <p>Gebet lernen, Waschung und tägliche Anbetungspraktiken</p>
+                        </div>
+                        <div class="overview-card">
+                            <h4>Woche 3: Tägliches Leben</h4>
+                            <p>Islamischer Lebensstil, Ethik und soziale Beziehungen</p>
+                        </div>
+                        <div class="overview-card">
+                            <h4>Woche 4: Vertiefung</h4>
+                            <p>Koran lesen, Bittgebete lernen und islamische Kultur</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Woche 1: Grundlagen (Tage 1-7)</h2>
+                    <div class="week-plan">
+                        <div class="day-card">
+                            <h4>Tag 1: Was ist Islam?</h4>
+                            <ul>
+                                <li>Bedeutung und Grundprinzipien des Islam</li>
+                                <li>Lernen der Schahada (Glaubensbekenntnis)</li>
+                                <li>Was es bedeutet, Muslim zu sein</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 2: Glaube an Allah</h4>
+                            <ul>
+                                <li>Allahs Existenz und Einheit</li>
+                                <li>Schöne Namen Allahs (Asma ul-Husna)</li>
+                                <li>Konzept des Tawhid (Monotheismus)</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 3: Glaube an Engel</h4>
+                            <ul>
+                                <li>Eigenschaften der Engel</li>
+                                <li>Wichtige Engel und ihre Aufgaben</li>
+                                <li>Gabriel, Michael, Israfil, Azrael</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 4: Glaube an Bücher</h4>
+                            <ul>
+                                <li>Göttliche Bücher: Thora, Evangelium, Psalmen</li>
+                                <li>Bedeutung des Heiligen Koran</li>
+                                <li>Bewahrung des Koran</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 5: Glaube an Propheten</h4>
+                            <ul>
+                                <li>Mission der Propheten</li>
+                                <li>Leben des Propheten Muhammad (SAW)</li>
+                                <li>Andere wichtige Propheten</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 6: Glaube an den Jüngsten Tag</h4>
+                            <ul>
+                                <li>Tod und Leben im Grab</li>
+                                <li>Tag der Auferstehung</li>
+                                <li>Paradies und Hölle</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 7: Glaube an das Schicksal</h4>
+                            <ul>
+                                <li>Konzepte von Schicksal und Bestimmung</li>
+                                <li>Menschlicher Wille und Verantwortung</li>
+                                <li>Vertrauen und Geduld</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Woche 2: Gebet und Anbetung (Tage 8-14)</h2>
+                    <div class="week-plan">
+                        <div class="day-card">
+                            <h4>Tag 8: Sauberkeit und Waschung</h4>
+                            <ul>
+                                <li>Sauberkeit im Islam</li>
+                                <li>Schritte der Waschung</li>
+                                <li>Ghusl (Ganzkörperwaschung)</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 9: Gebetszeiten</h4>
+                            <ul>
+                                <li>Fünf tägliche Gebete</li>
+                                <li>Gebetszeiten lernen</li>
+                                <li>Qibla-Richtung finden</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 10: Gebetshaltungen</h4>
+                            <ul>
+                                <li>Stehen, Verneigen, Niederwerfen</li>
+                                <li>Gebetsbewegungen</li>
+                                <li>Korrekte Haltungen</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 11: Gebetsrezitationen</h4>
+                            <ul>
+                                <li>Sure Al-Fatiha</li>
+                                <li>Lobpreisungen und Bittgebete</li>
+                                <li>Eröffnungsbittgebet</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 12: Erste Gebetserfahrung</h4>
+                            <ul>
+                                <li>Morgengebet verrichten</li>
+                                <li>Schritt-für-Schritt-Praxis</li>
+                                <li>Fehler und Korrekturen</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 13: Andere Gebete</h4>
+                            <ul>
+                                <li>Mittag-, Nachmittag-, Sonnenuntergang-, Nachtgebete</li>
+                                <li>Eigenschaften jedes Gebets</li>
+                                <li>Anzahl der Einheiten in jedem Gebet</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 14: Freitagsgebet</h4>
+                            <ul>
+                                <li>Bedeutung des Freitagsgebets</li>
+                                <li>Etikette beim Moscheenbesuch</li>
+                                <li>Gemeinschaftsgebet</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Woche 3: Tägliches Leben (Tage 15-21)</h2>
+                    <div class="week-plan">
+                        <div class="day-card">
+                            <h4>Tag 15: Halal und Haram</h4>
+                            <ul>
+                                <li>Erlaubte Speisen</li>
+                                <li>Verbotene Dinge</li>
+                                <li>Zweifelhafte Situationen</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 16: Familienbeziehungen</h4>
+                            <ul>
+                                <li>Rechte der Eltern</li>
+                                <li>Rechte des Ehepartners</li>
+                                <li>Kindererziehung</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 17: Soziale Beziehungen</h4>
+                            <ul>
+                                <li>Nachbarschaftsrechte</li>
+                                <li>Freundschaft</li>
+                                <li>Soziale Verantwortungen</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 18: Arbeitsethik</h4>
+                            <ul>
+                                <li>Ehrlicher Handel</li>
+                                <li>Vertrauen</li>
+                                <li>Gerechtigkeit</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 19: Zakat und Wohltätigkeit</h4>
+                            <ul>
+                                <li>Bedeutung der Zakat</li>
+                                <li>Zakat berechnen</li>
+                                <li>Wohltätigkeit geben</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 20: Fasten</h4>
+                            <ul>
+                                <li>Bedeutung des Ramadan-Fastens</li>
+                                <li>Etikette des Fastens</li>
+                                <li>Iftar und Suhur</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 21: Hajj und Umrah</h4>
+                            <ul>
+                                <li>Bedeutung der Hajj</li>
+                                <li>Hajj-Rituale</li>
+                                <li>Umrah-Pilgerfahrt</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Woche 4: Vertiefung (Tage 22-30)</h2>
+                    <div class="week-plan">
+                        <div class="day-card">
+                            <h4>Tag 22: Koran lesen</h4>
+                            <ul>
+                                <li>Arabische Buchstaben</li>
+                                <li>Einfache Kapitel</li>
+                                <li>Übersetzung lesen</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 23: Bittgebete lernen</h4>
+                            <ul>
+                                <li>Tägliche Bittgebete</li>
+                                <li>Mahlzeit-Bittgebete</li>
+                                <li>Reise-Bittgebete</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 24: Dhikr und Tasbih</h4>
+                            <ul>
+                                <li>Morgen- und Abend-Dhikr</li>
+                                <li>Gebetskette verwenden</li>
+                                <li>Vergebung suchen</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 25: Islamische Geschichte</h4>
+                            <ul>
+                                <li>Leben des Propheten Muhammad</li>
+                                <li>Erste Muslime</li>
+                                <li>Ausbreitung des Islam</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 26: Islamische Feste</h4>
+                            <ul>
+                                <li>Eid al-Fitr</li>
+                                <li>Eid al-Adha</li>
+                                <li>Mawlid-Feiern</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 27: Muslimische Gemeinschaft</h4>
+                            <ul>
+                                <li>Moschee-Kultur</li>
+                                <li>Islamische Bildung</li>
+                                <li>Gemeinschaftskooperation</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 28: Persönliche Entwicklung</h4>
+                            <ul>
+                                <li>Selbstdisziplin</li>
+                                <li>Geduld und Dankbarkeit</li>
+                                <li>Spirituelles Wachstum</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 29: Zukunftspläne</h4>
+                            <ul>
+                                <li>Fortsetzung der islamischen Bildung</li>
+                                <li>Gemeinschaftsintegration</li>
+                                <li>Familienplanung</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Tag 30: Bewertung</h4>
+                            <ul>
+                                <li>30-Tage-Bewertung</li>
+                                <li>Gelernte Themen</li>
+                                <li>Fortsetzungsplan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Tägliche Empfehlungen</h2>
+                    <div class="daily-tips">
+                        <div class="tip-card">
+                            <h4>Tägliche Aufgaben</h4>
+                            <ul>
+                                <li>Lesen Sie das Thema des Tages (15-20 Min.)</li>
+                                <li>Üben Sie, was Sie lernen</li>
+                                <li>Notieren Sie Ihre Fragen</li>
+                                <li>Vergessen Sie nicht zu beten</li>
+                            </ul>
+                        </div>
+                        <div class="tip-card">
+                            <h4>Wichtige Hinweise</h4>
+                            <ul>
+                                <li>Eilen Sie nicht, seien Sie geduldig</li>
+                                <li>Fragen Sie nach Dingen, die Sie nicht verstehen</li>
+                                <li>Besuchen Sie Ihre örtliche Moschee</li>
+                                <li>Schließen Sie muslimische Freundschaften</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Fazit</h2>
+                    <p>
+                        Dieser 30-Tage-Plan ist darauf ausgelegt, Ihnen zu helfen, die Grundlagen des Islam zu lernen. 
+                        Indem Sie jeden Tag ein wenig lernen, nehmen Sie schrittweise das islamische Leben an.
+                    </p>
+                    <p>
+                        Denken Sie daran, dass der Lernprozess nicht auf 30 Tage beschränkt ist. Dieser Plan ist nur 
+                        ein Anfang. Lernen Sie Ihr ganzes Leben lang weiter.
+                    </p>
+                </section>
+
+                <!-- Next Steps -->
+                <div class="next-steps">
+                    <h3>Nächster Schritt</h3>
+                    <p>Für Ihre Fragen besuchen Sie die <a href="faq.html">FAQ</a>-Seite.</p>
+                </div>
+            </div>
+
+            <!-- Article Navigation -->
+            <nav class="article-nav">
+                <a href="taegliches-leben.html" class="nav-prev">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                    Tägliches Leben
+                </a>
+                <a href="faq.html" class="nav-next">
+                    FAQ
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span>IG</span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">Islamische Anleitung</span>
+                            <span class="logo-sub">İslam Rehberi</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Umfassender, zuverlässiger und einfacher Leitfaden für neue Muslime. 
+                        Beginnen Sie Schritt für Schritt den Islam zu lernen.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Schnellzugriff</h3>
+                    <ul class="footer-links">
+                        <li><a href="was-ist-islam.html" class="footer-link">Was ist Islam?</a></li>
+                        <li><a href="gebetsanleitung.html" class="footer-link">Gebetsanleitung</a></li>
+                        <li><a href="30-tage-plan.html" class="footer-link">30-Tage-Plan</a></li>
+                        <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Learning Paths -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Lernpfade</h3>
+                    <ul class="footer-links">
+                        <li><a href="glaubenssaeulen.html" class="footer-link">Glaubenssäulen</a></li>
+                        <li><a href="gebetsanleitung.html" class="footer-link">Tägliche Anbetung</a></li>
+                        <li><a href="taegliches-leben.html" class="footer-link">Tägliches Leben</a></li>
+                        <li><a href="ressourcen.html" class="footer-link">Ressourcen</a></li>
+                    </ul>
+                </div>
+
+                <!-- Languages & Contact -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Sprachen</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="../tr/" class="footer-link language-link">
+                                <span class="flag">🇹🇷</span>
+                                <span>Türkçe</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../en/" class="footer-link language-link">
+                                <span class="flag">🇺🇸</span>
+                                <span>English</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../de/" class="footer-link language-link">
+                                <span class="flag">🇩🇪</span>
+                                <span>Deutsch</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <span>© 2024 Islamische Anleitung. Alle Rechte vorbehalten.</span>
+                        <svg class="heart-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"></path>
+                        </svg>
+                        <span>gemacht mit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
+
