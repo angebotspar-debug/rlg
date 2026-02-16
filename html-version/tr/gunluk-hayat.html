@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Günlük Hayat - İslam Rehberi</title>
+    <meta name="description" content="İslami yaşam tarzı rehberi: Günlük ibadetler, ahlaki değerler, sosyal ilişkiler ve pratik öneriler. Yeni Müslümanlar için kapsamlı yaşam kılavuzu.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <span>İR</span>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">İslam Rehberi</span>
+                    <span class="logo-sub">Islamic Guidance</span>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <a href="islam-nedir.html" class="nav-link">İslam Nedir?</a>
+                <a href="namaz-rehberi.html" class="nav-link">Namaz Rehberi</a>
+                <a href="iman-esaslari.html" class="nav-link">İman Esasları</a>
+                <a href="gunluk-hayat.html" class="nav-link active">Günlük Hayat</a>
+                <a href="30-gunluk-plan.html" class="nav-link">30 Günlük Plan</a>
+                <a href="sss.html" class="nav-link">SSS</a>
+                <a href="kaynaklar.html" class="nav-link">Kaynaklar</a>
+            </div>
+
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="language-btn" id="languageBtn">
+                    <span class="flag">🇹🇷</span>
+                    <span>TR</span>
+                    <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"></polyline>
+                    </svg>
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <a href="../tr/gunluk-hayat.html" class="language-option">
+                        <span class="flag">🇹🇷</span>
+                        <span>Türkçe</span>
+                    </a>
+                    <a href="../en/daily-life.html" class="language-option">
+                        <span class="flag">🇺🇸</span>
+                        <span>English</span>
+                    </a>
+                    <a href="../de/taegliches-leben.html" class="language-option">
+                        <span class="flag">🇩🇪</span>
+                        <span>Deutsch</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="islam-nedir.html" class="mobile-nav-link">İslam Nedir?</a>
+                <a href="namaz-rehberi.html" class="mobile-nav-link">Namaz Rehberi</a>
+                <a href="iman-esaslari.html" class="mobile-nav-link">İman Esasları</a>
+                <a href="gunluk-hayat.html" class="mobile-nav-link active">Günlük Hayat</a>
+                <a href="30-gunluk-plan.html" class="mobile-nav-link">30 Günlük Plan</a>
+                <a href="sss.html" class="mobile-nav-link">SSS</a>
+                <a href="kaynaklar.html" class="mobile-nav-link">Kaynaklar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Content -->
+    <article class="article-page">
+        <div class="container">
+            <!-- Article Header -->
+            <header class="article-header">
+                <div class="breadcrumb">
+                    <a href="index.html">Ana Sayfa</a>
+                    <span class="separator">›</span>
+                    <span class="current">Günlük Hayat</span>
+                </div>
+                
+                <div class="article-category hayat">Günlük Hayat</div>
+                
+                <h1 class="article-title">Günlük Hayat</h1>
+                
+                <div class="article-meta">
+                    <div class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12,6 12,12 16,14"></polyline>
+                        </svg>
+                        <span>8 dk okuma</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                        <span>Orta</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Article Content -->
+            <div class="article-content">
+                <div class="content-intro">
+                    <p class="lead">
+                        İslami yaşam tarzı, sadece ibadetlerle sınırlı değildir. İslam, hayatın her alanında 
+                        <strong>güzel ahlak, adalet, merhamet ve dürüstlük</strong> ile yaşamayı öğretir.
+                    </p>
+                </div>
+
+                <section class="content-section">
+                    <h2>Günün Başlangıcı</h2>
+                    <p>
+                        Müslüman bir günün başlangıcında şu alışkanlıkları edinmelidir:
+                    </p>
+                    
+                    <div class="daily-practices">
+                        <div class="practice-card">
+                            <h4>Sabah Uyanmak</h4>
+                            <ul>
+                                <li><strong>Dua:</strong> "Elhamdülillahillezi ahyana ba'de ma ematena ve ileyhin-nüşur"</li>
+                                <li>Allah'a şükretmek</li>
+                                <li>Güne pozitif başlamak</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="practice-card">
+                            <h4>Sabah Namazı</h4>
+                            <ul>
+                                <li>Fecir vaktinde kılınır</li>
+                                <li>Günün bereketli başlaması için</li>
+                                <li>Allah ile bağlantı kurmak</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="practice-card">
+                            <h4>Kur'an Okumak</h4>
+                            <ul>
+                                <li>Her gün en az bir sayfa</li>
+                                <li>Anlamını öğrenmeye çalışmak</li>
+                                <li>Tefekkür etmek</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Yemek Adabı</h2>
+                    <p>
+                        İslam'da yemek yemek de bir ibadettir ve belirli adabları vardır:
+                    </p>
+                    
+                    <div class="food-etiquette">
+                        <div class="etiquette-section">
+                            <h4>Yemekten Önce</h4>
+                            <ul>
+                                <li><strong>Bismillah</strong> demek</li>
+                                <li>Ellerini yıkamak</li>
+                                <li>Temiz bir yerde oturmak</li>
+                                <li>Sağ elle yemek</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="etiquette-section">
+                            <h4>Yemek Yerken</h4>
+                            <ul>
+                                <li>Küçük lokmalar almak</li>
+                                <li>Yavaş yavaş çiğnemek</li>
+                                <li>İsraf etmemek</li>
+                                <li>Paylaşmayı sevmek</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="etiquette-section">
+                            <h4>Yemekten Sonra</h4>
+                            <ul>
+                                <li><strong>"Elhamdülillahillezi at'amena ve sakana"</strong> demek</li>
+                                <li>Allah'a şükretmek</li>
+                                <li>Artıkları temizlemek</li>
+                                <li>Ellerini yıkamak</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Sosyal İlişkiler</h2>
+                    <p>
+                        İslam, insanlar arası ilişkilerde güzel ahlakı teşvik eder:
+                    </p>
+                    
+                    <div class="social-relations">
+                        <div class="relation-card">
+                            <h4>Aile İlişkileri</h4>
+                            <ul>
+                                <li><strong>Anne-babaya saygı:</strong> Cennet annelerin ayakları altındadır</li>
+                                <li><strong>Eşe güzel davranmak:</strong> Karşılıklı sevgi ve saygı</li>
+                                <li><strong>Çocuklara merhamet:</strong> Onları güzel ahlakla yetiştirmek</li>
+                                <li><strong>Akrabalık bağları:</strong> Sıla-i rahim yapmak</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="relation-card">
+                            <h4>Komşuluk İlişkileri</h4>
+                            <ul>
+                                <li><strong>Komşuya iyilik:</strong> "Komşusu aç iken tok yatan bizden değildir"</li>
+                                <li><strong>Zarar vermemek:</strong> Ses, koku veya başka rahatsızlık</li>
+                                <li><strong>Yardımlaşma:</strong> İhtiyaç anında destek olmak</li>
+                                <li><strong>Selam vermek:</strong> Güler yüzle karşılaşmak</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="relation-card">
+                            <h4>Toplumsal İlişkiler</h4>
+                            <ul>
+                                <li><strong>Adalet:</strong> Herkese hakkını vermek</li>
+                                <li><strong>Dürüstlük:</strong> Sözünde durmak, emanete sahip çıkmak</li>
+                                <li><strong>Merhamet:</strong> Zayıflara yardım etmek</li>
+                                <li><strong>Hoşgörü:</strong> Farklılıklara saygı göstermek</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>İş ve Ticaret Ahlakı</h2>
+                    <p>
+                        İslam, iş hayatında da yüksek ahlaki standartlar koyar:
+                    </p>
+                    
+                    <div class="business-ethics">
+                        <div class="ethics-principle">
+                            <h4>Dürüstlük</h4>
+                            <p>Alışverişte doğru bilgi vermek, malın kusurlarını gizlememek</p>
+                        </div>
+                        
+                        <div class="ethics-principle">
+                            <h4>Adalet</h4>
+                            <p>Ölçü ve tartıda hile yapmamak, hakkaniyetli fiyat belirlemek</p>
+                        </div>
+                        
+                        <div class="ethics-principle">
+                            <h4>Emanet</h4>
+                            <p>Müşterinin parasına ve malına sahip çıkmak</p>
+                        </div>
+                        
+                        <div class="ethics-principle">
+                            <h4>Haram Kazançtan Kaçınma</h4>
+                            <p>Faiz, kumar, haram mal ticareti yapmamak</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Kişisel Temizlik ve Sağlık</h2>
+                    <p>
+                        İslam, temizliği imanın yarısı olarak görür:
+                    </p>
+                    
+                    <div class="hygiene-health">
+                        <div class="hygiene-card">
+                            <h4>Vücut Temizliği</h4>
+                            <ul>
+                                <li>Düzenli yıkanmak (gusül)</li>
+                                <li>Diş temizliği (misvak kullanmak)</li>
+                                <li>Tırnak kesmek</li>
+                                <li>Temiz kıyafet giymek</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="hygiene-card">
+                            <h4>Sağlıklı Yaşam</h4>
+                            <ul>
+                                <li>Dengeli beslenme</li>
+                                <li>Aşırıya kaçmamak</li>
+                                <li>Düzenli hareket</li>
+                                <li>Erken yatıp erken kalkmak</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Zikir ve Dua</h2>
+                    <p>
+                        Günlük hayatta Allah'ı anmak ve dua etmek:
+                    </p>
+                    
+                    <div class="dhikr-dua">
+                        <div class="dhikr-section">
+                            <h4>Sabah Zikirları</h4>
+                            <ul>
+                                <li><strong>Subhanallah</strong> (33 defa)</li>
+                                <li><strong>Elhamdülillah</strong> (33 defa)</li>
+                                <li><strong>Allahu Ekber</strong> (34 defa)</li>
+                                <li><strong>Ayetel Kürsi</strong> okumak</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="dhikr-section">
+                            <h4>Akşam Zikirları</h4>
+                            <ul>
+                                <li><strong>İstiğfar</strong> çekmek</li>
+                                <li><strong>Salavat</strong> getirmek</li>
+                                <li>Günün şükrünü yapmak</li>
+                                <li>Tövbe etmek</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Zor Zamanlarla Başa Çıkma</h2>
+                    <p>
+                        İslam, sıkıntılı anlarda sabır ve tevekkülü öğretir:
+                    </p>
+                    
+                    <div class="coping-strategies">
+                        <div class="strategy-item">
+                            <h4>Sabır</h4>
+                            <p>Allah'ın hikmetine güvenmek ve aceleci davranmamak</p>
+                        </div>
+                        
+                        <div class="strategy-item">
+                            <h4>Dua</h4>
+                            <p>Allah'tan yardım istemek ve O'na sığınmak</p>
+                        </div>
+                        
+                        <div class="strategy-item">
+                            <h4>Tevekkül</h4>
+                            <p>Elinden geleni yaptıktan sonra sonucu Allah'a bırakmak</p>
+                        </div>
+                        
+                        <div class="strategy-item">
+                            <h4>Şükür</h4>
+                            <p>Sahip olduklarına şükretmek ve pozitif bakmak</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Günün Sonu</h2>
+                    <p>
+                        Gün bitiminde yapılması gerekenler:
+                    </p>
+                    
+                    <div class="end-of-day">
+                        <div class="evening-practice">
+                            <h4>Akşam Namazı</h4>
+                            <p>Maghrib vaktinde kılınan farz namaz</p>
+                        </div>
+                        
+                        <div class="evening-practice">
+                            <h4>Yatsı Namazı</h4>
+                            <p>Günün son farz namazı</p>
+                        </div>
+                        
+                        <div class="evening-practice">
+                            <h4>Muhasebe</h4>
+                            <p>Günü değerlendirmek, hatalardan ders çıkarmak</p>
+                        </div>
+                        
+                        <div class="evening-practice">
+                            <h4>Uyku Duası</h4>
+                            <p>"Bismike Allahumme emutu ve ahya" demek</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Pratik Öneriler</h2>
+                    <div class="practical-tips">
+                        <div class="tip-card">
+                            <h4>Yeni Müslümanlar İçin</h4>
+                            <ul>
+                                <li>Adım adım öğrenin, acele etmeyin</li>
+                                <li>Yerel Müslüman topluluğuyla iletişim kurun</li>
+                                <li>Sorularınızı çekinmeden sorun</li>
+                                <li>Sabırlı olun ve kendinizi zorlamayın</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tip-card">
+                            <h4>Günlük Rutinler</h4>
+                            <ul>
+                                <li>Namaz vakitlerini telefona kaydedin</li>
+                                <li>Kur'an okuma alışkanlığı edinin</li>
+                                <li>İslami kitaplar okuyun</li>
+                                <li>Hayırlı arkadaşlıklar kurun</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Sonuç</h2>
+                    <p>
+                        İslami yaşam tarzı, hayatın her anında Allah'ı hatırlamak ve O'nun rızasını 
+                        kazanmaya çalışmaktır. Bu yaşam tarzı, insana hem dünyada hem ahirette huzur getirir.
+                    </p>
+                    <p>
+                        Unutmayın ki mükemmel olmaya çalışmak güzeldir, ancak hatalar yaptığınızda 
+                        kendinizi suçlamayın. Allah çok bağışlayıcı ve merhametlidir.
+                    </p>
+                </section>
+
+                <!-- Next Steps -->
+                <div class="next-steps">
+                    <h3>Sonraki Adım</h3>
+                    <p>Sistematik öğrenme için <a href="30-gunluk-plan.html">30 Günlük Plan</a> sayfasını ziyaret edin.</p>
+                </div>
+            </div>
+
+            <!-- Article Navigation -->
+            <nav class="article-nav">
+                <a href="iman-esaslari.html" class="nav-prev">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                    İman Esasları
+                </a>
+                <a href="30-gunluk-plan.html" class="nav-next">
+                    30 Günlük Plan
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span>İR</span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">İslam Rehberi</span>
+                            <span class="logo-sub">Islamic Guidance</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Yeni Müslümanlar için kapsamlı, güvenilir ve basit rehber. 
+                        İslam'ı adım adım öğrenmeye başlayın.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Hızlı Erişim</h3>
+                    <ul class="footer-links">
+                        <li><a href="islam-nedir.html" class="footer-link">İslam Nedir?</a></li>
+                        <li><a href="namaz-rehberi.html" class="footer-link">Namaz Rehberi</a></li>
+                        <li><a href="30-gunluk-plan.html" class="footer-link">30 Günlük Plan</a></li>
+                        <li><a href="sss.html" class="footer-link">SSS</a></li>
+                    </ul>
+                </div>
+
+                <!-- Learning Paths -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Öğrenme Yolları</h3>
+                    <ul class="footer-links">
+                        <li><a href="iman-esaslari.html" class="footer-link">İman Esasları</a></li>
+                        <li><a href="namaz-rehberi.html" class="footer-link">Günlük İbadet</a></li>
+                        <li><a href="gunluk-hayat.html" class="footer-link">Günlük Hayat</a></li>
+                        <li><a href="kaynaklar.html" class="footer-link">Kaynaklar</a></li>
+                    </ul>
+                </div>
+
+                <!-- Languages & Contact -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Diller</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="../tr/" class="footer-link language-link">
+                                <span class="flag">🇹🇷</span>
+                                <span>Türkçe</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../en/" class="footer-link language-link">
+                                <span class="flag">🇺🇸</span>
+                                <span>English</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../de/" class="footer-link language-link">
+                                <span class="flag">🇩🇪</span>
+                                <span>Deutsch</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <span>© 2024 İslam Rehberi. Tüm hakları saklıdır.</span>
+                        <svg class="heart-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"></path>
+                        </svg>
+                        <span>ile yapıldı</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
