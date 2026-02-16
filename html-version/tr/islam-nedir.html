@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İslam Nedir? - İslam Rehberi</title>
+    <meta name="description" content="İslam dininin temel prensipleri, inanç esasları ve yaşam felsefesi hakkında kapsamlı bilgi. Yeni Müslümanlar için sade anlatım.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <span>IG</span>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">İslam Rehberi</span>
+                    <span class="logo-sub">Islamic Guidance</span>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <a href="islam-nedir.html" class="nav-link active">İslam Nedir?</a>
+                <a href="namaz-rehberi.html" class="nav-link">Namaz Rehberi</a>
+                <a href="iman-esaslari.html" class="nav-link">İman Esasları</a>
+                <a href="gunluk-hayat.html" class="nav-link">Günlük Hayat</a>
+                <a href="30-gunluk-plan.html" class="nav-link">30 Günlük Plan</a>
+                <a href="sss.html" class="nav-link">SSS</a>
+                <a href="kaynaklar.html" class="nav-link">Kaynaklar</a>
+            </div>
+
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="language-btn" id="languageBtn">
+                    <span class="flag">🇹🇷</span>
+                    <span>TR</span>
+                    <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"></polyline>
+                    </svg>
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <a href="../tr/islam-nedir.html" class="language-option">
+                        <span class="flag">🇹🇷</span>
+                        <span>Türkçe</span>
+                    </a>
+                    <a href="../en/what-is-islam.html" class="language-option">
+                        <span class="flag">🇺🇸</span>
+                        <span>English</span>
+                    </a>
+                    <a href="../de/was-ist-islam.html" class="language-option">
+                        <span class="flag">🇩🇪</span>
+                        <span>Deutsch</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="islam-nedir.html" class="mobile-nav-link active">İslam Nedir?</a>
+                <a href="namaz-rehberi.html" class="mobile-nav-link">Namaz Rehberi</a>
+                <a href="iman-esaslari.html" class="mobile-nav-link">İman Esasları</a>
+                <a href="gunluk-hayat.html" class="mobile-nav-link">Günlük Hayat</a>
+                <a href="30-gunluk-plan.html" class="mobile-nav-link">30 Günlük Plan</a>
+                <a href="sss.html" class="mobile-nav-link">SSS</a>
+                <a href="kaynaklar.html" class="mobile-nav-link">Kaynaklar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Content -->
+    <article class="article-page">
+        <div class="container">
+            <!-- Article Header -->
+            <header class="article-header">
+                <div class="breadcrumb">
+                    <a href="index.html">Ana Sayfa</a>
+                    <span class="separator">›</span>
+                    <span class="current">İslam Nedir?</span>
+                </div>
+                
+                <div class="article-category temel">Temel Bilgiler</div>
+                
+                <h1 class="article-title">İslam Nedir?</h1>
+                
+                <div class="article-meta">
+                    <div class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12,6 12,12 16,14"></polyline>
+                        </svg>
+                        <span>5 dakika okuma</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                        <span>Başlangıç Seviyesi</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Article Content -->
+            <div class="article-content">
+                <div class="content-intro">
+                    <p class="lead">
+                        İslam, Arapça bir kelime olup <strong>"barış, güvenlik ve teslim olma"</strong> anlamlarına gelir. 
+                        Dini bir terim olarak İslam, <strong>Allah'a tam teslim olmak</strong> ve <strong>O'nun emirlerine itaat etmek</strong> demektir.
+                    </p>
+                </div>
+
+                <section class="content-section">
+                    <h2>İslam Kelimesinin Anlamı</h2>
+                    <p>
+                        İslam kelimesi Arapça <strong>"selâme"</strong> kökünden türemiş olup şu anlamlara gelir:
+                    </p>
+                    <ul class="content-list">
+                        <li><strong>Barış:</strong> İç huzur ve toplumsal uyum</li>
+                        <li><strong>Güvenlik:</strong> Allah'ın koruması altında olmak</li>
+                        <li><strong>Teslim olma:</strong> Allah'ın iradesine tam boyun eğme</li>
+                        <li><strong>Kurtuluş:</strong> Bu dünyada ve ahirette mutluluk</li>
+                    </ul>
+                </section>
+
+                <section class="content-section">
+                    <h2>İslam'ın Temel Mesajı</h2>
+                    <p>
+                        İslam'ın temel mesajı basit ve açıktır:
+                    </p>
+                    <div class="highlight-box">
+                        <h3>"Lâ ilâhe illallah" - Allah'tan başka ilah yoktur.</h3>
+                        <p>
+                            Bu ifade İslam'ın özünü temsil eder:
+                        </p>
+                        <ul>
+                            <li><strong>Tevhid:</strong> Allah'ın birliği ve eşsizliği</li>
+                            <li><strong>İbadet:</strong> Yalnızca Allah'a kulluk</li>
+                            <li><strong>Yaşam tarzı:</strong> Allah'ın emirlerine göre yaşama</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Peygamberler Silsilesi</h2>
+                    <p>
+                        İslam, tarih boyunca gönderilen peygamberler silsilesinin son halkasıdır:
+                    </p>
+                    
+                    <div class="prophets-grid">
+                        <div class="prophet-card">
+                            <h4>Hz. Âdem (a.s.)</h4>
+                            <p>İlk insan ve peygamber</p>
+                        </div>
+                        <div class="prophet-card">
+                            <h4>Hz. Nuh (a.s.)</h4>
+                            <p>Tufan peygamberi</p>
+                        </div>
+                        <div class="prophet-card">
+                            <h4>Hz. İbrahim (a.s.)</h4>
+                            <p>Allah'ın halili (dostu)</p>
+                        </div>
+                        <div class="prophet-card">
+                            <h4>Hz. Musa (a.s.)</h4>
+                            <p>Tevrat'ı getiren peygamber</p>
+                        </div>
+                        <div class="prophet-card">
+                            <h4>Hz. İsa (a.s.)</h4>
+                            <p>İncil'i getiren peygamber</p>
+                        </div>
+                        <div class="prophet-card">
+                            <h4>Hz. Muhammed (s.a.v.)</h4>
+                            <p>Son peygamber</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Son Peygamber: Hz. Muhammed (s.a.v.)</h2>
+                    <p>
+                        Hz. Muhammed (s.a.v.) İslam'ın son peygamberidir:
+                    </p>
+                    
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <h4>Özellikleri</h4>
+                            <ul>
+                                <li><strong>571 yılında</strong> Mekke'de doğdu</li>
+                                <li><strong>40 yaşında</strong> peygamberlik görevine başladı</li>
+                                <li><strong>Kur'an'ı</strong> insanlığa ulaştırdı</li>
+                                <li><strong>Örnek bir hayat</strong> yaşadı ve İslam'ı davranışlarıyla öğretti</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h4>Görevi</h4>
+                            <ul>
+                                <li>Allah'ın son mesajını ulaştırmak</li>
+                                <li>İnsanlığı doğru yola iletmek</li>
+                                <li>Adalet ve merhameti yaymak</li>
+                                <li>Örnek bir toplum kurmak</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>İslam'a Nasıl Girilir?</h2>
+                    <p>
+                        İslam'a girmek için <strong>Kelime-i Şehadet</strong> getirmek yeterlidir:
+                    </p>
+                    
+                    <div class="shahada-box">
+                        <h3>Kelime-i Şehadet</h3>
+                        <div class="arabic-text">
+                            أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ
+                        </div>
+                        <div class="transliteration">
+                            "Eşhedü en lâ ilâhe illallahu ve eşhedü enne Muhammeden abduhû ve rasûluh"
+                        </div>
+                        <div class="translation">
+                            <strong>Türkçe:</strong> "Şahitlik ederim ki Allah'tan başka ilah yoktur ve şahitlik ederim ki Muhammed O'nun kulu ve elçisidir."
+                        </div>
+                    </div>
+
+                    <div class="shahada-meaning">
+                        <h4>Kelime-i Şehadet'in Anlamı</h4>
+                        <ol>
+                            <li><strong>Allah'ın Birliği:</strong> Tek ve eşsiz yaratıcı ve ilah</li>
+                            <li><strong>Muhammed'in Peygamberliği:</strong> O'nun son elçi olduğuna iman</li>
+                            <li><strong>Teslim olma:</strong> Kalple kabul etme ve hayatta uygulama</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>İslam'ın Temel Prensipleri</h2>
+                    
+                    <div class="principles-grid">
+                        <div class="principle-card">
+                            <h4>1. Tevhid (Allah'ın Birliği)</h4>
+                            <ul>
+                                <li>Allah birdir ve eşsizdir</li>
+                                <li>O'nun ortağı yoktur</li>
+                                <li>Her şeyin yaratıcısı ve sahibidir</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="principle-card">
+                            <h4>2. Risalet (Peygamberlik)</h4>
+                            <ul>
+                                <li>Allah insanlığa peygamberler gönderdi</li>
+                                <li>Muhammed son peygamberdir</li>
+                                <li>Kur'an son kitaptır</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="principle-card">
+                            <h4>3. Ahiret (Öbür Dünya)</h4>
+                            <ul>
+                                <li>Bu dünya geçicidir</li>
+                                <li>Ölümden sonra diriliş vardır</li>
+                                <li>Cennet ve cehennem gerçektir</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>İslam'ın Beş Şartı</h2>
+                    <div class="pillars-list">
+                        <div class="pillar-item">
+                            <div class="pillar-number">1</div>
+                            <div class="pillar-content">
+                                <h4>Şehadet</h4>
+                                <p>İmanı ikrar etmek</p>
+                            </div>
+                        </div>
+                        
+                        <div class="pillar-item">
+                            <div class="pillar-number">2</div>
+                            <div class="pillar-content">
+                                <h4>Namaz</h4>
+                                <p>Günde beş vakit namaz kılmak</p>
+                            </div>
+                        </div>
+                        
+                        <div class="pillar-item">
+                            <div class="pillar-number">3</div>
+                            <div class="pillar-content">
+                                <h4>Zekât</h4>
+                                <p>Malın bir kısmını hayır için vermek</p>
+                            </div>
+                        </div>
+                        
+                        <div class="pillar-item">
+                            <div class="pillar-number">4</div>
+                            <div class="pillar-content">
+                                <h4>Oruç</h4>
+                                <p>Ramazan ayında oruç tutmak</p>
+                            </div>
+                        </div>
+                        
+                        <div class="pillar-item">
+                            <div class="pillar-number">5</div>
+                            <div class="pillar-content">
+                                <h4>Hac</h4>
+                                <p>Gücü yetene Mekke'ye hac ziyareti</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Sonuç</h2>
+                    <p>
+                        İslam, insanlığa gönderilen son ve evrensel mesajdır. Basit, anlaşılır ve pratik bir din olan İslam, 
+                        insanların hem bu dünyada hem de ahirette mutluluğunu hedefler.
+                    </p>
+                    <p>
+                        Yeni Müslüman olan kardeşlerimiz için bu sadece bir başlangıçtır. İslam'ı öğrenmek ve yaşamak, 
+                        hayat boyu süren güzel bir yolculuktur.
+                    </p>
+                </section>
+
+                <!-- Next Steps -->
+                <div class="next-steps">
+                    <h3>Sonraki Adım</h3>
+                    <p>İslam'ın temel inanç esaslarını keşfetmek için <a href="iman-esaslari.html">İman Esasları</a> sayfasını ziyaret edin.</p>
+                </div>
+            </div>
+
+            <!-- Article Navigation -->
+            <nav class="article-nav">
+                <a href="index.html" class="nav-prev">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                    Ana Sayfa
+                </a>
+                <a href="iman-esaslari.html" class="nav-next">
+                    İman Esasları
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span>IG</span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">İslam Rehberi</span>
+                            <span class="logo-sub">Islamic Guidance</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Yeni Müslümanlar için kapsamlı, güvenilir ve sade anlatımlı rehber. 
+                        İslam'ı öğrenmeye adım adım başlayın.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Hızlı Erişim</h3>
+                    <ul class="footer-links">
+                        <li><a href="islam-nedir.html" class="footer-link">İslam Nedir?</a></li>
+                        <li><a href="namaz-rehberi.html" class="footer-link">Namaz Rehberi</a></li>
+                        <li><a href="30-gunluk-plan.html" class="footer-link">30 Günlük Plan</a></li>
+                        <li><a href="sss.html" class="footer-link">Sık Sorulan Sorular</a></li>
+                    </ul>
+                </div>
+
+                <!-- Learning Paths -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Öğrenme Yolları</h3>
+                    <ul class="footer-links">
+                        <li><a href="iman-esaslari.html" class="footer-link">İman Esasları</a></li>
+                        <li><a href="namaz-rehberi.html" class="footer-link">Günlük İbadetler</a></li>
+                        <li><a href="gunluk-hayat.html" class="footer-link">Günlük Hayat</a></li>
+                        <li><a href="kaynaklar.html" class="footer-link">Kaynaklar</a></li>
+                    </ul>
+                </div>
+
+                <!-- Languages & Contact -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Diller</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="../tr/" class="footer-link language-link">
+                                <span class="flag">🇹🇷</span>
+                                <span>Türkçe</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../en/" class="footer-link language-link">
+                                <span class="flag">🇺🇸</span>
+                                <span>English</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../de/" class="footer-link language-link">
+                                <span class="flag">🇩🇪</span>
+                                <span>Deutsch</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <span>© 2024 İslam Rehberi. Tüm hakları saklıdır.</span>
+                        <svg class="heart-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"></path>
+                        </svg>
+                        <span>ile yapılmıştır.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
