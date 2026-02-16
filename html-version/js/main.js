@@ -51,19 +51,16 @@ function initLanguageSelector() {
         const languageOptions = languageDropdown.querySelectorAll('.language-option');
         languageOptions.forEach(option => {
             option.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const flag = this.querySelector('.flag').textContent;
-                const text = this.querySelector('span:last-child').textContent;
-                
-                languageBtn.querySelector('.flag').textContent = flag;
-                languageBtn.querySelector('span:nth-child(2)').textContent = text.substring(0, 2).toUpperCase();
+                // Don't prevent default - allow navigation to occur
+                const href = this.getAttribute('href');
                 
                 languageBtn.classList.remove('active');
                 languageDropdown.classList.remove('active');
                 
-                // Here you would typically handle the language change
-                console.log('Language changed to:', text);
+                // Navigate to the new language page
+                if (href) {
+                    window.location.href = href;
+                }
             });
         });
     }
