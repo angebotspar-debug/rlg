@@ -1,0 +1,466 @@
+{
+  "site": {
+    "name": "İslam Rehberi",
+    "subtitle": "Islamic Guidance",
+    "description": "Yeni Müslümanlar için kapsamlı, güvenilir ve sade anlatımlı rehber",
+    "url": "https://islamrehberi.com",
+    "email": "iletisim@islamrehberi.com"
+  },
+  "languages": {
+    "tr": {
+      "name": "Türkçe",
+      "flag": "🇹🇷",
+      "code": "tr",
+      "dir": "ltr"
+    },
+    "en": {
+      "name": "English", 
+      "flag": "🇺🇸",
+      "code": "en",
+      "dir": "ltr"
+    },
+    "de": {
+      "name": "Deutsch",
+      "flag": "🇩🇪", 
+      "code": "de",
+      "dir": "ltr"
+    }
+  },
+  "navigation": {
+    "tr": [
+      { "title": "İslam Nedir?", "url": "/tr/islam-nedir.html", "icon": "heart" },
+      { "title": "Namaz Rehberi", "url": "/tr/namaz-rehberi.html", "icon": "star" },
+      { "title": "İman Esasları", "url": "/tr/iman-esaslari.html", "icon": "zap" },
+      { "title": "Günlük Hayat", "url": "/tr/gunluk-hayat.html", "icon": "package" },
+      { "title": "30 Günlük Plan", "url": "/tr/30-gunluk-plan.html", "icon": "clock" },
+      { "title": "SSS", "url": "/tr/sss.html", "icon": "settings" },
+      { "title": "Kaynaklar", "url": "/tr/kaynaklar.html", "icon": "book" }
+    ],
+    "en": [
+      { "title": "What is Islam?", "url": "/en/what-is-islam.html", "icon": "heart" },
+      { "title": "Prayer Guide", "url": "/en/prayer-guide.html", "icon": "star" },
+      { "title": "Pillars of Faith", "url": "/en/pillars-of-faith.html", "icon": "zap" },
+      { "title": "Daily Life", "url": "/en/daily-life.html", "icon": "package" },
+      { "title": "30-Day Plan", "url": "/en/30-day-plan.html", "icon": "clock" },
+      { "title": "FAQ", "url": "/en/faq.html", "icon": "settings" },
+      { "title": "Resources", "url": "/en/resources.html", "icon": "book" }
+    ],
+    "de": [
+      { "title": "Was ist Islam?", "url": "/de/was-ist-islam.html", "icon": "heart" },
+      { "title": "Gebetsanleitung", "url": "/de/gebetsanleitung.html", "icon": "star" },
+      { "title": "Glaubenssäulen", "url": "/de/glaubenssaeulen.html", "icon": "zap" },
+      { "title": "Tägliches Leben", "url": "/de/taegliches-leben.html", "icon": "package" },
+      { "title": "30-Tage-Plan", "url": "/de/30-tage-plan.html", "icon": "clock" },
+      { "title": "FAQ", "url": "/de/faq.html", "icon": "settings" },
+      { "title": "Ressourcen", "url": "/de/ressourcen.html", "icon": "book" }
+    ]
+  },
+  "pages": {
+    "home": {
+      "tr": {
+        "title": "İslam Rehberi - Yeni Müslümanlar İçin Başlangıç Rehberi",
+        "description": "Yeni Müslümanlar için kapsamlı, güvenilir ve sade anlatımlı rehber. İslam'ı öğrenmeye adım adım başlayın.",
+        "hero": {
+          "badge": "✨ Yeni Müslümanlar İçin Özel Hazırlandı",
+          "title": "İslam'a Hoş Geldiniz",
+          "subtitle": "Yeni Müslümanlar için kapsamlı, güvenilir ve sade anlatımlı rehber",
+          "description": "İslam'ı öğrenmeye adım adım başlayın. Temel bilgilerden günlük yaşama, ibadetlerden ahlaki değerlere kadar her konuda size rehberlik ediyoruz.",
+          "primaryButton": "Öğrenmeye Başla",
+          "secondaryButton": "30 Günlük Plan",
+          "trustItems": [
+            { "icon": "globe", "text": "3 Dil Desteği" },
+            { "icon": "zap", "text": "Güvenilir İçerik" },
+            { "icon": "clock", "text": "Adım Adım Rehber" }
+          ]
+        },
+        "features": [
+          {
+            "icon": "heart",
+            "title": "Sade ve Anlaşılır",
+            "description": "Karmaşık konuları basit ve anlaşılır dille açıklıyoruz. Yeni Müslümanlar için özel olarak hazırlanmış içerikler."
+          },
+          {
+            "icon": "star", 
+            "title": "Güvenilir Kaynaklar",
+            "description": "Tüm bilgilerimiz Kuran ve Sünnet'e dayalı, güvenilir İslami kaynaklardan derlenmiştir."
+          },
+          {
+            "icon": "check-circle",
+            "title": "Adım Adım Öğrenme", 
+            "description": "30 günlük öğrenme planı ile İslam'ı sistematik bir şekilde öğrenin. Her gün yeni bir konu."
+          }
+        ],
+        "articles": {
+          "title": "Öne Çıkan Konular",
+          "description": "İslam'ı öğrenmeye başlamak için en önemli konular",
+          "items": [
+            {
+              "category": "Temel Bilgiler",
+              "categoryClass": "temel",
+              "title": "İslam Nedir?",
+              "excerpt": "İslam dininin temel prensipleri, inanç esasları ve yaşam felsefesi hakkında kapsamlı bilgi.",
+              "readTime": "5 dk okuma",
+              "difficulty": "Başlangıç",
+              "difficultyClass": "beginner",
+              "url": "/tr/islam-nedir.html"
+            },
+            {
+              "category": "İbadetler",
+              "categoryClass": "ibadet", 
+              "title": "Namaz Nasıl Kılınır?",
+              "excerpt": "Namazın farzları, sünnetleri ve adım adım namaz kılma rehberi. Yeni Müslümanlar için detaylı anlatım.",
+              "readTime": "8 dk okuma",
+              "difficulty": "Orta",
+              "difficultyClass": "intermediate",
+              "url": "/tr/namaz-rehberi.html"
+            },
+            {
+              "category": "Öğrenme Planı",
+              "categoryClass": "plan",
+              "title": "30 Günlük Öğrenme Planı", 
+              "excerpt": "İslam'ı sistematik bir şekilde öğrenmek için hazırlanmış 30 günlük detaylı plan.",
+              "readTime": "3 dk okuma",
+              "difficulty": "Başlangıç",
+              "difficultyClass": "beginner",
+              "url": "/tr/30-gunluk-plan.html"
+            },
+            {
+              "category": "İman Esasları",
+              "categoryClass": "iman",
+              "title": "Altı İman Esası",
+              "excerpt": "İslam'ın temel inanç esasları: Allah'a, meleklere, kitaplara, peygamberlere, ahiret gününe ve kadere iman.",
+              "readTime": "6 dk okuma", 
+              "difficulty": "Başlangıç",
+              "difficultyClass": "beginner",
+              "url": "/tr/iman-esaslari.html"
+            },
+            {
+              "category": "Günlük Hayat",
+              "categoryClass": "hayat",
+              "title": "Müslüman Günlük Yaşamı",
+              "excerpt": "İslami yaşam tarzı, günlük ibadetler, ahlaki değerler ve sosyal ilişkiler rehberi.",
+              "readTime": "7 dk okuma",
+              "difficulty": "Orta", 
+              "difficultyClass": "intermediate",
+              "url": "/tr/gunluk-hayat.html"
+            },
+            {
+              "category": "Sık Sorulan Sorular",
+              "categoryClass": "sss",
+              "title": "Merak Edilenler",
+              "excerpt": "Yeni Müslümanların en çok merak ettiği sorular ve detaylı cevapları.",
+              "readTime": "4 dk okuma",
+              "difficulty": "Başlangıç",
+              "difficultyClass": "beginner", 
+              "url": "/tr/sss.html"
+            }
+          ]
+        }
+      },
+      "en": {
+        "title": "Islamic Guidance - Beginner's Guide for New Muslims",
+        "description": "Comprehensive, reliable and simple guide for new Muslims. Start learning Islam step by step.",
+        "hero": {
+          "badge": "✨ Specially Prepared for New Muslims",
+          "title": "Welcome to Islam",
+          "subtitle": "Comprehensive, reliable and simple guide for new Muslims",
+          "description": "Start learning Islam step by step. We guide you in every topic from basic knowledge to daily life, from worship to moral values.",
+          "primaryButton": "Start Learning",
+          "secondaryButton": "30-Day Plan",
+          "trustItems": [
+            { "icon": "globe", "text": "3 Language Support" },
+            { "icon": "zap", "text": "Reliable Content" },
+            { "icon": "clock", "text": "Step by Step Guide" }
+          ]
+        },
+        "features": [
+          {
+            "icon": "heart",
+            "title": "Simple and Clear",
+            "description": "We explain complex topics in simple and understandable language. Content specially prepared for new Muslims."
+          },
+          {
+            "icon": "star",
+            "title": "Reliable Sources", 
+            "description": "All our information is compiled from reliable Islamic sources based on the Quran and Sunnah."
+          },
+          {
+            "icon": "check-circle",
+            "title": "Step by Step Learning",
+            "description": "Learn Islam systematically with a 30-day learning plan. A new topic every day."
+          }
+        ],
+        "articles": {
+          "title": "Featured Topics",
+          "description": "The most important topics to start learning Islam",
+          "items": [
+            {
+              "category": "Basic Knowledge",
+              "categoryClass": "temel",
+              "title": "What is Islam?",
+              "excerpt": "Comprehensive information about the basic principles, beliefs and life philosophy of Islam.",
+              "readTime": "5 min read",
+              "difficulty": "Beginner",
+              "difficultyClass": "beginner",
+              "url": "/en/what-is-islam.html"
+            },
+            {
+              "category": "Worship",
+              "categoryClass": "ibadet",
+              "title": "How to Pray?",
+              "excerpt": "The obligations and sunnah of prayer and step-by-step prayer guide. Detailed explanation for new Muslims.",
+              "readTime": "8 min read",
+              "difficulty": "Intermediate",
+              "difficultyClass": "intermediate", 
+              "url": "/en/prayer-guide.html"
+            },
+            {
+              "category": "Learning Plan",
+              "categoryClass": "plan",
+              "title": "30-Day Learning Plan",
+              "excerpt": "A detailed 30-day plan prepared to learn Islam systematically.",
+              "readTime": "3 min read",
+              "difficulty": "Beginner",
+              "difficultyClass": "beginner",
+              "url": "/en/30-day-plan.html"
+            },
+            {
+              "category": "Pillars of Faith",
+              "categoryClass": "iman",
+              "title": "Six Pillars of Faith",
+              "excerpt": "The basic beliefs of Islam: faith in Allah, angels, books, prophets, the Day of Judgment and destiny.",
+              "readTime": "6 min read",
+              "difficulty": "Beginner", 
+              "difficultyClass": "beginner",
+              "url": "/en/pillars-of-faith.html"
+            },
+            {
+              "category": "Daily Life",
+              "categoryClass": "hayat",
+              "title": "Muslim Daily Life",
+              "excerpt": "Islamic lifestyle, daily worship, moral values and social relations guide.",
+              "readTime": "7 min read",
+              "difficulty": "Intermediate",
+              "difficultyClass": "intermediate",
+              "url": "/en/daily-life.html"
+            },
+            {
+              "category": "FAQ",
+              "categoryClass": "sss", 
+              "title": "Frequently Asked Questions",
+              "excerpt": "The most frequently asked questions by new Muslims and their detailed answers.",
+              "readTime": "4 min read",
+              "difficulty": "Beginner",
+              "difficultyClass": "beginner",
+              "url": "/en/faq.html"
+            }
+          ]
+        }
+      },
+      "de": {
+        "title": "Islamische Anleitung - Anfängerleitfaden für neue Muslime",
+        "description": "Umfassender, zuverlässiger und einfacher Leitfaden für neue Muslime. Beginnen Sie Schritt für Schritt den Islam zu lernen.",
+        "hero": {
+          "badge": "✨ Speziell für neue Muslime vorbereitet",
+          "title": "Willkommen im Islam",
+          "subtitle": "Umfassender, zuverlässiger und einfacher Leitfaden für neue Muslime",
+          "description": "Beginnen Sie Schritt für Schritt den Islam zu lernen. Wir führen Sie in jedem Thema vom Grundwissen bis zum täglichen Leben, von der Anbetung bis zu den moralischen Werten.",
+          "primaryButton": "Mit dem Lernen beginnen",
+          "secondaryButton": "30-Tage-Plan",
+          "trustItems": [
+            { "icon": "globe", "text": "3 Sprachen Unterstützung" },
+            { "icon": "zap", "text": "Zuverlässiger Inhalt" },
+            { "icon": "clock", "text": "Schritt-für-Schritt Anleitung" }
+          ]
+        },
+        "features": [
+          {
+            "icon": "heart",
+            "title": "Einfach und Klar",
+            "description": "Wir erklären komplexe Themen in einfacher und verständlicher Sprache. Inhalte speziell für neue Muslime vorbereitet."
+          },
+          {
+            "icon": "star",
+            "title": "Zuverlässige Quellen",
+            "description": "Alle unsere Informationen sind aus zuverlässigen islamischen Quellen basierend auf dem Quran und der Sunnah zusammengestellt."
+          },
+          {
+            "icon": "check-circle", 
+            "title": "Schritt-für-Schritt Lernen",
+            "description": "Lernen Sie den Islam systematisch mit einem 30-Tage-Lernplan. Jeden Tag ein neues Thema."
+          }
+        ],
+        "articles": {
+          "title": "Hervorgehobene Themen",
+          "description": "Die wichtigsten Themen, um mit dem Lernen des Islam zu beginnen",
+          "items": [
+            {
+              "category": "Grundwissen",
+              "categoryClass": "temel",
+              "title": "Was ist Islam?",
+              "excerpt": "Umfassende Informationen über die Grundprinzipien, Überzeugungen und Lebensphilosophie des Islam.",
+              "readTime": "5 Min. Lesezeit",
+              "difficulty": "Anfänger",
+              "difficultyClass": "beginner",
+              "url": "/de/was-ist-islam.html"
+            },
+            {
+              "category": "Anbetung",
+              "categoryClass": "ibadet",
+              "title": "Wie betet man?",
+              "excerpt": "Die Pflichten und Sunnah des Gebets und Schritt-für-Schritt Gebetsanleitung. Detaillierte Erklärung für neue Muslime.",
+              "readTime": "8 Min. Lesezeit",
+              "difficulty": "Mittelstufe",
+              "difficultyClass": "intermediate",
+              "url": "/de/gebetsanleitung.html"
+            },
+            {
+              "category": "Lernplan",
+              "categoryClass": "plan",
+              "title": "30-Tage-Lernplan",
+              "excerpt": "Ein detaillierter 30-Tage-Plan, der vorbereitet wurde, um den Islam systematisch zu lernen.",
+              "readTime": "3 Min. Lesezeit",
+              "difficulty": "Anfänger",
+              "difficultyClass": "beginner",
+              "url": "/de/30-tage-plan.html"
+            },
+            {
+              "category": "Glaubenssäulen",
+              "categoryClass": "iman",
+              "title": "Sechs Glaubenssäulen",
+              "excerpt": "Die grundlegenden Überzeugungen des Islam: Glaube an Allah, Engel, Bücher, Propheten, den Tag des Gerichts und das Schicksal.",
+              "readTime": "6 Min. Lesezeit",
+              "difficulty": "Anfänger",
+              "difficultyClass": "beginner",
+              "url": "/de/glaubenssaeulen.html"
+            },
+            {
+              "category": "Tägliches Leben",
+              "categoryClass": "hayat",
+              "title": "Muslimisches tägliches Leben",
+              "excerpt": "Islamischer Lebensstil, tägliche Anbetung, moralische Werte und soziale Beziehungen Leitfaden.",
+              "readTime": "7 Min. Lesezeit",
+              "difficulty": "Mittelstufe",
+              "difficultyClass": "intermediate",
+              "url": "/de/taegliches-leben.html"
+            },
+            {
+              "category": "FAQ",
+              "categoryClass": "sss",
+              "title": "Häufig gestellte Fragen",
+              "excerpt": "Die am häufigsten gestellten Fragen von neuen Muslimen und ihre detaillierten Antworten.",
+              "readTime": "4 Min. Lesezeit",
+              "difficulty": "Anfänger",
+              "difficultyClass": "beginner",
+              "url": "/de/faq.html"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "footer": {
+    "tr": {
+      "description": "Yeni Müslümanlar için kapsamlı, güvenilir ve sade anlatımlı rehber. İslam'ı öğrenmeye adım adım başlayın.",
+      "quickLinks": {
+        "title": "Hızlı Erişim",
+        "links": [
+          { "title": "İslam Nedir?", "url": "/tr/islam-nedir.html" },
+          { "title": "Namaz Rehberi", "url": "/tr/namaz-rehberi.html" },
+          { "title": "30 Günlük Plan", "url": "/tr/30-gunluk-plan.html" },
+          { "title": "Sık Sorulan Sorular", "url": "/tr/sss.html" }
+        ]
+      },
+      "learningPaths": {
+        "title": "Öğrenme Yolları",
+        "links": [
+          { "title": "İman Esasları", "url": "/tr/iman-esaslari.html" },
+          { "title": "Günlük İbadetler", "url": "/tr/namaz-rehberi.html" },
+          { "title": "Günlük Hayat", "url": "/tr/gunluk-hayat.html" },
+          { "title": "Kaynaklar", "url": "/tr/kaynaklar.html" }
+        ]
+      },
+      "languages": {
+        "title": "Diller"
+      },
+      "contact": {
+        "email": "iletisim@islamrehberi.com",
+        "website": "www.islamrehberi.com"
+      },
+      "copyright": "© 2024 İslam Rehberi. Tüm hakları saklıdır.",
+      "madeWith": "ile yapılmıştır.",
+      "policies": [
+        { "title": "Gizlilik Politikası", "url": "/tr/gizlilik.html" },
+        { "title": "Kullanım Koşulları", "url": "/tr/kullanim-kosullari.html" }
+      ]
+    },
+    "en": {
+      "description": "Comprehensive, reliable and simple guide for new Muslims. Start learning Islam step by step.",
+      "quickLinks": {
+        "title": "Quick Access",
+        "links": [
+          { "title": "What is Islam?", "url": "/en/what-is-islam.html" },
+          { "title": "Prayer Guide", "url": "/en/prayer-guide.html" },
+          { "title": "30-Day Plan", "url": "/en/30-day-plan.html" },
+          { "title": "FAQ", "url": "/en/faq.html" }
+        ]
+      },
+      "learningPaths": {
+        "title": "Learning Paths",
+        "links": [
+          { "title": "Pillars of Faith", "url": "/en/pillars-of-faith.html" },
+          { "title": "Daily Worship", "url": "/en/prayer-guide.html" },
+          { "title": "Daily Life", "url": "/en/daily-life.html" },
+          { "title": "Resources", "url": "/en/resources.html" }
+        ]
+      },
+      "languages": {
+        "title": "Languages"
+      },
+      "contact": {
+        "email": "contact@islamicguidance.com",
+        "website": "www.islamicguidance.com"
+      },
+      "copyright": "© 2024 Islamic Guidance. All rights reserved.",
+      "madeWith": "made with",
+      "policies": [
+        { "title": "Privacy Policy", "url": "/en/privacy.html" },
+        { "title": "Terms of Use", "url": "/en/terms.html" }
+      ]
+    },
+    "de": {
+      "description": "Umfassender, zuverlässiger und einfacher Leitfaden für neue Muslime. Beginnen Sie Schritt für Schritt den Islam zu lernen.",
+      "quickLinks": {
+        "title": "Schnellzugriff",
+        "links": [
+          { "title": "Was ist Islam?", "url": "/de/was-ist-islam.html" },
+          { "title": "Gebetsanleitung", "url": "/de/gebetsanleitung.html" },
+          { "title": "30-Tage-Plan", "url": "/de/30-tage-plan.html" },
+          { "title": "FAQ", "url": "/de/faq.html" }
+        ]
+      },
+      "learningPaths": {
+        "title": "Lernpfade",
+        "links": [
+          { "title": "Glaubenssäulen", "url": "/de/glaubenssaeulen.html" },
+          { "title": "Tägliche Anbetung", "url": "/de/gebetsanleitung.html" },
+          { "title": "Tägliches Leben", "url": "/de/taegliches-leben.html" },
+          { "title": "Ressourcen", "url": "/de/ressourcen.html" }
+        ]
+      },
+      "languages": {
+        "title": "Sprachen"
+      },
+      "contact": {
+        "email": "kontakt@islamischeanleitung.com",
+        "website": "www.islamischeanleitung.com"
+      },
+      "copyright": "© 2024 Islamische Anleitung. Alle Rechte vorbehalten.",
+      "madeWith": "gemacht mit",
+      "policies": [
+        { "title": "Datenschutzrichtlinie", "url": "/de/datenschutz.html" },
+        { "title": "Nutzungsbedingungen", "url": "/de/nutzungsbedingungen.html" }
+      ]
+    }
+  }
+}
