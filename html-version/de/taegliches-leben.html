@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tägliches Leben - Islamische Anleitung</title>
+    <meta name="description" content="Islamischer Lebensstil-Leitfaden: Tägliche Anbetung, moralische Werte, soziale Beziehungen und praktische Ratschläge. Umfassender Lebensführer für neue Muslime.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <span>IG</span>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Islamische Anleitung</span>
+                    <span class="logo-sub">İslam Rehberi</span>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <a href="was-ist-islam.html" class="nav-link">Was ist Islam?</a>
+                <a href="gebetsanleitung.html" class="nav-link">Gebetsanleitung</a>
+                <a href="glaubenssaeulen.html" class="nav-link">Glaubenssäulen</a>
+                <a href="taegliches-leben.html" class="nav-link active">Tägliches Leben</a>
+                <a href="30-tage-plan.html" class="nav-link">30-Tage-Plan</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="ressourcen.html" class="nav-link">Ressourcen</a>
+            </div>
+
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="language-btn" id="languageBtn">
+                    <span class="flag">🇩🇪</span>
+                    <span>DE</span>
+                    <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"></polyline>
+                    </svg>
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <a href="../tr/gunluk-hayat.html" class="language-option">
+                        <span class="flag">🇹🇷</span>
+                        <span>Türkçe</span>
+                    </a>
+                    <a href="../en/daily-life.html" class="language-option">
+                        <span class="flag">🇺🇸</span>
+                        <span>English</span>
+                    </a>
+                    <a href="../de/taegliches-leben.html" class="language-option">
+                        <span class="flag">🇩🇪</span>
+                        <span>Deutsch</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="was-ist-islam.html" class="mobile-nav-link">Was ist Islam?</a>
+                <a href="gebetsanleitung.html" class="mobile-nav-link">Gebetsanleitung</a>
+                <a href="glaubenssaeulen.html" class="mobile-nav-link">Glaubenssäulen</a>
+                <a href="taegliches-leben.html" class="mobile-nav-link active">Tägliches Leben</a>
+                <a href="30-tage-plan.html" class="mobile-nav-link">30-Tage-Plan</a>
+                <a href="faq.html" class="mobile-nav-link">FAQ</a>
+                <a href="ressourcen.html" class="mobile-nav-link">Ressourcen</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Content -->
+    <article class="article-page">
+        <div class="container">
+            <!-- Article Header -->
+            <header class="article-header">
+                <div class="breadcrumb">
+                    <a href="index.html">Startseite</a>
+                    <span class="separator">›</span>
+                    <span class="current">Tägliches Leben</span>
+                </div>
+                
+                <div class="article-category hayat">Tägliches Leben</div>
+                
+                <h1 class="article-title">Tägliches Leben</h1>
+                
+                <div class="article-meta">
+                    <div class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12,6 12,12 16,14"></polyline>
+                        </svg>
+                        <span>8 Min. Lesezeit</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                        <span>Mittelstufe</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Article Content -->
+            <div class="article-content">
+                <div class="content-intro">
+                    <p class="lead">
+                        Der islamische Lebensstil beschränkt sich nicht nur auf die Anbetung. Der Islam lehrt, in jedem Lebensbereich mit 
+                        <strong>gutem Charakter, Gerechtigkeit, Barmherzigkeit und Ehrlichkeit</strong> zu leben.
+                    </p>
+                </div>
+
+                <section class="content-section">
+                    <h2>Tagesbeginn</h2>
+                    <p>
+                        Ein Muslim sollte zu Beginn jeden Tages diese Gewohnheiten annehmen:
+                    </p>
+                    
+                    <div class="daily-practices">
+                        <div class="practice-card">
+                            <h4>Aufwachen</h4>
+                            <ul>
+                                <li><strong>Bittgebet:</strong> "Alhamdulillahil-ladhi ahyana ba'da ma amatana wa ilayhin-nushur"</li>
+                                <li>Allah danken</li>
+                                <li>Den Tag positiv beginnen</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="practice-card">
+                            <h4>Morgengebet</h4>
+                            <ul>
+                                <li>Wird zur Fajr-Zeit verrichtet</li>
+                                <li>Für einen gesegneten Tagesbeginn</li>
+                                <li>Verbindung mit Allah aufnehmen</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="practice-card">
+                            <h4>Koran lesen</h4>
+                            <ul>
+                                <li>Täglich mindestens eine Seite</li>
+                                <li>Versuchen, die Bedeutung zu lernen</li>
+                                <li>Nachdenken und kontemplieren</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Essensmanieren</h2>
+                    <p>
+                        Im Islam ist auch das Essen ein Akt der Anbetung mit spezifischen Manieren:
+                    </p>
+                    
+                    <div class="food-etiquette">
+                        <div class="etiquette-section">
+                            <h4>Vor dem Essen</h4>
+                            <ul>
+                                <li><strong>"Bismillah"</strong> sagen</li>
+                                <li>Hände waschen</li>
+                                <li>An einem sauberen Ort sitzen</li>
+                                <li>Mit der rechten Hand essen</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="etiquette-section">
+                            <h4>Beim Essen</h4>
+                            <ul>
+                                <li>Kleine Bissen nehmen</li>
+                                <li>Langsam kauen</li>
+                                <li>Verschwendung vermeiden</li>
+                                <li>Gerne teilen</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="etiquette-section">
+                            <h4>Nach dem Essen</h4>
+                            <ul>
+                                <li><strong>"Alhamdulillahil-ladhi at'amana wa saqana"</strong> sagen</li>
+                                <li>Allah danken</li>
+                                <li>Reste aufräumen</li>
+                                <li>Hände waschen</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Soziale Beziehungen</h2>
+                    <p>
+                        Der Islam fördert guten Charakter in zwischenmenschlichen Beziehungen:
+                    </p>
+                    
+                    <div class="social-relations">
+                        <div class="relation-card">
+                            <h4>Familienbeziehungen</h4>
+                            <ul>
+                                <li><strong>Respekt vor den Eltern:</strong> Das Paradies liegt zu Füßen der Mütter</li>
+                                <li><strong>Gütige Behandlung des Ehepartners:</strong> Gegenseitige Liebe und Respekt</li>
+                                <li><strong>Barmherzigkeit zu Kindern:</strong> Sie mit gutem Charakter erziehen</li>
+                                <li><strong>Familienbande:</strong> Verwandtschaftsbande pflegen</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="relation-card">
+                            <h4>Nachbarschaftsbeziehungen</h4>
+                            <ul>
+                                <li><strong>Güte zu Nachbarn:</strong> "Er gehört nicht zu uns, dessen Nachbar hungrig schlafen geht"</li>
+                                <li><strong>Schaden vermeiden:</strong> Kein Lärm, Geruch oder andere Störung</li>
+                                <li><strong>Gegenseitige Hilfe:</strong> Unterstützung in Zeiten der Not</li>
+                                <li><strong>Grüßen:</strong> Mit einem lächelnden Gesicht begegnen</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="relation-card">
+                            <h4>Gemeinschaftsbeziehungen</h4>
+                            <ul>
+                                <li><strong>Gerechtigkeit:</strong> Jedem sein Recht geben</li>
+                                <li><strong>Ehrlichkeit:</strong> Wort halten, Vertrauen schützen</li>
+                                <li><strong>Barmherzigkeit:</strong> Den Schwachen helfen</li>
+                                <li><strong>Toleranz:</strong> Unterschiede respektieren</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Arbeits- und Geschäftsethik</h2>
+                    <p>
+                        Der Islam setzt auch im Geschäftsleben hohe moralische Standards:
+                    </p>
+                    
+                    <div class="business-ethics">
+                        <div class="ethics-principle">
+                            <h4>Ehrlichkeit</h4>
+                            <p>Genaue Informationen bei Transaktionen geben, Produktmängel nicht verbergen</p>
+                        </div>
+                        
+                        <div class="ethics-principle">
+                            <h4>Gerechtigkeit</h4>
+                            <p>Kein Betrug bei Gewichten und Maßen, faire Preise setzen</p>
+                        </div>
+                        
+                        <div class="ethics-principle">
+                            <h4>Vertrauen</h4>
+                            <p>Geld und Waren der Kunden schützen</p>
+                        </div>
+                        
+                        <div class="ethics-principle">
+                            <h4>Haram-Einkommen vermeiden</h4>
+                            <p>Keine Zinsen, Glücksspiel oder Handel mit verbotenen Waren</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Persönliche Hygiene und Gesundheit</h2>
+                    <p>
+                        Der Islam betrachtet Sauberkeit als die Hälfte des Glaubens:
+                    </p>
+                    
+                    <div class="hygiene-health">
+                        <div class="hygiene-card">
+                            <h4>Körperhygiene</h4>
+                            <ul>
+                                <li>Regelmäßiges Baden (Ghusl)</li>
+                                <li>Zahnhygiene (Miswak verwenden)</li>
+                                <li>Nägel schneiden</li>
+                                <li>Saubere Kleidung tragen</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="hygiene-card">
+                            <h4>Gesundes Leben</h4>
+                            <ul>
+                                <li>Ausgewogene Ernährung</li>
+                                <li>Exzesse vermeiden</li>
+                                <li>Regelmäßige Bewegung</li>
+                                <li>Früh zu Bett, früh aufstehen</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Dhikr und Bittgebet</h2>
+                    <p>
+                        Allah im täglichen Leben gedenken und Bittgebete sprechen:
+                    </p>
+                    
+                    <div class="dhikr-dua">
+                        <div class="dhikr-section">
+                            <h4>Morgen-Dhikr</h4>
+                            <ul>
+                                <li><strong>Subhanallah</strong> (33 Mal)</li>
+                                <li><strong>Alhamdulillah</strong> (33 Mal)</li>
+                                <li><strong>Allahu Akbar</strong> (34 Mal)</li>
+                                <li><strong>Ayat al-Kursi</strong> rezitieren</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="dhikr-section">
+                            <h4>Abend-Dhikr</h4>
+                            <ul>
+                                <li><strong>Vergebung suchen (Istighfar)</strong></li>
+                                <li><strong>Segen auf den Propheten</strong> senden</li>
+                                <li>Dankbarkeit für den Tag ausdrücken</li>
+                                <li>Bereuen (Tawbah)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Umgang mit schwierigen Zeiten</h2>
+                    <p>
+                        Der Islam lehrt Geduld und Vertrauen in Allah in schwierigen Momenten:
+                    </p>
+                    
+                    <div class="coping-strategies">
+                        <div class="strategy-item">
+                            <h4>Geduld (Sabr)</h4>
+                            <p>Auf Allahs Weisheit vertrauen und hastige Handlungen vermeiden</p>
+                        </div>
+                        
+                        <div class="strategy-item">
+                            <h4>Bittgebet (Dua)</h4>
+                            <p>Hilfe von Allah suchen und Zuflucht bei Ihm nehmen</p>
+                        </div>
+                        
+                        <div class="strategy-item">
+                            <h4>Vertrauen (Tawakkul)</h4>
+                            <p>Nach dem Besten, was man tun kann, das Ergebnis Allah überlassen</p>
+                        </div>
+                        
+                        <div class="strategy-item">
+                            <h4>Dankbarkeit (Shukr)</h4>
+                            <p>Dankbar sein für das, was man hat, und positiv schauen</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Tagesende</h2>
+                    <p>
+                        Dinge, die am Ende des Tages zu tun sind:
+                    </p>
+                    
+                    <div class="end-of-day">
+                        <div class="evening-practice">
+                            <h4>Maghrib-Gebet</h4>
+                            <p>Das Pflichtgebet, das bei Sonnenuntergang verrichtet wird</p>
+                        </div>
+                        
+                        <div class="evening-practice">
+                            <h4>Isha-Gebet</h4>
+                            <p>Das letzte Pflichtgebet des Tages</p>
+                        </div>
+                        
+                        <div class="evening-practice">
+                            <h4>Selbstreflexion</h4>
+                            <p>Den Tag bewerten, aus Fehlern lernen</p>
+                        </div>
+                        
+                        <div class="evening-practice">
+                            <h4>Schlafgebet</h4>
+                            <p>"Bismika Allahumma amutu wa ahya" sagen</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Praktische Ratschläge</h2>
+                    <div class="practical-tips">
+                        <div class="tip-card">
+                            <h4>Für neue Muslime</h4>
+                            <ul>
+                                <li>Schritt für Schritt lernen, nicht eilen</li>
+                                <li>Kontakt zur örtlichen muslimischen Gemeinschaft aufnehmen</li>
+                                <li>Zögern Sie nicht, Fragen zu stellen</li>
+                                <li>Geduldig sein und sich nicht zwingen</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tip-card">
+                            <h4>Tägliche Routinen</h4>
+                            <ul>
+                                <li>Gebetszeiten im Telefon speichern</li>
+                                <li>Koran-Lesegewohnheit entwickeln</li>
+                                <li>Islamische Bücher lesen</li>
+                                <li>Rechtschaffene Freundschaften aufbauen</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Fazit</h2>
+                    <p>
+                        Islamischer Lebensstil bedeutet, Allah in jedem Moment des Lebens zu gedenken und 
+                        danach zu streben, Sein Wohlgefallen zu erlangen. Dieser Lebensstil bringt Frieden sowohl in dieser Welt als auch im Jenseits.
+                    </p>
+                    <p>
+                        Denken Sie daran, dass das Streben nach Perfektion schön ist, aber machen Sie sich keine Vorwürfe, 
+                        wenn Sie Fehler machen. Allah ist der Allvergebende und Barmherzige.
+                    </p>
+                </section>
+
+                <!-- Next Steps -->
+                <div class="next-steps">
+                    <h3>Nächster Schritt</h3>
+                    <p>Für systematisches Lernen besuchen Sie die Seite <a href="30-tage-plan.html">30-Tage-Plan</a>.</p>
+                </div>
+            </div>
+
+            <!-- Article Navigation -->
+            <nav class="article-nav">
+                <a href="glaubenssaeulen.html" class="nav-prev">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                    Glaubenssäulen
+                </a>
+                <a href="30-tage-plan.html" class="nav-next">
+                    30-Tage-Plan
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span>IG</span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">Islamische Anleitung</span>
+                            <span class="logo-sub">İslam Rehberi</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Umfassender, zuverlässiger und einfacher Leitfaden für neue Muslime. 
+                        Beginnen Sie Schritt für Schritt den Islam zu lernen.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Schnellzugriff</h3>
+                    <ul class="footer-links">
+                        <li><a href="was-ist-islam.html" class="footer-link">Was ist Islam?</a></li>
+                        <li><a href="gebetsanleitung.html" class="footer-link">Gebetsanleitung</a></li>
+                        <li><a href="30-tage-plan.html" class="footer-link">30-Tage-Plan</a></li>
+                        <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Learning Paths -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Lernpfade</h3>
+                    <ul class="footer-links">
+                        <li><a href="glaubenssaeulen.html" class="footer-link">Glaubenssäulen</a></li>
+                        <li><a href="gebetsanleitung.html" class="footer-link">Tägliche Anbetung</a></li>
+                        <li><a href="taegliches-leben.html" class="footer-link">Tägliches Leben</a></li>
+                        <li><a href="ressourcen.html" class="footer-link">Ressourcen</a></li>
+                    </ul>
+                </div>
+
+                <!-- Languages & Contact -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Sprachen</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="../tr/" class="footer-link language-link">
+                                <span class="flag">🇹🇷</span>
+                                <span>Türkçe</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../en/" class="footer-link language-link">
+                                <span class="flag">🇺🇸</span>
+                                <span>English</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../de/" class="footer-link language-link">
+                                <span class="flag">🇩🇪</span>
+                                <span>Deutsch</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <span>© 2024 Islamische Anleitung. Alle Rechte vorbehalten.</span>
+                        <svg class="heart-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"></path>
+                        </svg>
+                        <span>gemacht mit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
