@@ -16,15 +16,33 @@
             justify-content: center;
             background: linear-gradient(135deg, var(--primary-50) 0%, white 50%, var(--tan-50) 100%);
             padding: var(--space-8);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .language-landing::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=1920&h=1080&fit=crop&crop=center') center/cover;
+            opacity: 0.1;
+            z-index: 0;
         }
         
         .language-container {
             max-width: 800px;
             text-align: center;
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
             border-radius: var(--radius-3xl);
             padding: var(--space-16);
             box-shadow: var(--shadow-strong);
+            position: relative;
+            z-index: 1;
+            animation: fadeUp 0.8s ease-out;
         }
         
         .landing-logo {
@@ -98,11 +116,19 @@
         }
         
         .language-card:hover {
-            transform: translateY(-4px);
+            transform: translateY(-4px) scale(1.02);
             box-shadow: var(--shadow-medium);
             border-color: var(--islamic-green);
             background: var(--primary-100);
         }
+        
+        .language-card {
+            animation: fadeUp 0.6s ease-out;
+        }
+        
+        .language-card:nth-child(1) { animation-delay: 0.1s; }
+        .language-card:nth-child(2) { animation-delay: 0.2s; }
+        .language-card:nth-child(3) { animation-delay: 0.3s; }
         
         .language-flag {
             font-size: 3rem;
@@ -280,4 +306,3 @@
     </script>
 </body>
 </html>
-
