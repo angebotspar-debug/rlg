@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Günlük Plan - İslam Rehberi</title>
+    <meta name="description" content="Yeni Müslümanlar için 30 günlük sistematik İslam öğrenme planı. Adım adım rehber ile İslam'ı öğrenin.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <span>İR</span>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">İslam Rehberi</span>
+                    <span class="logo-sub">Islamic Guidance</span>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <a href="islam-nedir.html" class="nav-link">İslam Nedir?</a>
+                <a href="namaz-rehberi.html" class="nav-link">Namaz Rehberi</a>
+                <a href="iman-esaslari.html" class="nav-link">İman Esasları</a>
+                <a href="gunluk-hayat.html" class="nav-link">Günlük Hayat</a>
+                <a href="30-gunluk-plan.html" class="nav-link active">30 Günlük Plan</a>
+                <a href="sss.html" class="nav-link">SSS</a>
+                <a href="kaynaklar.html" class="nav-link">Kaynaklar</a>
+            </div>
+
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="language-btn" id="languageBtn">
+                    <span class="flag">🇹🇷</span>
+                    <span>TR</span>
+                    <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"></polyline>
+                    </svg>
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <a href="../tr/30-gunluk-plan.html" class="language-option">
+                        <span class="flag">🇹🇷</span>
+                        <span>Türkçe</span>
+                    </a>
+                    <a href="../en/30-day-plan.html" class="language-option">
+                        <span class="flag">🇺🇸</span>
+                        <span>English</span>
+                    </a>
+                    <a href="../de/30-tage-plan.html" class="language-option">
+                        <span class="flag">🇩🇪</span>
+                        <span>Deutsch</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="islam-nedir.html" class="mobile-nav-link">İslam Nedir?</a>
+                <a href="namaz-rehberi.html" class="mobile-nav-link">Namaz Rehberi</a>
+                <a href="iman-esaslari.html" class="mobile-nav-link">İman Esasları</a>
+                <a href="gunluk-hayat.html" class="mobile-nav-link">Günlük Hayat</a>
+                <a href="30-gunluk-plan.html" class="mobile-nav-link active">30 Günlük Plan</a>
+                <a href="sss.html" class="mobile-nav-link">SSS</a>
+                <a href="kaynaklar.html" class="mobile-nav-link">Kaynaklar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Hero Section -->
+    <section class="article-hero">
+        <div class="article-hero-background">
+            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1920&h=600&fit=crop&crop=center" 
+                 alt="30 Günlük Plan - Öğrenme Planı" loading="lazy">
+            <div class="article-hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="article-hero-content animate-fade-up">
+                <div class="breadcrumb">
+                    <a href="index.html">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        </svg>
+                        Ana Sayfa
+                    </a>
+                    <span class="separator">›</span>
+                    <span class="current">30 Günlük Plan</span>
+                </div>
+                
+                <div class="article-category plan">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M8 2v4l-3 3h18l-3-3V2z"></path>
+                        <path d="M9 9v10a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V9"></path>
+                    </svg>
+                    30 Günlük Plan
+                </div>
+                
+                <h1 class="article-hero-title">30 Günlük Plan</h1>
+                
+                <div class="article-hero-meta">
+                    <div class="meta-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12,6 12,12 16,14"></polyline>
+                        </svg>
+                        <span>10 dakika okuma</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                        <span>Başlangıç Seviyesi</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Yeni Müslümanlar İçin</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="article-page">
+        <div class="container">
+
+            <!-- Article Content -->
+            <div class="article-content">
+                <div class="content-intro">
+                    <p class="lead">
+                        Yeni Müslümanlar için <strong>30 günlük sistematik öğrenme planı</strong>. 
+                        Her gün adım adım İslam'ın temellerini öğrenin ve uygulayın.
+                    </p>
+                </div>
+
+                <section class="content-section">
+                    <h2>Plan Nasıl Çalışır?</h2>
+                    <div class="plan-overview">
+                        <div class="overview-card">
+                            <h4>Hafta 1: Temel Bilgiler</h4>
+                            <p>İslam'ın temelleri, iman esasları ve temel ibadetler</p>
+                        </div>
+                        <div class="overview-card">
+                            <h4>Hafta 2: Namaz ve İbadet</h4>
+                            <p>Namaz öğrenme, abdest alma ve günlük ibadetler</p>
+                        </div>
+                        <div class="overview-card">
+                            <h4>Hafta 3: Günlük Yaşam</h4>
+                            <p>İslami yaşam tarzı, ahlak ve sosyal ilişkiler</p>
+                        </div>
+                        <div class="overview-card">
+                            <h4>Hafta 4: Derinleşme</h4>
+                            <p>Kur'an okuma, dua öğrenme ve İslami kültür</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Hafta 1: Temel Bilgiler (1-7. Günler)</h2>
+                    <div class="week-plan">
+                        <div class="day-card">
+                            <h4>Gün 1: İslam Nedir?</h4>
+                            <ul>
+                                <li>İslam'ın anlamı ve temel prensipleri</li>
+                                <li>Kelime-i Şehadet öğrenme</li>
+                                <li>Müslüman olmanın anlamı</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 2: Allah'a İman</h4>
+                            <ul>
+                                <li>Allah'ın varlığı ve birliği</li>
+                                <li>Allah'ın güzel isimleri (Esma-ül Hüsna)</li>
+                                <li>Tevhid kavramı</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 3: Meleklere İman</h4>
+                            <ul>
+                                <li>Meleklerin özellikleri</li>
+                                <li>Önemli melekler ve görevleri</li>
+                                <li>Cebrail, Mikail, İsrafil, Azrail</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 4: Kitaplara İman</h4>
+                            <ul>
+                                <li>İlahi kitaplar: Tevrat, İncil, Zebur</li>
+                                <li>Kur'an-ı Kerim'in önemi</li>
+                                <li>Kur'an'ın korunmuşluğu</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 5: Peygamberlere İman</h4>
+                            <ul>
+                                <li>Peygamberlerin görevi</li>
+                                <li>Hz. Muhammed (SAV)'in hayatı</li>
+                                <li>Diğer önemli peygamberler</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 6: Ahiret Gününe İman</h4>
+                            <ul>
+                                <li>Ölüm ve kabir hayatı</li>
+                                <li>Kıyamet günü</li>
+                                <li>Cennet ve cehennem</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 7: Kadere İman</h4>
+                            <ul>
+                                <li>Kader ve kaza kavramları</li>
+                                <li>İnsan iradesi ve sorumluluk</li>
+                                <li>Tevekkül ve sabır</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Hafta 2: Namaz ve İbadet (8-14. Günler)</h2>
+                    <div class="week-plan">
+                        <div class="day-card">
+                            <h4>Gün 8: Temizlik ve Abdest</h4>
+                            <ul>
+                                <li>İslam'da temizlik</li>
+                                <li>Abdest alma adımları</li>
+                                <li>Gusül (boy abdesti)</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 9: Namaz Vakitleri</h4>
+                            <ul>
+                                <li>Beş vakit namaz</li>
+                                <li>Namaz vakitlerini öğrenme</li>
+                                <li>Kıble yönü bulma</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 10: Namaz Duruşları</h4>
+                            <ul>
+                                <li>Kıyam, rükû, secde</li>
+                                <li>Namaz hareketleri</li>
+                                <li>Doğru duruş şekilleri</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 11: Namaz Okumaları</h4>
+                            <ul>
+                                <li>Fatiha suresi</li>
+                                <li>Tesbihler ve dualar</li>
+                                <li>Sübhaneke duası</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 12: İlk Namaz Deneyimi</h4>
+                            <ul>
+                                <li>Sabah namazı kılma</li>
+                                <li>Adım adım uygulama</li>
+                                <li>Hatalar ve düzeltmeler</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 13: Diğer Namazlar</h4>
+                            <ul>
+                                <li>Öğle, ikindi, akşam, yatsı</li>
+                                <li>Her namazın özelliği</li>
+                                <li>Namaz sayıları</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 14: Cuma Namazı</h4>
+                            <ul>
+                                <li>Cuma namazının önemi</li>
+                                <li>Camiye gitme adabı</li>
+                                <li>Cemaatle namaz</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Hafta 3: Günlük Yaşam (15-21. Günler)</h2>
+                    <div class="week-plan">
+                        <div class="day-card">
+                            <h4>Gün 15: Helal ve Haram</h4>
+                            <ul>
+                                <li>Helal gıdalar</li>
+                                <li>Haram olan şeyler</li>
+                                <li>Şüpheli durumlar</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 16: Aile İlişkileri</h4>
+                            <ul>
+                                <li>Anne-baba hakları</li>
+                                <li>Eş hakları</li>
+                                <li>Çocuk terbiyesi</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 17: Sosyal İlişkiler</h4>
+                            <ul>
+                                <li>Komşuluk hakları</li>
+                                <li>Arkadaşlık</li>
+                                <li>Toplumsal sorumluluklar</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 18: İş Ahlakı</h4>
+                            <ul>
+                                <li>Dürüst ticaret</li>
+                                <li>Emanet</li>
+                                <li>Adalet</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 19: Zekât ve Sadaka</h4>
+                            <ul>
+                                <li>Zekâtın önemi</li>
+                                <li>Zekât hesaplama</li>
+                                <li>Sadaka verme</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 20: Oruç</h4>
+                            <ul>
+                                <li>Ramazan orucunun önemi</li>
+                                <li>Oruç tutma adabı</li>
+                                <li>İftar ve sahur</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 21: Hac ve Umre</h4>
+                            <ul>
+                                <li>Haccın önemi</li>
+                                <li>Hac ibadetleri</li>
+                                <li>Umre ziyareti</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Hafta 4: Derinleşme (22-30. Günler)</h2>
+                    <div class="week-plan">
+                        <div class="day-card">
+                            <h4>Gün 22: Kur'an Okuma</h4>
+                            <ul>
+                                <li>Arapça harfler</li>
+                                <li>Basit sureler</li>
+                                <li>Meal okuma</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 23: Dua Öğrenme</h4>
+                            <ul>
+                                <li>Günlük dualar</li>
+                                <li>Yemek duaları</li>
+                                <li>Seyahat duaları</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 24: Zikir ve Tesbih</h4>
+                            <ul>
+                                <li>Sabah-akşam zikirleri</li>
+                                <li>Tesbih çekme</li>
+                                <li>İstiğfar</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 25: İslam Tarihi</h4>
+                            <ul>
+                                <li>Hz. Muhammed'in hayatı</li>
+                                <li>İlk Müslümanlar</li>
+                                <li>İslam'ın yayılması</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 26: İslami Bayramlar</h4>
+                            <ul>
+                                <li>Ramazan Bayramı</li>
+                                <li>Kurban Bayramı</li>
+                                <li>Mevlid Kandili</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 27: Müslüman Toplum</h4>
+                            <ul>
+                                <li>Cami kültürü</li>
+                                <li>İslami eğitim</li>
+                                <li>Toplumsal yardımlaşma</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 28: Kişisel Gelişim</h4>
+                            <ul>
+                                <li>Nefis terbiyesi</li>
+                                <li>Sabır ve şükür</li>
+                                <li>Manevi gelişim</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 29: Gelecek Planları</h4>
+                            <ul>
+                                <li>İslami eğitim devam</li>
+                                <li>Toplumla bütünleşme</li>
+                                <li>Aile kurma</li>
+                            </ul>
+                        </div>
+                        <div class="day-card">
+                            <h4>Gün 30: Değerlendirme</h4>
+                            <ul>
+                                <li>30 günün değerlendirmesi</li>
+                                <li>Öğrenilen konular</li>
+                                <li>Devam planı</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Günlük Öneriler</h2>
+                    <div class="daily-tips">
+                        <div class="tip-card">
+                            <h4>Her Gün Yapılacaklar</h4>
+                            <ul>
+                                <li>Günün konusunu okuyun (15-20 dk)</li>
+                                <li>Öğrendiklerinizi uygulayın</li>
+                                <li>Sorularınızı not edin</li>
+                                <li>Dua etmeyi unutmayın</li>
+                            </ul>
+                        </div>
+                        <div class="tip-card">
+                            <h4>Önemli Notlar</h4>
+                            <ul>
+                                <li>Acele etmeyin, sabırlı olun</li>
+                                <li>Anlamadığınız yerleri sorun</li>
+                                <li>Yerel camiye ziyaret edin</li>
+                                <li>Müslüman arkadaşlar edinin</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Sonuç</h2>
+                    <p>
+                        Bu 30 günlük plan, İslam'ın temellerini öğrenmeniz için hazırlanmıştır. 
+                        Her gün biraz daha öğrenerek, İslami yaşamı adım adım benimseyin.
+                    </p>
+                    <p>
+                        Unutmayın ki öğrenme süreci 30 günle sınırlı değildir. Bu plan sadece 
+                        bir başlangıçtır. Hayat boyu öğrenmeye devam edin.
+                    </p>
+                </section>
+
+                <!-- Next Steps -->
+                <div class="next-steps">
+                    <h3>Sonraki Adım</h3>
+                    <p>Sorularınız için <a href="sss.html">SSS</a> sayfasını ziyaret edin.</p>
+                </div>
+            </div>
+
+            <!-- Article Navigation -->
+            <nav class="article-nav">
+                <a href="gunluk-hayat.html" class="nav-prev">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                    Günlük Hayat
+                </a>
+                <a href="sss.html" class="nav-next">
+                    SSS
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span>İR</span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">İslam Rehberi</span>
+                            <span class="logo-sub">Islamic Guidance</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Yeni Müslümanlar için kapsamlı, güvenilir ve basit rehber. 
+                        İslam'ı adım adım öğrenmeye başlayın.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Hızlı Erişim</h3>
+                    <ul class="footer-links">
+                        <li><a href="islam-nedir.html" class="footer-link">İslam Nedir?</a></li>
+                        <li><a href="namaz-rehberi.html" class="footer-link">Namaz Rehberi</a></li>
+                        <li><a href="30-gunluk-plan.html" class="footer-link">30 Günlük Plan</a></li>
+                        <li><a href="sss.html" class="footer-link">SSS</a></li>
+                    </ul>
+                </div>
+
+                <!-- Learning Paths -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Öğrenme Yolları</h3>
+                    <ul class="footer-links">
+                        <li><a href="iman-esaslari.html" class="footer-link">İman Esasları</a></li>
+                        <li><a href="namaz-rehberi.html" class="footer-link">Günlük İbadet</a></li>
+                        <li><a href="gunluk-hayat.html" class="footer-link">Günlük Hayat</a></li>
+                        <li><a href="kaynaklar.html" class="footer-link">Kaynaklar</a></li>
+                    </ul>
+                </div>
+
+                <!-- Languages & Contact -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Diller</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="../tr/" class="footer-link language-link">
+                                <span class="flag">🇹🇷</span>
+                                <span>Türkçe</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../en/" class="footer-link language-link">
+                                <span class="flag">🇺🇸</span>
+                                <span>English</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../de/" class="footer-link language-link">
+                                <span class="flag">🇩🇪</span>
+                                <span>Deutsch</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <span>© 2024 İslam Rehberi. Tüm hakları saklıdır.</span>
+                        <svg class="heart-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"></path>
+                        </svg>
+                        <span>ile yapıldı</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

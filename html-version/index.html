@@ -1,428 +1,308 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İslam Rehberi - Yeni Müslümanlar İçin Başlangıç Rehberi</title>
-    <meta name="description" content="Yeni Müslümanlar için kapsamlı, güvenilir ve sade anlatımlı rehber. İslam'ı öğrenmeye adım adım başlayın.">
+    <title>Islamic Guidance - Choose Your Language | İslam Rehberi</title>
+    <meta name="description" content="Islamic guidance for new Muslims in Turkish, English, and German. Choose your preferred language to start learning Islam.">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animations.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        .language-landing {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary-50) 0%, white 50%, var(--tan-50) 100%);
+            padding: var(--space-8);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .language-landing::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=1920&h=1080&fit=crop&crop=center') center/cover;
+            opacity: 0.1;
+            z-index: 0;
+        }
+        
+        .language-container {
+            max-width: 800px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-3xl);
+            padding: var(--space-16);
+            box-shadow: var(--shadow-strong);
+            position: relative;
+            z-index: 1;
+            animation: fadeUp 0.8s ease-out;
+        }
+        
+        .landing-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-4);
+            margin-bottom: var(--space-8);
+        }
+        
+        .landing-logo-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--islamic-green), var(--islamic-light-green));
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: var(--font-size-3xl);
+            font-weight: var(--font-bold);
+        }
+        
+        .landing-logo-text {
+            text-align: left;
+        }
+        
+        .landing-logo-main {
+            font-size: var(--font-size-3xl);
+            font-weight: var(--font-bold);
+            color: var(--islamic-green);
+            display: block;
+            line-height: 1.2;
+        }
+        
+        .landing-logo-sub {
+            font-size: var(--font-size-lg);
+            color: var(--neutral-600);
+            display: block;
+        }
+        
+        .landing-title {
+            font-size: var(--font-size-4xl);
+            font-weight: var(--font-bold);
+            color: var(--neutral-900);
+            margin-bottom: var(--space-4);
+        }
+        
+        .landing-subtitle {
+            font-size: var(--font-size-xl);
+            color: var(--neutral-600);
+            margin-bottom: var(--space-12);
+            line-height: var(--leading-relaxed);
+        }
+        
+        .language-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-6);
+            margin-bottom: var(--space-8);
+        }
+        
+        .language-card {
+            background: var(--primary-50);
+            border: 2px solid var(--primary-200);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-8);
+            text-decoration: none;
+            transition: all var(--transition-normal);
+            cursor: pointer;
+        }
+        
+        .language-card:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: var(--shadow-medium);
+            border-color: var(--islamic-green);
+            background: var(--primary-100);
+        }
+        
+        .language-card {
+            animation: fadeUp 0.6s ease-out;
+        }
+        
+        .language-card:nth-child(1) { animation-delay: 0.1s; }
+        .language-card:nth-child(2) { animation-delay: 0.2s; }
+        .language-card:nth-child(3) { animation-delay: 0.3s; }
+        
+        .language-flag {
+            font-size: 3rem;
+            margin-bottom: var(--space-4);
+            display: block;
+        }
+        
+        .language-name {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-semibold);
+            color: var(--islamic-green);
+            margin-bottom: var(--space-2);
+            display: block;
+        }
+        
+        .language-native {
+            font-size: var(--font-size-base);
+            color: var(--neutral-600);
+            display: block;
+        }
+        
+        .auto-redirect {
+            background: var(--neutral-50);
+            border-radius: var(--radius-lg);
+            padding: var(--space-4);
+            margin-top: var(--space-8);
+            font-size: var(--font-size-sm);
+            color: var(--neutral-600);
+        }
+        
+        .redirect-timer {
+            font-weight: var(--font-semibold);
+            color: var(--islamic-green);
+        }
+        
+        @media (max-width: 768px) {
+            .language-container {
+                padding: var(--space-8);
+                margin: var(--space-4);
+            }
+            
+            .landing-logo {
+                flex-direction: column;
+                gap: var(--space-3);
+            }
+            
+            .landing-logo-text {
+                text-align: center;
+            }
+            
+            .landing-title {
+                font-size: var(--font-size-2xl);
+            }
+            
+            .language-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav-container">
-        <div class="nav-content">
+    <div class="language-landing">
+        <div class="language-container">
             <!-- Logo -->
-            <div class="nav-logo">
-                <div class="logo-icon">
+            <div class="landing-logo">
+                <div class="landing-logo-icon">
                     <span>IG</span>
                 </div>
-                <div class="logo-text">
-                    <span class="logo-main">İslam Rehberi</span>
-                    <span class="logo-sub">Islamic Guidance</span>
+                <div class="landing-logo-text">
+                    <span class="landing-logo-main">Islamic Guidance</span>
+                    <span class="landing-logo-sub">İslam Rehberi</span>
                 </div>
             </div>
-
-            <!-- Desktop Navigation -->
-            <div class="nav-links">
-                <a href="#" class="nav-link">İslam Nedir?</a>
-                <a href="#" class="nav-link">Namaz Rehberi</a>
-                <a href="#" class="nav-link">İman Esasları</a>
-                <a href="#" class="nav-link">Günlük Hayat</a>
-                <a href="#" class="nav-link">30 Günlük Plan</a>
-                <a href="#" class="nav-link">SSS</a>
-                <a href="#" class="nav-link">Kaynaklar</a>
-            </div>
-
-            <!-- Language Selector -->
-            <div class="language-selector">
-                <button class="language-btn" id="languageBtn">
-                    <span class="flag">🇹🇷</span>
-                    <span>TR</span>
-                    <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="6,9 12,15 18,9"></polyline>
-                    </svg>
-                </button>
-                <div class="language-dropdown" id="languageDropdown">
-                    <a href="#" class="language-option">
-                        <span class="flag">🇹🇷</span>
-                        <span>Türkçe</span>
-                    </a>
-                    <a href="#" class="language-option">
-                        <span class="flag">🇺🇸</span>
-                        <span>English</span>
-                    </a>
-                    <a href="#" class="language-option">
-                        <span class="flag">🇩🇪</span>
-                        <span>Deutsch</span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Mobile Menu Button -->
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div class="mobile-menu" id="mobileMenu">
-            <div class="mobile-menu-content">
-                <a href="#" class="mobile-nav-link">İslam Nedir?</a>
-                <a href="#" class="mobile-nav-link">Namaz Rehberi</a>
-                <a href="#" class="mobile-nav-link">İman Esasları</a>
-                <a href="#" class="mobile-nav-link">Günlük Hayat</a>
-                <a href="#" class="mobile-nav-link">30 Günlük Plan</a>
-                <a href="#" class="mobile-nav-link">SSS</a>
-                <a href="#" class="mobile-nav-link">Kaynaklar</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-background"></div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span class="badge-text">✨ Yeni Müslümanlar İçin Özel Hazırlandı</span>
-            </div>
             
-            <h1 class="hero-title">
-                <span class="title-line1">İslam'a</span>
-                <span class="title-line2 gradient-text">Hoş Geldiniz</span>
-            </h1>
-            
-            <p class="hero-subtitle">
-                Yeni Müslümanlar için kapsamlı, güvenilir ve sade anlatımlı rehber
+            <!-- Title -->
+            <h1 class="landing-title">Choose Your Language</h1>
+            <p class="landing-subtitle">
+                Welcome to Islamic Guidance, a comprehensive guide for new Muslims. 
+                Please select your preferred language to continue.
             </p>
             
-            <p class="hero-description">
-                İslam'ı öğrenmeye adım adım başlayın. Temel bilgilerden günlük yaşama, 
-                ibadetlerden ahlaki değerlere kadar her konuda size rehberlik ediyoruz.
-            </p>
-            
-            <div class="hero-buttons">
-                <a href="#" class="btn-primary">Öğrenmeye Başla</a>
-                <a href="#" class="btn-secondary">30 Günlük Plan</a>
+            <!-- Language Selection -->
+            <div class="language-grid">
+                <a href="tr/" class="language-card" data-lang="tr">
+                    <span class="language-flag">🇹🇷</span>
+                    <span class="language-name">Türkçe</span>
+                    <span class="language-native">İslam Rehberi</span>
+                </a>
+                
+                <a href="en/" class="language-card" data-lang="en">
+                    <span class="language-flag">🇺🇸</span>
+                    <span class="language-name">English</span>
+                    <span class="language-native">Islamic Guidance</span>
+                </a>
+                
+                <a href="de/" class="language-card" data-lang="de">
+                    <span class="language-flag">🇩🇪</span>
+                    <span class="language-name">Deutsch</span>
+                    <span class="language-native">Islamische Anleitung</span>
+                </a>
             </div>
             
-            <div class="hero-trust">
-                <div class="trust-item">
-                    <svg class="trust-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                        <polyline points="3.27,6.96 12,12.01 20.73,6.96"></polyline>
-                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                    </svg>
-                    <span>3 Dil Desteği</span>
-                </div>
-                <div class="trust-item">
-                    <svg class="trust-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                    </svg>
-                    <span>Güvenilir İçerik</span>
-                </div>
-                <div class="trust-item">
-                    <svg class="trust-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12,6 12,12 16,14"></polyline>
-                    </svg>
-                    <span>Adım Adım Rehber</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Sade ve Anlaşılır</h3>
-                    <p class="feature-description">
-                        Karmaşık konuları basit ve anlaşılır dille açıklıyoruz. 
-                        Yeni Müslümanlar için özel olarak hazırlanmış içerikler.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Güvenilir Kaynaklar</h3>
-                    <p class="feature-description">
-                        Tüm bilgilerimiz Kuran ve Sünnet'e dayalı, güvenilir 
-                        İslami kaynaklardan derlenmiştir.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22,4 12,14.01 9,11.01"></polyline>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Adım Adım Öğrenme</h3>
-                    <p class="feature-description">
-                        30 günlük öğrenme planı ile İslam'ı sistematik bir 
-                        şekilde öğrenin. Her gün yeni bir konu.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Articles -->
-    <section class="articles">
-        <div class="container">
-            <div class="articles-header">
-                <h2 class="section-title">
-                    Öne Çıkan <span class="text-accent">Konular</span>
-                </h2>
-                <p class="section-description">
-                    İslam'ı öğrenmeye başlamak için en önemli konular
+            <!-- Auto-redirect notice -->
+            <div class="auto-redirect" id="autoRedirect" style="display: none;">
+                <p>
+                    🌐 Detecting your browser language... 
+                    Redirecting to <span class="redirect-timer" id="redirectLang"></span> in 
+                    <span class="redirect-timer" id="countdown">3</span> seconds.
+                    <br>
+                    <small>Click any language above to choose manually.</small>
                 </p>
             </div>
-
-            <div class="articles-grid">
-                <article class="article-card">
-                    <div class="article-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"></path>
-                        </svg>
-                    </div>
-                    <div class="article-category temel">Temel Bilgiler</div>
-                    <h3 class="article-title">İslam Nedir?</h3>
-                    <p class="article-excerpt">
-                        İslam dininin temel prensipleri, inanç esasları ve yaşam felsefesi hakkında kapsamlı bilgi.
-                    </p>
-                    <div class="article-meta">
-                        <span class="read-time">5 dk okuma</span>
-                        <span class="difficulty beginner">Başlangıç</span>
-                    </div>
-                </article>
-
-                <article class="article-card">
-                    <div class="article-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                        </svg>
-                    </div>
-                    <div class="article-category ibadet">İbadetler</div>
-                    <h3 class="article-title">Namaz Nasıl Kılınır?</h3>
-                    <p class="article-excerpt">
-                        Namazın farzları, sünnetleri ve adım adım namaz kılma rehberi. Yeni Müslümanlar için detaylı anlatım.
-                    </p>
-                    <div class="article-meta">
-                        <span class="read-time">8 dk okuma</span>
-                        <span class="difficulty intermediate">Orta</span>
-                    </div>
-                </article>
-
-                <article class="article-card">
-                    <div class="article-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <polyline points="12,6 12,12 16,14"></polyline>
-                        </svg>
-                    </div>
-                    <div class="article-category plan">Öğrenme Planı</div>
-                    <h3 class="article-title">30 Günlük Öğrenme Planı</h3>
-                    <p class="article-excerpt">
-                        İslam'ı sistematik bir şekilde öğrenmek için hazırlanmış 30 günlük detaylı plan.
-                    </p>
-                    <div class="article-meta">
-                        <span class="read-time">3 dk okuma</span>
-                        <span class="difficulty beginner">Başlangıç</span>
-                    </div>
-                </article>
-
-                <article class="article-card">
-                    <div class="article-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                        </svg>
-                    </div>
-                    <div class="article-category iman">İman Esasları</div>
-                    <h3 class="article-title">Altı İman Esası</h3>
-                    <p class="article-excerpt">
-                        İslam'ın temel inanç esasları: Allah'a, meleklere, kitaplara, peygamberlere, ahiret gününe ve kadere iman.
-                    </p>
-                    <div class="article-meta">
-                        <span class="read-time">6 dk okuma</span>
-                        <span class="difficulty beginner">Başlangıç</span>
-                    </div>
-                </article>
-
-                <article class="article-card">
-                    <div class="article-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                        </svg>
-                    </div>
-                    <div class="article-category hayat">Günlük Hayat</div>
-                    <h3 class="article-title">Müslüman Günlük Yaşamı</h3>
-                    <p class="article-excerpt">
-                        İslami yaşam tarzı, günlük ibadetler, ahlaki değerler ve sosyal ilişkiler rehberi.
-                    </p>
-                    <div class="article-meta">
-                        <span class="read-time">7 dk okuma</span>
-                        <span class="difficulty intermediate">Orta</span>
-                    </div>
-                </article>
-
-                <article class="article-card">
-                    <div class="article-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-                        </svg>
-                    </div>
-                    <div class="article-category sss">Sık Sorulan Sorular</div>
-                    <h3 class="article-title">Merak Edilenler</h3>
-                    <p class="article-excerpt">
-                        Yeni Müslümanların en çok merak ettiği sorular ve detaylı cevapları.
-                    </p>
-                    <div class="article-meta">
-                        <span class="read-time">4 dk okuma</span>
-                        <span class="difficulty beginner">Başlangıç</span>
-                    </div>
-                </article>
-            </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <!-- Brand -->
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <div class="logo-icon">
-                            <span>IG</span>
-                        </div>
-                        <div class="logo-text">
-                            <span class="logo-main">İslam Rehberi</span>
-                            <span class="logo-sub">Islamic Guidance</span>
-                        </div>
-                    </div>
-                    <p class="footer-description">
-                        Yeni Müslümanlar için kapsamlı, güvenilir ve sade anlatımlı rehber. 
-                        İslam'ı öğrenmeye adım adım başlayın.
-                    </p>
-                    <div class="footer-trust">
-                        <div class="trust-item">
-                            <svg class="trust-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                            </svg>
-                            <span>3 Dil Desteği</span>
-                        </div>
-                        <div class="trust-item">
-                            <svg class="trust-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"></path>
-                            </svg>
-                            <span>Güvenilir İçerik</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Quick Links -->
-                <div class="footer-section">
-                    <h3 class="footer-title">Hızlı Erişim</h3>
-                    <ul class="footer-links">
-                        <li><a href="#" class="footer-link">İslam Nedir?</a></li>
-                        <li><a href="#" class="footer-link">Namaz Rehberi</a></li>
-                        <li><a href="#" class="footer-link">30 Günlük Plan</a></li>
-                        <li><a href="#" class="footer-link">Sık Sorulan Sorular</a></li>
-                    </ul>
-                </div>
-
-                <!-- Learning Paths -->
-                <div class="footer-section">
-                    <h3 class="footer-title">Öğrenme Yolları</h3>
-                    <ul class="footer-links">
-                        <li><a href="#" class="footer-link">İman Esasları</a></li>
-                        <li><a href="#" class="footer-link">Günlük İbadetler</a></li>
-                        <li><a href="#" class="footer-link">Günlük Hayat</a></li>
-                        <li><a href="#" class="footer-link">Kaynaklar</a></li>
-                    </ul>
-                </div>
-
-                <!-- Languages & Contact -->
-                <div class="footer-section">
-                    <h3 class="footer-title">Diller</h3>
-                    <ul class="footer-links">
-                        <li>
-                            <a href="#" class="footer-link language-link">
-                                <span class="flag">🇹🇷</span>
-                                <span>Türkçe</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link language-link">
-                                <span class="flag">🇺🇸</span>
-                                <span>English</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link language-link">
-                                <span class="flag">🇩🇪</span>
-                                <span>Deutsch</span>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <div class="footer-contact">
-                        <div class="contact-item">
-                            <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                            <span>iletisim@islamrehberi.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <path d="M2 12h20"></path>
-                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                            </svg>
-                            <span>www.islamrehberi.com</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bottom Bar -->
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <div class="copyright">
-                        <span>© 2024 İslam Rehberi. Tüm hakları saklıdır.</span>
-                        <svg class="heart-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"></path>
-                        </svg>
-                        <span>ile yapılmıştır.</span>
-                    </div>
-                    
-                    <div class="footer-policies">
-                        <a href="#" class="policy-link">Gizlilik Politikası</a>
-                        <a href="#" class="policy-link">Kullanım Koşulları</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
+    <script>
+        // Language detection and auto-redirect
+        function detectAndRedirect() {
+            // Get browser language
+            const browserLang = navigator.language || navigator.userLanguage;
+            const langCode = browserLang.substring(0, 2).toLowerCase();
+            
+            // Language mapping
+            const supportedLanguages = {
+                'tr': { name: 'Turkish', path: 'tr/' },
+                'en': { name: 'English', path: 'en/' },
+                'de': { name: 'German', path: 'de/' }
+            };
+            
+            // Default to Turkish if language not supported
+            const targetLang = supportedLanguages[langCode] || supportedLanguages['tr'];
+            
+            // Show auto-redirect notice
+            const autoRedirectDiv = document.getElementById('autoRedirect');
+            const redirectLangSpan = document.getElementById('redirectLang');
+            const countdownSpan = document.getElementById('countdown');
+            
+            autoRedirectDiv.style.display = 'block';
+            redirectLangSpan.textContent = targetLang.name;
+            
+            // Countdown timer
+            let countdown = 3;
+            const timer = setInterval(() => {
+                countdown--;
+                countdownSpan.textContent = countdown;
+                
+                if (countdown <= 0) {
+                    clearInterval(timer);
+                    window.location.href = targetLang.path;
+                }
+            }, 1000);
+            
+            // Allow manual override by clicking language cards
+            const languageCards = document.querySelectorAll('.language-card');
+            languageCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    clearInterval(timer);
+                });
+            });
+        }
+        
+        // Start auto-redirect after 1 second
+        setTimeout(detectAndRedirect, 1000);
+        
+        // Add hover effects
+        document.querySelectorAll('.language-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-4px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
 </body>
 </html>

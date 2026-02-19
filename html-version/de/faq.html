@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Islamische Anleitung</title>
+    <meta name="description" content="Häufig gestellte Fragen von neuen Muslimen mit detaillierten Antworten. Finden Sie Antworten auf Ihre Fragen über den Islam.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <span>IG</span>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Islamische Anleitung</span>
+                    <span class="logo-sub">İslam Rehberi</span>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <a href="was-ist-islam.html" class="nav-link">Was ist Islam?</a>
+                <a href="gebetsanleitung.html" class="nav-link">Gebetsanleitung</a>
+                <a href="glaubenssaeulen.html" class="nav-link">Glaubenssäulen</a>
+                <a href="taegliches-leben.html" class="nav-link">Tägliches Leben</a>
+                <a href="30-tage-plan.html" class="nav-link">30-Tage-Plan</a>
+                <a href="faq.html" class="nav-link active">FAQ</a>
+                <a href="ressourcen.html" class="nav-link">Ressourcen</a>
+            </div>
+
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="language-btn" id="languageBtn">
+                    <span class="flag">🇩🇪</span>
+                    <span>DE</span>
+                    <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"></polyline>
+                    </svg>
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <a href="../tr/sss.html" class="language-option">
+                        <span class="flag">🇹🇷</span>
+                        <span>Türkçe</span>
+                    </a>
+                    <a href="../en/faq.html" class="language-option">
+                        <span class="flag">🇺🇸</span>
+                        <span>English</span>
+                    </a>
+                    <a href="../de/faq.html" class="language-option">
+                        <span class="flag">🇩🇪</span>
+                        <span>Deutsch</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="was-ist-islam.html" class="mobile-nav-link">Was ist Islam?</a>
+                <a href="gebetsanleitung.html" class="mobile-nav-link">Gebetsanleitung</a>
+                <a href="glaubenssaeulen.html" class="mobile-nav-link">Glaubenssäulen</a>
+                <a href="taegliches-leben.html" class="mobile-nav-link">Tägliches Leben</a>
+                <a href="30-tage-plan.html" class="mobile-nav-link">30-Tage-Plan</a>
+                <a href="faq.html" class="mobile-nav-link active">FAQ</a>
+                <a href="ressourcen.html" class="mobile-nav-link">Ressourcen</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Hero Section -->
+    <section class="article-hero">
+        <div class="article-hero-background">
+            <img src="https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=1920&h=600&fit=crop&crop=center" 
+                 alt="Häufig gestellte Fragen - FAQ" loading="lazy">
+            <div class="article-hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="article-hero-content animate-fade-up">
+                <div class="breadcrumb">
+                    <a href="index.html">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        </svg>
+                        Startseite
+                    </a>
+                    <span class="separator">›</span>
+                    <span class="current">FAQ</span>
+                </div>
+                
+                <div class="article-category faq">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M12 1v6m0 6v6"></path>
+                        <path d="m21 12-6-6-6 6-6-6"></path>
+                    </svg>
+                    FAQ
+                </div>
+                
+                <h1 class="article-hero-title">Häufig gestellte Fragen</h1>
+                
+                <div class="article-hero-meta">
+                    <div class="meta-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12,6 12,12 16,14"></polyline>
+                        </svg>
+                        <span>12 Minuten Lesezeit</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                        <span>Alle Stufen</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Für neue Muslime</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="article-page">
+        <div class="container">
+
+            <!-- Article Content -->
+            <div class="article-content">
+                <div class="content-intro">
+                    <p class="lead">
+                        Die am häufigsten gestellten Fragen von neuen Muslimen mit <strong>detaillierten Antworten</strong>. 
+                        Finden Sie Antworten auf Ihre Fragen über den Islam.
+                    </p>
+                </div>
+
+                <section class="content-section">
+                    <h2>Grundlegende Glaubensfragen</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Was muss ich tun, um Muslim zu werden?</h3>
+                        <p>
+                            Um Muslim zu werden, müssen Sie die <strong>Schahada (Glaubensbekenntnis)</strong> sprechen: 
+                            "Asch-hadu an la ilaha illa Allah, wa asch-hadu anna Muhammadan rasul Allah" 
+                            (Ich bezeuge, dass es keinen Gott gibt außer Allah, und ich bezeuge, dass Muhammad Sein Gesandter ist).
+                        </p>
+                        <p>
+                            Wenn Sie diese Worte aufrichtig aussprechen, werden Sie Muslim. 
+                            Danach können Sie beginnen, die Grundlagen des Islam zu lernen.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Was sind die fünf Säulen des Islam?</h3>
+                        <p>Die fünf grundlegenden Säulen des Islam sind:</p>
+                        <ul>
+                            <li><strong>Schahada:</strong> Glaube an Allahs Einheit und Muhammads Prophetentum</li>
+                            <li><strong>Salah:</strong> Fünf tägliche Gebete verrichten</li>
+                            <li><strong>Zakat:</strong> Finanzielle Unterstützung für Bedürftige</li>
+                            <li><strong>Sawm:</strong> Fasten während des Monats Ramadan</li>
+                            <li><strong>Hajj:</strong> Pilgerfahrt nach Mekka für diejenigen, die dazu imstande sind</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Was sind die sechs Glaubenssäulen?</h3>
+                        <p>Der Islam hat sechs Glaubenssäulen:</p>
+                        <ul>
+                            <li>Glaube an Allah</li>
+                            <li>Glaube an Engel</li>
+                            <li>Glaube an Bücher</li>
+                            <li>Glaube an Propheten</li>
+                            <li>Glaube an den Jüngsten Tag</li>
+                            <li>Glaube an das Schicksal</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Gebet und Anbetung Fragen</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Wie kann ich beten lernen?</h3>
+                        <p>
+                            Um das Gebet zu lernen, können Sie diesem schrittweisen Prozess folgen:
+                        </p>
+                        <ul>
+                            <li>Lernen Sie zuerst, wie man die Waschung durchführt</li>
+                            <li>Lernen Sie die Gebetszeiten</li>
+                            <li>Bestimmen Sie die Qibla-Richtung</li>
+                            <li>Lernen Sie Gebetshaltungen (Stehen, Verneigen, Niederwerfen)</li>
+                            <li>Lernen Sie Sure Al-Fatiha und grundlegende Bittgebete</li>
+                            <li>Holen Sie sich Hilfe von Ihrer örtlichen Moschee</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Wie kann ich Gebetszeiten lernen?</h3>
+                        <p>
+                            Gebetszeiten werden durch die Sonnenposition bestimmt:
+                        </p>
+                        <ul>
+                            <li><strong>Fajr (Morgendämmerung):</strong> Vor Tagesanbruch</li>
+                            <li><strong>Dhuhr (Mittag):</strong> Nachdem die Sonne ihren Zenit überschritten hat</li>
+                            <li><strong>Asr (Nachmittag):</strong> Am Nachmittag</li>
+                            <li><strong>Maghrib (Sonnenuntergang):</strong> Nach Sonnenuntergang</li>
+                            <li><strong>Isha (Nacht):</strong> Wenn die Abenddämmerung verschwindet</li>
+                        </ul>
+                        <p>Sie können eine Gebetszeit-App auf Ihr Telefon herunterladen, um die täglichen Zeiten zu verfolgen.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Wie führe ich die Waschung durch?</h3>
+                        <p>Schritte für die Waschung:</p>
+                        <ol>
+                            <li>Sagen Sie "Bismillah"</li>
+                            <li>Waschen Sie Ihre Hände dreimal</li>
+                            <li>Spülen Sie Ihren Mund dreimal</li>
+                            <li>Reinigen Sie Ihre Nase dreimal</li>
+                            <li>Waschen Sie Ihr Gesicht dreimal</li>
+                            <li>Waschen Sie Ihre Arme bis zu den Ellbogen dreimal</li>
+                            <li>Streichen Sie über Ihren Kopf</li>
+                            <li>Waschen Sie Ihre Füße bis zu den Knöcheln dreimal</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Fragen zum täglichen Leben</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Welche Lebensmittel sind halal und welche sind haram?</h3>
+                        <p><strong>Halal-Lebensmittel:</strong></p>
+                        <ul>
+                            <li>Gemüse und Früchte</li>
+                            <li>Getreide und Hülsenfrüchte</li>
+                            <li>Halal geschlachtetes Fleisch (Rind, Lamm, Huhn usw.)</li>
+                            <li>Fisch und Meeresfrüchte</li>
+                            <li>Milch und Milchprodukte</li>
+                        </ul>
+                        <p><strong>Haram-Lebensmittel:</strong></p>
+                        <ul>
+                            <li>Schweinefleisch und Schweineprodukte</li>
+                            <li>Alkoholische Getränke</li>
+                            <li>Nicht-halal geschlachtetes Tierfleisch</li>
+                            <li>Aas</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Wie kann ich meiner Familie sagen, dass ich Muslim geworden bin?</h3>
+                        <p>
+                            Dies ist eine heikle Angelegenheit und kann für jede Situation unterschiedliche Ansätze erfordern:
+                        </p>
+                        <ul>
+                            <li>Seien Sie geduldig und eilen Sie nicht</li>
+                            <li>Lernen Sie zuerst den Islam gut</li>
+                            <li>Seien Sie ein Vorbild durch Ihr gutes Verhalten</li>
+                            <li>Warten Sie auf den richtigen Zeitpunkt</li>
+                            <li>Verwenden Sie respektvolle und verständnisvolle Sprache</li>
+                            <li>Suchen Sie bei Bedarf Rat von erfahrenen Muslimen</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Wie sind die Rechte der Frauen im Islam?</h3>
+                        <p>
+                            Der Islam gewährt Frauen viele Rechte:
+                        </p>
+                        <ul>
+                            <li>Recht auf Bildung</li>
+                            <li>Recht auf Arbeit</li>
+                            <li>Erbrecht</li>
+                            <li>Ehe- und Scheidungsrechte</li>
+                            <li>Eigentumsrechte</li>
+                            <li>Recht auf politische Teilhabe</li>
+                        </ul>
+                        <p>Der Islam sieht Männer und Frauen in verschiedenen Rollen, aber von gleichem Wert.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Soziale und kulturelle Fragen</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Wie kann ich in die Moschee gehen?</h3>
+                        <p>
+                            Für Ihren ersten Besuch in einer Moschee:
+                        </p>
+                        <ul>
+                            <li>Tragen Sie saubere Kleidung</li>
+                            <li>Ziehen Sie Ihre Schuhe am Eingang aus</li>
+                            <li>Treten Sie leise ein</li>
+                            <li>Erklären Sie Ihre Situation dem Imam oder der Gemeinde</li>
+                            <li>Zögern Sie nicht, um Hilfe zu bitten</li>
+                            <li>Wenn Sie nicht wissen, wie man betet, können Sie einfach beobachten</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Wie kann ich muslimische Freunde finden?</h3>
+                        <p>
+                            Um sich mit der muslimischen Gemeinschaft zu verbinden:
+                        </p>
+                        <ul>
+                            <li>Besuchen Sie regelmäßig Ihre örtliche Moschee</li>
+                            <li>Nehmen Sie an islamischen Veranstaltungen teil</li>
+                            <li>Treten Sie muslimischen Studentenvereinigungen bei</li>
+                            <li>Treten Sie Online-Muslim-Gemeinschaften bei</li>
+                            <li>Nehmen Sie an islamischen Kursen teil</li>
+                            <li>Engagieren Sie sich ehrenamtlich für wohltätige Arbeit</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Was soll ich während des Ramadan tun?</h3>
+                        <p>
+                            Während des Ramadan:
+                        </p>
+                        <ul>
+                            <li>Stehen Sie für Suhur auf und essen Sie</li>
+                            <li>Enthalten Sie sich tagsüber von Essen, Trinken und sexuellen Beziehungen</li>
+                            <li>Brechen Sie Ihr Fasten beim Iftar</li>
+                            <li>Lesen Sie mehr Koran</li>
+                            <li>Beten Sie mehr</li>
+                            <li>Geben Sie Wohltätigkeit</li>
+                            <li>Nehmen Sie an Tarawih-Gebeten teil</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Lern- und Entwicklungsfragen</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Muss ich Arabisch lernen?</h3>
+                        <p>
+                            Arabisch zu lernen ist nicht verpflichtend, aber es ist vorteilhaft:
+                        </p>
+                        <ul>
+                            <li>Das Lernen grundlegender arabischer Bittgebete für das Gebet ist ausreichend</li>
+                            <li>Arabisch ist hilfreich für das Verständnis des Koran</li>
+                            <li>Sie können Übersetzungen in Ihrer eigenen Sprache lesen</li>
+                            <li>Sie können versuchen, mit der Zeit grundlegendes Arabisch zu lernen</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Welche Bücher sollte ich lesen?</h3>
+                        <p>
+                            Empfohlene Bücher für neue Muslime:
+                        </p>
+                        <ul>
+                            <li>Übersetzung des Heiligen Koran</li>
+                            <li>Biographie des Propheten Muhammad (Sira-Bücher)</li>
+                            <li>Grundlegende islamische Wissensbücher</li>
+                            <li>Gebet- und Anbetungsführer</li>
+                            <li>Islamische Ethikbücher</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Was passiert, wenn ich Fehler mache?</h3>
+                        <p>
+                            Fehler zu machen ist im Islam normal:
+                        </p>
+                        <ul>
+                            <li>Allah ist der Allvergebende</li>
+                            <li>Aufrichtige Reue ist ausreichend</li>
+                            <li>Lernen Sie aus Ihren Fehlern</li>
+                            <li>Machen Sie sich nicht zu viele Vorwürfe</li>
+                            <li>Lernen Sie weiter</li>
+                            <li>Streben Sie nach Perfektion, aber erwarten Sie nicht, perfekt zu sein</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Praktische Ratschläge</h2>
+                    <div class="practical-tips">
+                        <div class="tip-card">
+                            <h4>Für neue Muslime</h4>
+                            <ul>
+                                <li>Seien Sie geduldig und lernen Sie Schritt für Schritt</li>
+                                <li>Zögern Sie nicht, Fragen zu stellen</li>
+                                <li>Verbinden Sie sich mit der örtlichen muslimischen Gemeinschaft</li>
+                                <li>Beten Sie regelmäßig</li>
+                            </ul>
+                        </div>
+                        <div class="tip-card">
+                            <h4>Wichtige Erinnerungen</h4>
+                            <ul>
+                                <li>Den Islam zu lernen ist ein lebenslanger Prozess</li>
+                                <li>Jeder Muslim ist auf einer anderen Stufe</li>
+                                <li>Machen Sie Fortschritte in Ihrem eigenen Tempo</li>
+                                <li>Vertrauen Sie auf Allahs Barmherzigkeit</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Fazit</h2>
+                    <p>
+                        Dies sind die Fragen, über die neue Muslime am meisten nachdenken. 
+                        Wenn Sie andere Fragen haben, zögern Sie nicht, Hilfe von 
+                        Ihrer örtlichen Moschee oder erfahrenen Muslimen zu suchen.
+                    </p>
+                    <p>
+                        Denken Sie daran, dass das Lernen des Islam eine Reise ist. Seien Sie geduldig, 
+                        bitten Sie um Allahs Hilfe und machen Sie Schritt für Schritt Fortschritte.
+                    </p>
+                </section>
+
+                <!-- Next Steps -->
+                <div class="next-steps">
+                    <h3>Nächster Schritt</h3>
+                    <p>Für weitere Ressourcen besuchen Sie die <a href="ressourcen.html">Ressourcen</a>-Seite.</p>
+                </div>
+            </div>
+
+            <!-- Article Navigation -->
+            <nav class="article-nav">
+                <a href="30-tage-plan.html" class="nav-prev">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                    30-Tage-Plan
+                </a>
+                <a href="ressourcen.html" class="nav-next">
+                    Ressourcen
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span>IG</span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">Islamische Anleitung</span>
+                            <span class="logo-sub">İslam Rehberi</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Umfassender, zuverlässiger und einfacher Leitfaden für neue Muslime. 
+                        Beginnen Sie Schritt für Schritt den Islam zu lernen.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Schnellzugriff</h3>
+                    <ul class="footer-links">
+                        <li><a href="was-ist-islam.html" class="footer-link">Was ist Islam?</a></li>
+                        <li><a href="gebetsanleitung.html" class="footer-link">Gebetsanleitung</a></li>
+                        <li><a href="30-tage-plan.html" class="footer-link">30-Tage-Plan</a></li>
+                        <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Learning Paths -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Lernpfade</h3>
+                    <ul class="footer-links">
+                        <li><a href="glaubenssaeulen.html" class="footer-link">Glaubenssäulen</a></li>
+                        <li><a href="gebetsanleitung.html" class="footer-link">Tägliche Anbetung</a></li>
+                        <li><a href="taegliches-leben.html" class="footer-link">Tägliches Leben</a></li>
+                        <li><a href="ressourcen.html" class="footer-link">Ressourcen</a></li>
+                    </ul>
+                </div>
+
+                <!-- Languages & Contact -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Sprachen</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="../tr/" class="footer-link language-link">
+                                <span class="flag">🇹🇷</span>
+                                <span>Türkçe</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../en/" class="footer-link language-link">
+                                <span class="flag">🇺🇸</span>
+                                <span>English</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../de/" class="footer-link language-link">
+                                <span class="flag">🇩🇪</span>
+                                <span>Deutsch</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <span>© 2024 Islamische Anleitung. Alle Rechte vorbehalten.</span>
+                        <svg class="heart-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"></path>
+                        </svg>
+                        <span>gemacht mit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

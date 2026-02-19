@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sıkça Sorulan Sorular - İslam Rehberi</title>
+    <meta name="description" content="Yeni Müslümanların en çok sorduğu sorular ve cevapları. İslam hakkında merak ettiklerinizi öğrenin.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <span>İR</span>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">İslam Rehberi</span>
+                    <span class="logo-sub">Islamic Guidance</span>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <a href="islam-nedir.html" class="nav-link">İslam Nedir?</a>
+                <a href="namaz-rehberi.html" class="nav-link">Namaz Rehberi</a>
+                <a href="iman-esaslari.html" class="nav-link">İman Esasları</a>
+                <a href="gunluk-hayat.html" class="nav-link">Günlük Hayat</a>
+                <a href="30-gunluk-plan.html" class="nav-link">30 Günlük Plan</a>
+                <a href="sss.html" class="nav-link active">SSS</a>
+                <a href="kaynaklar.html" class="nav-link">Kaynaklar</a>
+            </div>
+
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="language-btn" id="languageBtn">
+                    <span class="flag">🇹🇷</span>
+                    <span>TR</span>
+                    <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"></polyline>
+                    </svg>
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <a href="../tr/sss.html" class="language-option">
+                        <span class="flag">🇹🇷</span>
+                        <span>Türkçe</span>
+                    </a>
+                    <a href="../en/faq.html" class="language-option">
+                        <span class="flag">🇺🇸</span>
+                        <span>English</span>
+                    </a>
+                    <a href="../de/faq.html" class="language-option">
+                        <span class="flag">🇩🇪</span>
+                        <span>Deutsch</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="islam-nedir.html" class="mobile-nav-link">İslam Nedir?</a>
+                <a href="namaz-rehberi.html" class="mobile-nav-link">Namaz Rehberi</a>
+                <a href="iman-esaslari.html" class="mobile-nav-link">İman Esasları</a>
+                <a href="gunluk-hayat.html" class="mobile-nav-link">Günlük Hayat</a>
+                <a href="30-gunluk-plan.html" class="mobile-nav-link">30 Günlük Plan</a>
+                <a href="sss.html" class="mobile-nav-link active">SSS</a>
+                <a href="kaynaklar.html" class="mobile-nav-link">Kaynaklar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Hero Section -->
+    <section class="article-hero">
+        <div class="article-hero-background">
+            <img src="https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=1920&h=600&fit=crop&crop=center" 
+                 alt="Sıkça Sorulan Sorular - SSS" loading="lazy">
+            <div class="article-hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="article-hero-content animate-fade-up">
+                <div class="breadcrumb">
+                    <a href="index.html">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        </svg>
+                        Ana Sayfa
+                    </a>
+                    <span class="separator">›</span>
+                    <span class="current">SSS</span>
+                </div>
+                
+                <div class="article-category faq">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M12 1v6m0 6v6"></path>
+                        <path d="m21 12-6-6-6 6-6-6"></path>
+                    </svg>
+                    SSS
+                </div>
+                
+                <h1 class="article-hero-title">Sıkça Sorulan Sorular</h1>
+                
+                <div class="article-hero-meta">
+                    <div class="meta-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12,6 12,12 16,14"></polyline>
+                        </svg>
+                        <span>12 dakika okuma</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                        <span>Tüm Seviyeler</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Yeni Müslümanlar İçin</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="article-page">
+        <div class="container">
+
+            <!-- Article Content -->
+            <div class="article-content">
+                <div class="content-intro">
+                    <p class="lead">
+                        Yeni Müslümanların en çok merak ettiği sorular ve <strong>detaylı cevapları</strong>. 
+                        İslam hakkında aklınıza takılan soruların yanıtlarını bulun.
+                    </p>
+                </div>
+
+                <section class="content-section">
+                    <h2>Temel İnanç Soruları</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Müslüman olmak için ne yapmam gerekiyor?</h3>
+                        <p>
+                            Müslüman olmak için <strong>Kelime-i Şehadet</strong> getirmeniz yeterlidir: 
+                            "Eşhedü en la ilahe illallah ve eşhedü enne Muhammeden rasulullah" 
+                            (Allah'tan başka ilah olmadığına ve Muhammed'in O'nun elçisi olduğuna şahitlik ederim).
+                        </p>
+                        <p>
+                            Bu sözleri samimi bir şekilde söylediğinizde Müslüman olursunuz. 
+                            Daha sonra İslam'ın temellerini öğrenmeye başlayabilirsiniz.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>İslam'ın beş şartı nelerdir?</h3>
+                        <p>İslam'ın beş temel şartı şunlardır:</p>
+                        <ul>
+                            <li><strong>Şehadet:</strong> Allah'ın birliğine ve Muhammed'in peygamberliğine inanmak</li>
+                            <li><strong>Namaz:</strong> Günde beş vakit namaz kılmak</li>
+                            <li><strong>Zekât:</strong> Belirli şartları taşıyanlara mali yardım yapmak</li>
+                            <li><strong>Oruç:</strong> Ramazan ayında oruç tutmak</li>
+                            <li><strong>Hac:</strong> Gücü yetenlerin Mekke'ye hac ziyareti yapması</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>İman esasları nelerdir?</h3>
+                        <p>İslam'da altı iman esası vardır:</p>
+                        <ul>
+                            <li>Allah'a iman</li>
+                            <li>Meleklere iman</li>
+                            <li>Kitaplara iman</li>
+                            <li>Peygamberlere iman</li>
+                            <li>Ahiret gününe iman</li>
+                            <li>Kadere iman</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Namaz ve İbadet Soruları</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Namaz kılmayı nasıl öğrenebilirim?</h3>
+                        <p>
+                            Namaz öğrenmek için adım adım şu süreci takip edebilirsiniz:
+                        </p>
+                        <ul>
+                            <li>Önce abdest almayı öğrenin</li>
+                            <li>Namaz vakitlerini öğrenin</li>
+                            <li>Kıble yönünü belirleyin</li>
+                            <li>Namaz duruşlarını (kıyam, rükû, secde) öğrenin</li>
+                            <li>Fatiha suresini ve temel duaları öğrenin</li>
+                            <li>Yerel camiden yardım alın</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Namaz vakitlerini nasıl öğrenebilirim?</h3>
+                        <p>
+                            Namaz vakitleri güneşin konumuna göre belirlenir:
+                        </p>
+                        <ul>
+                            <li><strong>Sabah (Fecir):</strong> Şafak sökmeden önce</li>
+                            <li><strong>Öğle (Zuhr):</strong> Güneş tepe noktasından sonra</li>
+                            <li><strong>İkindi (Asr):</strong> Öğleden sonra</li>
+                            <li><strong>Akşam (Maghrib):</strong> Güneş battıktan sonra</li>
+                            <li><strong>Yatsı (Isha):</strong> Akşam şafağı kaybolduğunda</li>
+                        </ul>
+                        <p>Telefonunuza namaz vakti uygulaması indirerek günlük vakitleri takip edebilirsiniz.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Abdest nasıl alınır?</h3>
+                        <p>Abdest alma adımları:</p>
+                        <ol>
+                            <li>Besmele çekin</li>
+                            <li>Ellerinizi üç kez yıkayın</li>
+                            <li>Ağzınızı üç kez çalkalayın</li>
+                            <li>Burnunuzu üç kez temizleyin</li>
+                            <li>Yüzünüzü üç kez yıkayın</li>
+                            <li>Kollarınızı dirseklere kadar üç kez yıkayın</li>
+                            <li>Başınızı mesh edin</li>
+                            <li>Ayaklarınızı topuklara kadar üç kez yıkayın</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Günlük Yaşam Soruları</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Hangi yiyecekler helal, hangiler haram?</h3>
+                        <p><strong>Helal yiyecekler:</strong></p>
+                        <ul>
+                            <li>Sebze ve meyveler</li>
+                            <li>Tahıllar ve baklagiller</li>
+                            <li>Helal kesim et (sığır, koyun, tavuk vb.)</li>
+                            <li>Balık ve deniz ürünleri</li>
+                            <li>Süt ve süt ürünleri</li>
+                        </ul>
+                        <p><strong>Haram yiyecekler:</strong></p>
+                        <ul>
+                            <li>Domuz eti ve ürünleri</li>
+                            <li>Alkol içeren içecekler</li>
+                            <li>Helal olmayan şekilde kesilen hayvan etleri</li>
+                            <li>Ölü hayvan eti</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Müslüman olduğumu aileme nasıl söyleyebilirim?</h3>
+                        <p>
+                            Bu hassas bir konudur ve her duruma göre farklı yaklaşımlar gerekebilir:
+                        </p>
+                        <ul>
+                            <li>Sabırlı olun ve acele etmeyin</li>
+                            <li>Önce İslam'ı iyi öğrenin</li>
+                            <li>Güzel davranışlarınızla örnek olun</li>
+                            <li>Uygun zamanı bekleyin</li>
+                            <li>Saygılı ve anlayışlı bir dil kullanın</li>
+                            <li>Gerekirse deneyimli Müslümanlardan tavsiye alın</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>İslam'da kadın hakları nasıldır?</h3>
+                        <p>
+                            İslam kadınlara birçok hak tanır:
+                        </p>
+                        <ul>
+                            <li>Eğitim hakkı</li>
+                            <li>Çalışma hakkı</li>
+                            <li>Miras hakkı</li>
+                            <li>Evlilik ve boşanma hakları</li>
+                            <li>Mülkiyet hakkı</li>
+                            <li>Siyasi katılım hakkı</li>
+                        </ul>
+                        <p>İslam, kadın ve erkeği farklı rollerde ama eşit değerde görür.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Sosyal ve Kültürel Sorular</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Camiye nasıl gidebilirim?</h3>
+                        <p>
+                            Camiye ilk kez gitmek için:
+                        </p>
+                        <ul>
+                            <li>Temiz kıyafetler giyin</li>
+                            <li>Ayakkabılarınızı girişte çıkarın</li>
+                            <li>Sessizce içeri girin</li>
+                            <li>İmam veya cemaatten birine durumunuzu açıklayın</li>
+                            <li>Yardım istekten çekinmeyin</li>
+                            <li>Namaz kılmayı bilmiyorsanız sadece izleyebilirsiniz</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Müslüman arkadaşlar nasıl edinebilirim?</h3>
+                        <p>
+                            Müslüman toplumla bağlantı kurmak için:
+                        </p>
+                        <ul>
+                            <li>Yerel camiye düzenli olarak gidin</li>
+                            <li>İslami etkinliklere katılın</li>
+                            <li>Müslüman öğrenci derneklerine katılın</li>
+                            <li>Online Müslüman topluluklarına katılın</li>
+                            <li>İslami kurslar alın</li>
+                            <li>Hayır işlerinde gönüllü olun</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Ramazan ayında ne yapmalıyım?</h3>
+                        <p>
+                            Ramazan ayında:
+                        </p>
+                        <ul>
+                            <li>Sahurda kalkıp yemek yiyin</li>
+                            <li>Gün boyunca yemek, içmek ve cinsel ilişkiden kaçının</li>
+                            <li>İftarda orucu açın</li>
+                            <li>Daha çok Kur'an okuyun</li>
+                            <li>Daha çok dua edin</li>
+                            <li>Sadaka verin</li>
+                            <li>Teravih namazına katılın</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Öğrenme ve Gelişim Soruları</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Arapça öğrenmek zorunda mıyım?</h3>
+                        <p>
+                            Arapça öğrenmek zorunlu değildir, ancak faydalıdır:
+                        </p>
+                        <ul>
+                            <li>Namaz için temel Arapça duaları öğrenmeniz yeterlidir</li>
+                            <li>Kur'an'ı anlamak için Arapça faydalıdır</li>
+                            <li>Kendi dilinizde meal okuyabilirsiniz</li>
+                            <li>Zamanla temel Arapça öğrenmeye çalışabilirsiniz</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Hangi kitapları okumalıyım?</h3>
+                        <p>
+                            Yeni Müslümanlar için önerilen kitaplar:
+                        </p>
+                        <ul>
+                            <li>Kur'an-ı Kerim meali</li>
+                            <li>Hz. Muhammed'in hayatı (Siyer kitapları)</li>
+                            <li>Temel İslam bilgisi kitapları</li>
+                            <li>Namaz ve ibadet rehberleri</li>
+                            <li>İslam ahlakı kitapları</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Hatalar yaptığımda ne olur?</h3>
+                        <p>
+                            İslam'da hata yapmak normaldir:
+                        </p>
+                        <ul>
+                            <li>Allah çok bağışlayıcıdır</li>
+                            <li>Samimi tövbe etmek yeterlidir</li>
+                            <li>Hatalardan ders çıkarın</li>
+                            <li>Kendinizi çok suçlamayın</li>
+                            <li>Öğrenmeye devam edin</li>
+                            <li>Mükemmel olmaya çalışın ama mükemmel olmayı beklemeyin</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Pratik Öneriler</h2>
+                    <div class="practical-tips">
+                        <div class="tip-card">
+                            <h4>Yeni Müslümanlar İçin</h4>
+                            <ul>
+                                <li>Sabırlı olun ve adım adım öğrenin</li>
+                                <li>Sorularınızı çekinmeden sorun</li>
+                                <li>Yerel Müslüman topluluğuyla iletişim kurun</li>
+                                <li>Düzenli olarak dua edin</li>
+                            </ul>
+                        </div>
+                        <div class="tip-card">
+                            <h4>Önemli Hatırlatmalar</h4>
+                            <ul>
+                                <li>İslam öğrenmek hayat boyu süren bir süreçtir</li>
+                                <li>Her Müslüman farklı seviyededir</li>
+                                <li>Kendi hızınızda ilerleyin</li>
+                                <li>Allah'ın merhametine güvenin</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Sonuç</h2>
+                    <p>
+                        Bu sorular yeni Müslümanların en çok merak ettikleri konulardır. 
+                        Aklınıza takılan başka sorular olursa, yerel camiden veya 
+                        deneyimli Müslümanlardan yardım almaktan çekinmeyin.
+                    </p>
+                    <p>
+                        Unutmayın ki İslam öğrenmek bir yolculuktur. Sabırlı olun, 
+                        Allah'ın yardımını dileyin ve adım adım ilerleyin.
+                    </p>
+                </section>
+
+                <!-- Next Steps -->
+                <div class="next-steps">
+                    <h3>Sonraki Adım</h3>
+                    <p>Daha fazla kaynak için <a href="kaynaklar.html">Kaynaklar</a> sayfasını ziyaret edin.</p>
+                </div>
+            </div>
+
+            <!-- Article Navigation -->
+            <nav class="article-nav">
+                <a href="30-gunluk-plan.html" class="nav-prev">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                    30 Günlük Plan
+                </a>
+                <a href="kaynaklar.html" class="nav-next">
+                    Kaynaklar
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span>İR</span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">İslam Rehberi</span>
+                            <span class="logo-sub">Islamic Guidance</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Yeni Müslümanlar için kapsamlı, güvenilir ve basit rehber. 
+                        İslam'ı adım adım öğrenmeye başlayın.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Hızlı Erişim</h3>
+                    <ul class="footer-links">
+                        <li><a href="islam-nedir.html" class="footer-link">İslam Nedir?</a></li>
+                        <li><a href="namaz-rehberi.html" class="footer-link">Namaz Rehberi</a></li>
+                        <li><a href="30-gunluk-plan.html" class="footer-link">30 Günlük Plan</a></li>
+                        <li><a href="sss.html" class="footer-link">SSS</a></li>
+                    </ul>
+                </div>
+
+                <!-- Learning Paths -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Öğrenme Yolları</h3>
+                    <ul class="footer-links">
+                        <li><a href="iman-esaslari.html" class="footer-link">İman Esasları</a></li>
+                        <li><a href="namaz-rehberi.html" class="footer-link">Günlük İbadet</a></li>
+                        <li><a href="gunluk-hayat.html" class="footer-link">Günlük Hayat</a></li>
+                        <li><a href="kaynaklar.html" class="footer-link">Kaynaklar</a></li>
+                    </ul>
+                </div>
+
+                <!-- Languages & Contact -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Diller</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="../tr/" class="footer-link language-link">
+                                <span class="flag">🇹🇷</span>
+                                <span>Türkçe</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../en/" class="footer-link language-link">
+                                <span class="flag">🇺🇸</span>
+                                <span>English</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../de/" class="footer-link language-link">
+                                <span class="flag">🇩🇪</span>
+                                <span>Deutsch</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <span>© 2024 İslam Rehberi. Tüm hakları saklıdır.</span>
+                        <svg class="heart-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"></path>
+                        </svg>
+                        <span>ile yapıldı</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

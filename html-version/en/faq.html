@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Islamic Guidance</title>
+    <meta name="description" content="Frequently asked questions by new Muslims with detailed answers. Find answers to your questions about Islam.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <span>IG</span>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Islamic Guidance</span>
+                    <span class="logo-sub">İslam Rehberi</span>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <a href="what-is-islam.html" class="nav-link">What is Islam?</a>
+                <a href="prayer-guide.html" class="nav-link">Prayer Guide</a>
+                <a href="pillars-of-faith.html" class="nav-link">Pillars of Faith</a>
+                <a href="daily-life.html" class="nav-link">Daily Life</a>
+                <a href="30-day-plan.html" class="nav-link">30-Day Plan</a>
+                <a href="faq.html" class="nav-link active">FAQ</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+            </div>
+
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="language-btn" id="languageBtn">
+                    <span class="flag">🇺🇸</span>
+                    <span>EN</span>
+                    <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"></polyline>
+                    </svg>
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <a href="../tr/sss.html" class="language-option">
+                        <span class="flag">🇹🇷</span>
+                        <span>Türkçe</span>
+                    </a>
+                    <a href="../en/faq.html" class="language-option">
+                        <span class="flag">🇺🇸</span>
+                        <span>English</span>
+                    </a>
+                    <a href="../de/faq.html" class="language-option">
+                        <span class="flag">🇩🇪</span>
+                        <span>Deutsch</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="what-is-islam.html" class="mobile-nav-link">What is Islam?</a>
+                <a href="prayer-guide.html" class="mobile-nav-link">Prayer Guide</a>
+                <a href="pillars-of-faith.html" class="mobile-nav-link">Pillars of Faith</a>
+                <a href="daily-life.html" class="mobile-nav-link">Daily Life</a>
+                <a href="30-day-plan.html" class="mobile-nav-link">30-Day Plan</a>
+                <a href="faq.html" class="mobile-nav-link active">FAQ</a>
+                <a href="resources.html" class="mobile-nav-link">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Hero Section -->
+    <section class="article-hero">
+        <div class="article-hero-background">
+            <img src="https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=1920&h=600&fit=crop&crop=center" 
+                 alt="Frequently Asked Questions - FAQ" loading="lazy">
+            <div class="article-hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="article-hero-content animate-fade-up">
+                <div class="breadcrumb">
+                    <a href="index.html">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        </svg>
+                        Home
+                    </a>
+                    <span class="separator">›</span>
+                    <span class="current">FAQ</span>
+                </div>
+                
+                <div class="article-category faq">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M12 1v6m0 6v6"></path>
+                        <path d="m21 12-6-6-6 6-6-6"></path>
+                    </svg>
+                    FAQ
+                </div>
+                
+                <h1 class="article-hero-title">Frequently Asked Questions</h1>
+                
+                <div class="article-hero-meta">
+                    <div class="meta-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12,6 12,12 16,14"></polyline>
+                        </svg>
+                        <span>12 minutes read</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                        <span>All Levels</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>For New Muslims</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="article-page">
+        <div class="container">
+
+            <!-- Article Content -->
+            <div class="article-content">
+                <div class="content-intro">
+                    <p class="lead">
+                        The most commonly asked questions by new Muslims with <strong>detailed answers</strong>. 
+                        Find answers to your questions about Islam.
+                    </p>
+                </div>
+
+                <section class="content-section">
+                    <h2>Basic Faith Questions</h2>
+                    
+                    <div class="faq-item">
+                        <h3>What do I need to do to become Muslim?</h3>
+                        <p>
+                            To become Muslim, you need to recite the <strong>Shahada (Declaration of Faith)</strong>: 
+                            "Ash-hadu an la ilaha illa Allah, wa ash-hadu anna Muhammadan rasul Allah" 
+                            (I bear witness that there is no god but Allah, and I bear witness that Muhammad is His messenger).
+                        </p>
+                        <p>
+                            When you sincerely say these words, you become Muslim. 
+                            After that, you can start learning the fundamentals of Islam.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What are the Five Pillars of Islam?</h3>
+                        <p>The five fundamental pillars of Islam are:</p>
+                        <ul>
+                            <li><strong>Shahada:</strong> Believing in Allah's oneness and Muhammad's prophethood</li>
+                            <li><strong>Salah:</strong> Performing five daily prayers</li>
+                            <li><strong>Zakat:</strong> Giving financial assistance to those who meet certain conditions</li>
+                            <li><strong>Sawm:</strong> Fasting during the month of Ramadan</li>
+                            <li><strong>Hajj:</strong> Pilgrimage to Mecca for those who are able</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What are the Six Pillars of Faith?</h3>
+                        <p>Islam has six pillars of faith:</p>
+                        <ul>
+                            <li>Faith in Allah</li>
+                            <li>Faith in Angels</li>
+                            <li>Faith in Books</li>
+                            <li>Faith in Prophets</li>
+                            <li>Faith in the Day of Judgment</li>
+                            <li>Faith in Destiny</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Prayer and Worship Questions</h2>
+                    
+                    <div class="faq-item">
+                        <h3>How can I learn to pray?</h3>
+                        <p>
+                            To learn prayer, you can follow this step-by-step process:
+                        </p>
+                        <ul>
+                            <li>First learn how to perform ablution</li>
+                            <li>Learn the prayer times</li>
+                            <li>Determine the Qibla direction</li>
+                            <li>Learn prayer positions (standing, bowing, prostrating)</li>
+                            <li>Learn Surah Al-Fatiha and basic supplications</li>
+                            <li>Get help from your local mosque</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How can I learn prayer times?</h3>
+                        <p>
+                            Prayer times are determined by the sun's position:
+                        </p>
+                        <ul>
+                            <li><strong>Fajr (Dawn):</strong> Before dawn breaks</li>
+                            <li><strong>Dhuhr (Noon):</strong> After the sun passes its zenith</li>
+                            <li><strong>Asr (Afternoon):</strong> In the afternoon</li>
+                            <li><strong>Maghrib (Sunset):</strong> After sunset</li>
+                            <li><strong>Isha (Night):</strong> When evening twilight disappears</li>
+                        </ul>
+                        <p>You can download a prayer time app on your phone to track daily times.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How do I perform ablution?</h3>
+                        <p>Steps for performing ablution:</p>
+                        <ol>
+                            <li>Say "Bismillah"</li>
+                            <li>Wash your hands three times</li>
+                            <li>Rinse your mouth three times</li>
+                            <li>Clean your nose three times</li>
+                            <li>Wash your face three times</li>
+                            <li>Wash your arms up to the elbows three times</li>
+                            <li>Wipe your head</li>
+                            <li>Wash your feet up to the ankles three times</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Daily Life Questions</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Which foods are halal and which are haram?</h3>
+                        <p><strong>Halal foods:</strong></p>
+                        <ul>
+                            <li>Vegetables and fruits</li>
+                            <li>Grains and legumes</li>
+                            <li>Halal slaughtered meat (beef, lamb, chicken, etc.)</li>
+                            <li>Fish and seafood</li>
+                            <li>Milk and dairy products</li>
+                        </ul>
+                        <p><strong>Haram foods:</strong></p>
+                        <ul>
+                            <li>Pork and pork products</li>
+                            <li>Alcoholic beverages</li>
+                            <li>Non-halal slaughtered animal meat</li>
+                            <li>Dead animal meat</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How can I tell my family that I became Muslim?</h3>
+                        <p>
+                            This is a sensitive matter and may require different approaches for each situation:
+                        </p>
+                        <ul>
+                            <li>Be patient and don't rush</li>
+                            <li>First learn Islam well</li>
+                            <li>Set an example with your good behavior</li>
+                            <li>Wait for the right time</li>
+                            <li>Use respectful and understanding language</li>
+                            <li>If necessary, seek advice from experienced Muslims</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What are women's rights in Islam?</h3>
+                        <p>
+                            Islam grants many rights to women:
+                        </p>
+                        <ul>
+                            <li>Right to education</li>
+                            <li>Right to work</li>
+                            <li>Right to inheritance</li>
+                            <li>Marriage and divorce rights</li>
+                            <li>Property rights</li>
+                            <li>Right to political participation</li>
+                        </ul>
+                        <p>Islam views men and women in different roles but of equal value.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Social and Cultural Questions</h2>
+                    
+                    <div class="faq-item">
+                        <h3>How can I go to the mosque?</h3>
+                        <p>
+                            For your first visit to a mosque:
+                        </p>
+                        <ul>
+                            <li>Wear clean clothes</li>
+                            <li>Remove your shoes at the entrance</li>
+                            <li>Enter quietly</li>
+                            <li>Explain your situation to the imam or congregation</li>
+                            <li>Don't hesitate to ask for help</li>
+                            <li>If you don't know how to pray, you can just observe</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How can I make Muslim friends?</h3>
+                        <p>
+                            To connect with the Muslim community:
+                        </p>
+                        <ul>
+                            <li>Regularly attend your local mosque</li>
+                            <li>Participate in Islamic events</li>
+                            <li>Join Muslim student associations</li>
+                            <li>Join online Muslim communities</li>
+                            <li>Take Islamic courses</li>
+                            <li>Volunteer for charitable work</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What should I do during Ramadan?</h3>
+                        <p>
+                            During Ramadan:
+                        </p>
+                        <ul>
+                            <li>Wake up for Suhur and eat</li>
+                            <li>Abstain from food, drink, and sexual relations during the day</li>
+                            <li>Break your fast at Iftar</li>
+                            <li>Read more Quran</li>
+                            <li>Pray more</li>
+                            <li>Give charity</li>
+                            <li>Attend Tarawih prayers</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Learning and Development Questions</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Do I have to learn Arabic?</h3>
+                        <p>
+                            Learning Arabic is not mandatory, but it is beneficial:
+                        </p>
+                        <ul>
+                            <li>Learning basic Arabic supplications for prayer is sufficient</li>
+                            <li>Arabic is helpful for understanding the Quran</li>
+                            <li>You can read translations in your own language</li>
+                            <li>You can try to learn basic Arabic over time</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Which books should I read?</h3>
+                        <p>
+                            Recommended books for new Muslims:
+                        </p>
+                        <ul>
+                            <li>Translation of the Holy Quran</li>
+                            <li>Biography of Prophet Muhammad (Seerah books)</li>
+                            <li>Basic Islamic knowledge books</li>
+                            <li>Prayer and worship guides</li>
+                            <li>Islamic ethics books</li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What happens when I make mistakes?</h3>
+                        <p>
+                            Making mistakes is normal in Islam:
+                        </p>
+                        <ul>
+                            <li>Allah is Most Forgiving</li>
+                            <li>Sincere repentance is sufficient</li>
+                            <li>Learn from your mistakes</li>
+                            <li>Don't blame yourself too much</li>
+                            <li>Continue learning</li>
+                            <li>Strive for perfection but don't expect to be perfect</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Practical Advice</h2>
+                    <div class="practical-tips">
+                        <div class="tip-card">
+                            <h4>For New Muslims</h4>
+                            <ul>
+                                <li>Be patient and learn step by step</li>
+                                <li>Don't hesitate to ask questions</li>
+                                <li>Connect with the local Muslim community</li>
+                                <li>Pray regularly</li>
+                            </ul>
+                        </div>
+                        <div class="tip-card">
+                            <h4>Important Reminders</h4>
+                            <ul>
+                                <li>Learning Islam is a lifelong process</li>
+                                <li>Every Muslim is at a different level</li>
+                                <li>Progress at your own pace</li>
+                                <li>Trust in Allah's mercy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Conclusion</h2>
+                    <p>
+                        These are the questions that new Muslims wonder about most. 
+                        If you have other questions, don't hesitate to seek help from 
+                        your local mosque or experienced Muslims.
+                    </p>
+                    <p>
+                        Remember that learning Islam is a journey. Be patient, 
+                        ask for Allah's help, and progress step by step.
+                    </p>
+                </section>
+
+                <!-- Next Steps -->
+                <div class="next-steps">
+                    <h3>Next Step</h3>
+                    <p>For more resources, visit the <a href="resources.html">Resources</a> page.</p>
+                </div>
+            </div>
+
+            <!-- Article Navigation -->
+            <nav class="article-nav">
+                <a href="30-day-plan.html" class="nav-prev">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                    30-Day Plan
+                </a>
+                <a href="resources.html" class="nav-next">
+                    Resources
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span>IG</span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">Islamic Guidance</span>
+                            <span class="logo-sub">İslam Rehberi</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Comprehensive, reliable and simple guide for new Muslims. 
+                        Start learning Islam step by step.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Access</h3>
+                    <ul class="footer-links">
+                        <li><a href="what-is-islam.html" class="footer-link">What is Islam?</a></li>
+                        <li><a href="prayer-guide.html" class="footer-link">Prayer Guide</a></li>
+                        <li><a href="30-day-plan.html" class="footer-link">30-Day Plan</a></li>
+                        <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Learning Paths -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Learning Paths</h3>
+                    <ul class="footer-links">
+                        <li><a href="pillars-of-faith.html" class="footer-link">Pillars of Faith</a></li>
+                        <li><a href="prayer-guide.html" class="footer-link">Daily Worship</a></li>
+                        <li><a href="daily-life.html" class="footer-link">Daily Life</a></li>
+                        <li><a href="resources.html" class="footer-link">Resources</a></li>
+                    </ul>
+                </div>
+
+                <!-- Languages & Contact -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Languages</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="../tr/" class="footer-link language-link">
+                                <span class="flag">🇹🇷</span>
+                                <span>Türkçe</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../en/" class="footer-link language-link">
+                                <span class="flag">🇺🇸</span>
+                                <span>English</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../de/" class="footer-link language-link">
+                                <span class="flag">🇩🇪</span>
+                                <span>Deutsch</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <span>© 2024 Islamic Guidance. All rights reserved.</span>
+                        <svg class="heart-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"></path>
+                        </svg>
+                        <span>made with</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
